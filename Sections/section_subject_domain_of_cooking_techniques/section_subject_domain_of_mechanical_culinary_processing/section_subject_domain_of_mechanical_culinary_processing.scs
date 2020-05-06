@@ -1,0 +1,15 @@
+section_subject_domain_of_mechanical_culinary_processing
+=> nrel_main_idtf: 
+	[Раздел. Предметная область механической кулинарной обработки]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of mechanical culinary processing]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_mechanical_culinary_processing = [*^"file://subject_domain_of_mechanical_culinary_processing.scsi"*];;
+
+section_subject_domain_of_mechanical_culinary_processing
+
+-> rrel_key_sc_element: subject_domain_of_mechanical_culinary_processing;;

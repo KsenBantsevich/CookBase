@@ -1,0 +1,12 @@
+ui_classic_slicing_table <- sc_node_not_relation;;
+
+ui_classic_slicing_table => nrel_main_idtf: [Таблица классической нарезки] (* <- lang_ru;; *);;
+
+ui_classic_slicing_table  <-rrel_key_sc_element:...
+(*
+<-table;;
+<=nrel_sc_text_translation:...
+(*
+->"file://classic_slicing_table.html"(*=>nrel_format:format_html ;;*);;
+*);;
+*);;

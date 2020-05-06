@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_dice_slicing;;
+concept_dice_slicing => nrel_main_idtf:
+[нарезка кубики](*<-lang_ru;;*);
+[dice slicing] (* <-lang_en;; *);;

@@ -1,0 +1,9 @@
+ui_useful_tables <- ui_user_command_class_noatom;;
+
+ui_useful_tables => nrel_main_idtf: [Полезные таблицы] (* <- lang_ru;; *);;
+
+ui_useful_tables <= nrel_ui_commands_decomposition:
+{
+	ui_classic_slicing_table
+};;
+
