@@ -1,0 +1,33 @@
+
+concept_rhizome
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [корневищные овощи]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_rhizome;;
+	<= nrel_sc_text_translation: ...(*->[Корневищными овощами называют те растения, съедобной частью которых являются утолщенные корневища и корни. ]
+    (*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр.(корневищные овощи)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_rhizome;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Деление на корневищные, корнеплодные и клубневые овощи является в большей степени 
+	потребительским, нежели ботаническим. Где-то категория корневищных овощей перекликается с клубнеплодами и корнеплодами. Так,<b><sc_element sys_idtf="concept_sweet_potato">
+	батат</b></sc_element>,который относится к клубнеплодным овощам можно отнести и к корневищным, поскольку в пищу идут утолщенные корни или корневые клубни. Но этот овощ относят 
+	к <b><sc_element sys_idtf="concept_tubers">	клубневым</b></sc_element>по традиции, из-за схожести с <b><sc_element sys_idtf="concept_potato">картофелем</b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(корневищные овощи)](*<- lang_ru;;*);;   
+	
+*);;
+
+
+
+concept_rhizome->concept_horseradish;
+         concept_katran;;

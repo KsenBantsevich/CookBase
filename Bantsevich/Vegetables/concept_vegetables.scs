@@ -1,0 +1,65 @@
+
+concept_vegetables
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [овощ]
+		(* <- lang_ru;; *);
+  
+  =>nrel_idtf:[vegetable]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_vegetables;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/vegetables.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(овощ)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_vegetables;;
+	<= nrel_sc_text_translation: ...(*->[ Как кулинарный термин, овощ обозначает сочную съедобную  часть специально культивируемых огородных травянистых 
+    растений (например,клубень или плод),
+    а также всякую твердую растительную <b><sc_element sys_idtf="concept_meal">пищу</b></sc_element>, кроме <b><sc_element sys_idtf="concept_fruits">фруктов
+    </b></sc_element>,<b><sc_element sys_idtf="concept_berries">ягод</b></sc_element>,<b><sc_element sys_idtf="concept_nuts">орехов</b></sc_element> и
+    <b><sc_element sys_idtf="concept_cereals">круп</b></sc_element>. ](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(овощ)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_vegetables;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Общим для всех овощей является то, что в пищу употребляют сочную часть растений. 
+                    То есть, семечки, сухие семена – это уже не овощи.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(овощ,семечки)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_vegetables;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Невозможно себе представить здоровое питание без овощей, ведь они содержат множество важных питательных
+     веществ.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(овощ,питательные вещества)](*<- lang_ru;;*);;
+*);;
+
+
+concept_vegetables <= nrel_subdividing:
+{		
+		concept_tubers;
+	    concept_roots;
+        concept_rhizome;
+        concept_cabbage;
+        concept_leafy;
+        concept_spicy;
+        concept_bulbous;
+        concept_tomat;
+        concept_pulses;
+        concept_cereal;
+        concept_desser;
+        concept_pumk
+		
+};;
+
+

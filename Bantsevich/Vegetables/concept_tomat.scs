@@ -1,0 +1,45 @@
+
+concept_tomat
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [томатные овощи]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_tomat;;
+	<= nrel_sc_text_translation: ...(*->[томатные овощи - это <b><sc_element sys_idtf="concept_vegetables">овощи</b></sc_element>
+	семейства пасленовых, у которых в пищу употребляется многосемянная ягода с семенными 
+    камерами, заполненными сочной мякотью или полая семенная камера-ягода, состоящая из оболочки, семяносцев и семян.]
+     (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр. (томатные овощи)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_tomat;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[томатные овощи характеризуются высокой пищевой ценностью, обусловленной содержанием сахаров,
+     минеральных веществ (0,7 %) и витаминов (b-каротин, С, витамины группы В и др.).](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(томатные овощи, пищевая ценность)](*<- lang_ru;;*);;
+    
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_tomat;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Популярность томатных овощей обусловлена их высокой питательной ценностью и превосходными вкусовыми качествами
+	.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(томатные овощи, популярность)](*<- lang_ru;;*);;
+    
+	
+*);;
+
+
+
+concept_tomat->concept_tomato;
+		concept_sweet_pepper;
+        concept_pepper;
+        concept_eggplant;;

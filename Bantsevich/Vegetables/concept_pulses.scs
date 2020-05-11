@@ -1,0 +1,55 @@
+
+concept_pulses
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [бобовые овощи]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pulses;;
+	<= nrel_sc_text_translation: ...(*->[бобовые овощи - культурные растения семейства бобовых, выращиваемые для получения <b><sc_element sys_idtf="concept_vegetables">овощей
+	</b></sc_element>в виде молодых бобов.]
+    (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(бобовые овощи)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pulses;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[бобовые овощи употребляют в пищу в свежем, консервированном, 
+    сушеном виде, после термической обработки; они являются типичным компонентом для многих национальных кухонь.](*<-lang_ru;;*);;*);;
+	
+		
+	=> nrel_main_idtf: [Утв.(бобовые овощи, употребление)](*<- lang_ru;;*);;   
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pulses;;
+	
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В Беларуси традиционный «ассортимент» бобовых не столь широк: 
+	<b><sc_element sys_idtf="concept_beans">обыкновенная фасоль</b></sc_element>,<b><sc_element sys_idtf="concept_bean">бобы</b></sc_element>
+	и <b><sc_element sys_idtf="concept_peas">горох</b></sc_element>.В странах же Азии и Америки бобовые культуры культивируются гораздо шире.] 
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	 
+	=> nrel_main_idtf: [Утв.(бобовые овощи,распространение)](*<- lang_ru;;*);;   
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pulses;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[бобовые овощные культуры уникальны с точки зрения своей питательной ценности.
+                                 бобовые овощи чрезвычайно богаты полноценными белками.Также бобовые овощи богаты углеводами, клетчаткой, витаминами 
+                                  железом, калием, фосфором, кальцием, магнием, метионином, фосфолипидами.](*<-lang_ru;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(бобовые овощи, питательная ценность)](*<- lang_ru;;*);;   
+	
+*);;
+
+concept_pulses->concept_peas;
+        concept_beans;
+        concept_bean;;

@@ -1,0 +1,33 @@
+
+concept_desser
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [десертные овощи]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_desser;;
+	<= nrel_sc_text_translation: ...(*->[десертные овощи – группа <b><sc_element sys_idtf="concept_vegetables">овощей</b></sc_element>
+     богатых витаминами, созревающих раньше других, обладающих высокими вкусовыми 
+                качествами и подаваемых на десерт.]   (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр. (десертные овощи)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_desser;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Чисто десертным овощем можно назвать, пожалуй, только 
+     <b><sc_element sys_idtf="concept_rhubarb">ревень</b></sc_element>, из которого делают варенье, компот,
+     цукаты и даже вино.  <b><sc_element sys_idtf="concept_asparagus">Спаржу</b></sc_element> и
+      <b><sc_element sys_idtf="concept_artichoke">артишок</b></sc_element> используют чаще не как десерт: из спаржи готовятся вторые блюда и салаты, артишоки добавляют в пиццу,
+      делают из них гарниры и салаты, добавляют во вторые блюда, маринуют.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(десертные овощи, уточнение)](*<- lang_ru;;*);;  
+    
+	
+*);;
+
+concept_desser->concept_asparagus; concept_artichoke;concept_rhubarb;;

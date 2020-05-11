@@ -1,0 +1,55 @@
+
+concept_bulbous
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [луковичные овощи]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_bulbous;;
+	<= nrel_sc_text_translation: ...(*->[луковичные овощи - это <b><sc_element sys_idtf="concept_vegetables">овощные растения</b></sc_element> 
+	с употребляемой в пищу подземной (луковица) или надземной частью, содержащие большое количество эфирных масел и обладающие острым
+	 вкусом.] (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(луковичные овощи)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bulbous;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В кулинарии луковичные овощи широко применяются как приправа для приготовления множества  
+                блюд - первых, вторых, закусок и салатов, подлив, фарша, начинок для пирогов; для консервирования и маринования. ](*<-lang_ru;;*);;*);;
+	
+	=> nrel_main_idtf: [Утв.(луковичные овощи, применение)](*<- lang_ru;;*);;
+    
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bulbous;;
+	
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Специфический аромат и острый вкус луковичным овощам придает эфирное масло (у 
+	<b><sc_element sys_idtf="concept_onion">лука</b></sc_element> - тиосульфат, 
+                у <b><sc_element sys_idtf="concept_garlic">чеснока</b></sc_element> - алацин), 
+				которое обладает фитонцидными свойствами (то есть подавляют жизнедеятельность бактерий), повышает аппетит
+                и улучшает пищеварение.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(луковичные овощи, лук, чеснок)](*<- lang_ru;;*);;
+    
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bulbous;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[луковичные овощи содержат большое количество питательных веществ, обладают высокими вкусовыми и ароматическими 
+	свойствами. ](*<-lang_ru;;*);;*);;
+	
+	=> nrel_main_idtf: [Утв.(луковичные овощи, аромат)](*<- lang_ru;;*);;
+    
+	
+*);;
+concept_bulbous->concept_garlic;;
+concept_bulbous->concept_onion;;

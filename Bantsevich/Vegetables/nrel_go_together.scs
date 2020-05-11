@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_go_together;;
+nrel_go_together => nrel_main_idtf:
+[ сочетаться* ](*<-lang_ru;;*);
+[go together* ] (* <-lang_en;; *);
+=>nrel_idtf:
+[гармонировать* ] (* <-lang_ru;; *); 
+[be in harmony* ] (* <-lang_en;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: nrel_go_together;;
+	<= nrel_sc_text_translation: ...(*->[Сочетаться - подходить по запаху, консистенции, химическому составу, вкусовым, эстетическим и другим параметрам.]
+        (*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (сочетаться, про различные ингредиенты)](*<- lang_ru;;*);;
+   
+	
+*);;
+
+nrel_go_together=>nrel_first_domain:concept_ingredient;;
+nrel_go_together=>nrel_second_domain:concept_ingredient;;
+
+
+nrel_go_together <- reflexive_relation; symmetric_relation; notransitive_relation; non_oriented_relation; binary_relation;;
+relation=>nrel_inclusion:non_oriented_relation;;
+relation=>nrel_inclusion:binary_relation(*
+=>nrel_inclusion:antireflexive_relation;;
+=>nrel_inclusion:symmetric_relation;;
+=>nrel_inclusion:notransitive_relation;;
+*);;
+
+parameter->arity;;
+arity->binary_relation;;
+binary_relation=>nrel_measurement:2;;
+2<-number;;
+
+
+

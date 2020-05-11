@@ -1,0 +1,147 @@
+concept_fruits
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [фрукты]
+		(* <- lang_ru;; *);;
+
+concept_berries
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [ягоды]
+		(* <- lang_ru;; *);;
+
+
+concept_nuts
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [орехи]
+		(* <- lang_ru;; *);;
+
+concept_cereals
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [крупы]
+		(* <- lang_ru;; *);;
+
+concept_sunflower_seeds
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [семечки]
+		(* <- lang_ru;; *);;
+
+concept_dry_seeds
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [сухие семена]
+		(* <- lang_ru;; *);;
+
+concept_dish
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [блюдо]
+		(* <- lang_ru;; *);;
+
+concept_plant_lifespan
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [вид растения по продолжительности периода выращивания]
+		(* <- lang_ru;; *);;
+
+
+concept_ingredient
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [ингредиент]
+		(* <- lang_ru;; *);;
+
+
+concept_scrapple 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [студень]
+		(* <- lang_ru;; *);;
+
+concept_meat
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [мясо]
+		(* <- lang_ru;; *);;
+
+
+concept_sausage
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [сосиски]
+		(* <- lang_ru;; *);;
+
+
+concept_g
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [грамм]
+		(* <- lang_ru;; *);;
+
+
+concept_starch
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [крахмал]
+		(* <- lang_ru;; *);;
+
+concept_dish
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [блюдо]
+		(* <- lang_ru;; *);;
+
+concept_flour
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [мука]
+		(* <- lang_ru;; *);;
+
+concept_sugar
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [сахар]
+		(* <- lang_ru;; *);;
+		
+concept_alcohol
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [спирт]
+		(* <- lang_ru;; *);;
+
+nrel_salting
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [соление* ]
+		(* <- lang_ru;; *);;
+
+nrel_pickling
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [маринование* ]
+		(* <- lang_ru;; *);;
+
+nrel_conservation
+
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [консервирование* ]
+		(* <- lang_ru;; *);;
+
+
+concept_mushrooms
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [грибы]
+		(* <- lang_ru;; *);;
+
+concept_meat
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [мясо]
+		(* <- lang_ru;; *);;
+
+concept_fish
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [рыба]
+		(* <- lang_ru;; *);;
+
+concept_eggs
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [яйца]
+		(* <- lang_ru;; *);;
+		
+concept_mint
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [мята]
+		(* <- lang_ru;; *);;
+
+concept_milk_product
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [молочный продукт]
+		(* <- lang_ru;; *);;
+
+concept_alcohol
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [алкоголь]
+		(* <- lang_ru;; *);;

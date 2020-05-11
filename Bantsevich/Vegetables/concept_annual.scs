@@ -1,0 +1,46 @@
+
+concept_annual
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [однолетнее растение]
+		(* <- lang_ru;; *);
+       
+    =>nrel_idtf:[annual plant]
+       (*<-lang_en;;*);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_annual;;
+	<= nrel_sc_text_translation: ...(*->[Однолетние растения – это растения, которые проходят все этапы развития  за один вегетативный период.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр.(однолетнее растение)](*<- lang_ru;;*);;
+   
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_annual;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Жизненный цикл однолетних растений от посева и до формирования новых семян проходит за один год. 
+    Жизнь растения можно разделить на следующие этапы: прорастание семени и появление семядольных листьев, активный рост вегетативной части, формирование 
+    репродуктивных органов и полное созревание растения.](*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(однолетнее растение,жизненный цикл)](*<- lang_ru;;*);;
+  
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_annual;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ряд однолетних <b><sc_element sys_idtf="concept_vegetables">овощных культур</b></sc_element>
+     можно выращивать как <b><sc_element sys_idtf="concept_perennial">многолетние</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(однолетнее растение,Многолетнее растение)](*<- lang_ru;;*);;
+  
+*);;
+
+concept_plant_lifespan->concept_annual;;
+
+
+
+
+

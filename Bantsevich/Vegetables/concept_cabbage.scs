@@ -1,0 +1,32 @@
+
+concept_cabbage
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [капустные овощи]
+		(* <- lang_ru;; *);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_cabbage;;
+	<= nrel_sc_text_translation: ...(*->[капустные овощи - это группа <b><sc_element sys_idtf="concept_vegetables">овощtq</b></sc_element> с употребляемой в пищу надземной 
+	частью,  сходных по своему химическому составу и относящихся к роду капустных. ]
+    (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(капустные овощи)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cabbage;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В составе капустных овощей преобладает вода (86-92%), содержатся сахара (1,7-7,9 мг/100 грамм), 
+    			белки (от 1% в цветной до 5,5% в брюссельской и савойской), азотсодержащие вещества (1,1-6,9 мг/100 грамм), клетчатка (0,6-1,4 мг/100 грамм), 
+    			зольные элементы (до 1 мг/100 грамм), витамин С (в белокочанной капусте около 50 мг%, в брюссельской - более 100 мг%.). 
+    			Сахара представлены в виде глюкозы и фруктозы.]
+     (*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(капустные овощи, состав)](*<- lang_ru;;*);;
+    
+	
+*);;
+
+
+concept_cabbage-> concept_white_cabbage; concept_broccoli;  concept_cauliflower;;

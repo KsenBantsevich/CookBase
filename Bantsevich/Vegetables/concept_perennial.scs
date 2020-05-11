@@ -1,0 +1,38 @@
+
+concept_perennial
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [многолетнее растение]
+		(* <- lang_ru;; *);
+       
+    =>nrel_idtf:[perennial plant]
+       (*<-lang_en;;*);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_perennial;;
+	<= nrel_sc_text_translation: ...(*->[Многоленее растение — растение, живущее более двух лет.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр.(многолетнее растение)](*<- lang_ru;;*);;
+   
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_perennial;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для многолетних растений на первом году жизни характерно развитие корневой системе, листьев и почек. 
+    Образование продуктивные органов у многолетников  происходит в основном на второй-третий год жизненного цикла и продолжается, возобновляясь, в течение 
+    нескольких лет. Как и у <b><sc_element sys_idtf="concept_biennial">двухлетних растений</b></sc_element>, у многолетних с началом зимы наступает период
+    покоя и перегруппировки питательных веществ. Многолетние <b><sc_element sys_idtf="concept_vegetables">овощные культуры</b></sc_element>
+    могут жить более 3-5 лет.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(многолетнее растение,жизненный цикл)](*<- lang_ru;;*);;
+  
+*);;
+
+
+concept_plant_lifespan->concept_perennial;;
+
+
+
+
