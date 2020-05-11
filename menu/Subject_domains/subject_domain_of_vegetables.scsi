@@ -1,0 +1,27 @@
+subject_domain_of_vegetables
+=> nrel_main_idtf:
+[Предметная область овощей]
+(* <- lang_ru;;*);
+[Subject domain of vegetables]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_vegetables;
+-> rrel_not_maximum_studied_object_class:
+	concept_tubers;    
+	concept_roots;   
+	concept_rhizome;
+	concept_cabbage;
+	concept_leafy;
+	concept_spicy; 
+	concept_bulbous;
+	concept_tomat;
+	concept_pumk;
+	concept_pulses;
+	concept_bean;
+	concept_cereal;
+	concept_desser;;
+
+

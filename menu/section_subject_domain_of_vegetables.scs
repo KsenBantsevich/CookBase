@@ -1,0 +1,15 @@
+section_subject_domain_of_vegetables
+=> nrel_main_idtf: 
+	[Раздел. Предметная область овощей]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of vegetables]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_vegetables = [*^"file://Subject_domains/subject_domain_of_vegetables.scsi"*];;
+
+section_subject_domain_of_vegetables
+
+-> rrel_key_sc_element: subject_domain_of_vegetables;;
