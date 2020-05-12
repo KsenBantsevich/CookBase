@@ -1,0 +1,30 @@
+concept_pome_fruit
+	<-sc_node_not_relation;
+	=>nrel_idtf:[pome fruit] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Семечковые фрукты] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pome_fruit;;
+	<= nrel_sc_text_translation: ...(*->[Семечковые фрукты - это плоды имеющие плотную сочную мякоть, утолщенную и весьма плотную кожицу и множество мелких семян внутри.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Семечковые фрукты)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pome_fruit;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//pome_fruit.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Семечковые фрукты)](*<- lang_ru;;*);;
+*);;
+
+concept_pome_fruit=>nrel_inclusion:
+	{
+	concept_apple;
+	concept_pear;
+	concept_quince;
+	concept_loquat
+	};;
+

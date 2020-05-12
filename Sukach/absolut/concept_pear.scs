@@ -1,0 +1,47 @@
+concept_pear
+	=>nrel_idtf:[pear] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Груша] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pear;;
+	<= nrel_sc_text_translation: ...(*->[Груша - плод одноимённого дерева,.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Груша)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pear;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Груши имеют форму лампочки, но встречаются круглые или цилиндрические груши.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Груша)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_pear=>nrel_sugar_content : 10_g
+(*
+	=> nrel_main_idtf:[10 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_pear=>nrel_fiber_content : 3.1_g
+(*
+	=> nrel_main_idtf:[3.1 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pear;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//pear.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Груша)](*<- lang_ru;;*);;
+*);;
+

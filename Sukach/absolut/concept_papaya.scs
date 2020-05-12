@@ -1,0 +1,47 @@
+concept_papaya
+	=>nrel_idtf:[papaya] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Папайя] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_papaya;;
+	<= nrel_sc_text_translation: ...(*->[Папайя - плод растения рода Карика.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Папайя)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_papaya;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Папайя – это экзотический фрукт с ароматной и вкусной мякотью.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Папайя)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_papaya=>nrel_sugar_content : 8_g
+(*
+	=> nrel_main_idtf:[8 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_papaya=>nrel_fiber_content : 1.7_g
+(*
+	=> nrel_main_idtf:[1.7 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_papaya;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//papaya.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Папайя)](*<- lang_ru;;*);;
+*);;
+

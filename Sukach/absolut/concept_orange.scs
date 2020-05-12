@@ -1,0 +1,38 @@
+concept_orange
+	=>nrel_idtf:[orange] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Апельсин] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_orange;;
+	<= nrel_sc_text_translation: ...(*->[Апельсин - плоды вечнозеленых растений семейства Рутовые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Апельсин)](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_orange;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Апельсин является естественным гибридом между помело и мандарина.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Апельсин)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_orange=>nrel_sugar_content : 9_g
+(*
+	=> nrel_main_idtf:[9 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_orange;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//orange.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Апельсин)](*<- lang_ru;;*);;
+*);;
+

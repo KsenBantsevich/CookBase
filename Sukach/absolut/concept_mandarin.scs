@@ -1,0 +1,47 @@
+concept_mandarin
+	=>nrel_idtf:[mandarin] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Мандарин] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_mandarin;;
+	<= nrel_sc_text_translation: ...(*->[Мандарин - плод мандаринового дерева или кустарника.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Мандарин)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mandarin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Мандарин является основным источником витаминов зимой.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Мандарин)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_mandarin=>nrel_sugar_content : 11_g
+(*
+	=> nrel_main_idtf:[11 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_mandarin=>nrel_fiber_content : 1.9_g
+(*
+	=> nrel_main_idtf:[1.9 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_mandarin;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//mandarin.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Мандарин)](*<- lang_ru;;*);;
+*);;
+

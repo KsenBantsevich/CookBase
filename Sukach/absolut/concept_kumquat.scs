@@ -1,0 +1,38 @@
+concept_kumquat
+	=>nrel_idtf:[kumquat] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Кумкват] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_kumquat;;
+	<= nrel_sc_text_translation: ...(*->[Кумкват - плод видов растений семейства Рутовые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Кумкват)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_kumquat;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Другие названия кумквата фортунелла или кинкан.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Кумкват)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_kumquat=>nrel_sugar_content : 13_g
+(*
+	=> nrel_main_idtf:[13 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_kumquat;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//kumquat.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Кумкват)](*<- lang_ru;;*);;
+*);;
+

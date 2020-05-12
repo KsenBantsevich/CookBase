@@ -1,0 +1,38 @@
+concept_pitaya
+	=>nrel_idtf:[pitaya] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Питайя] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pitaya;;
+	<= nrel_sc_text_translation: ...(*->[Питайя - плод нескольких видов кактусов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Питайя)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pitaya;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[На вкус питайя похожа одновременно на киви и банан.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Питайя)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_pitaya=>nrel_sugar_content : 8_g
+(*
+	=> nrel_main_idtf:[8 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pitaya;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//pitaya.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Питайя)](*<- lang_ru;;*);;
+*);;
+

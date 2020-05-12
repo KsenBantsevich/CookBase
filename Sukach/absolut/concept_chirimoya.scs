@@ -1,0 +1,47 @@
+concept_chirimoya
+	=>nrel_idtf:[chirimoya] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Черимойя] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_chirimoya;;
+	<= nrel_sc_text_translation: ...(*->[Черимойя - плод дерева рода Аннона.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Черимойя)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_chirimoya;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вкусовые качества черимойи очень неоднозначны, можно сказать, что это смесь ананаса, клубники, манго, банана.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Черимойя)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_chirimoya=>nrel_sugar_content : 6_g
+(*
+	=> nrel_main_idtf:[6 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_chirimoya=>nrel_fiber_content : 5_g
+(*
+	=> nrel_main_idtf:[5 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_chirimoya;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//chirimoya.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Черимойя)](*<- lang_ru;;*);;
+*);;
+

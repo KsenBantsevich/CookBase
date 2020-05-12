@@ -1,0 +1,47 @@
+concept_apple
+	=>nrel_idtf:[apple] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Яблоко] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_apple;;
+	<= nrel_sc_text_translation: ...(*->[Яблоко - сочный плод яблони.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Яблоко)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_apple;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[По вкусу яблоки бывают сладкими, кисло-сладкими, кислыми, терпкими и горьковатыми.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Яблоко)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_apple =>nrel_sugar_content : 10_g
+(*
+	=> nrel_main_idtf:[10 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_apple=>nrel_fiber_content : 2.4_g
+(*
+	=> nrel_main_idtf:[2,4 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_apple;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//apple.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Яблоко)](*<- lang_ru;;*);;
+*);;
+

@@ -1,0 +1,55 @@
+concept_mango
+	=>nrel_idtf:[mango] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Манго] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_mango;;
+	<= nrel_sc_text_translation: ...(*->[Манго - плоды растений рода манго семейства Анакардиевые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Манго)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mango;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вкус манго похож на сочетание персика и ананаса, но намного более сладкий. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Манго)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mango;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Чаще всего манго кушают в свежем виде. Их него делают сок, пюре, компот, используют в сушеном виде. Еще фрукт добавляют в десерты, фруктовые салаты, выпечку. Манго сочетается с мясом курицы и говядины, делает их более пикантными и насыщенными.  ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Манго, применение)](*<- lang_ru;;*);;
+
+*);;
+
+concept_mango=>nrel_sugar_content : 14_g
+(*
+	=> nrel_main_idtf:[14 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_mango=>nrel_fiber_content : 1.6_g
+(*
+	=> nrel_main_idtf:[1.6 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_mango;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//mango.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Манго)](*<- lang_ru;;*);;
+*);;
+

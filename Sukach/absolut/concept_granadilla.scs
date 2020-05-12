@@ -1,0 +1,38 @@
+concept_granadilla
+	=>nrel_idtf:[granadilla] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Гранадилла] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_granadilla;;
+	<= nrel_sc_text_translation: ...(*->[Гранадилла - яйцевидный плод с твердой скользкой кожурой желтого, оранжевого или красного цвета диаметром 6-7 см.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Гранадилла)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_granadilla;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Мякоть гранадиллы почти прозрачная, желатинообразная, с черными мягкими семенами.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Гранадилла)](*<- lang_ru;;*);;
+
+*);;
+
+concept_granadilla=>nrel_sugar_content : 11_g
+(*
+	=> nrel_main_idtf:[11 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_granadilla;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//granadilla.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Гранадилла)](*<- lang_ru;;*);;
+*);;
+
