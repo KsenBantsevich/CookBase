@@ -40,7 +40,7 @@ concept_bursen => nrel_kkal : 392_kkal
 
 
 concept_bursen => nrel_fat_content: 40_fat
-	(*;
+	(*
 	<- concept_fat_content;;
 	=> nrel_main_idtf: [40 %](*<- lang_ru;;*);;
 	*);;
