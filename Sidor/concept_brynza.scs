@@ -1,0 +1,58 @@
+sc_node_not_relation -> concept_brynza;;
+concept_brynza => nrel_main_idtf: [брынза](*<- lang_ru;;*);;
+concept_brynza => nrel_main_idtf: [brynza](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_brynza;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Бры́нза — рассольный сыр, изготавливаемый из козьего или овечьего молока.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(брынза)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_brynza;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Брынза является ингредиентом некоторых овощных блюд, используется для начинки пирогов и вареников, подается к мясным блюдам, супам, чаю, часто выступает в роли закуски. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(брынза)](*<- lang_ru;;*);;
+*);;
+
+
+
+concept_brynza => nrel_kkal : 260_kkal;;
+
+
+
+concept_brynza => nrel_fat_content: 40_50_fat;;
+
+concept_brynza => nrel_storage_time: 7_days
+(*
+=> nrel_main_idtf:
+[7 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_brynza<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//brynza.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

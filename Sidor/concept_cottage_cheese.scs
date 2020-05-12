@@ -1,0 +1,86 @@
+sc_node_not_relation -> concept_cottage_cheese;;
+
+concept_cottage_cheese => nrel_main_idtf: [творог](*<- lang_ru;;*);;
+concept_cottage_cheese => nrel_main_idtf: [cottage cheese](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cottage_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Творог — кисломолочный продукт белого цвета, получаемый сквашиванием молока с последующим удалением сыворотки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(творог)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_cottage_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В твороге содержится белок, минеральные вещества, лактоза (молочный сахар), жир, ферменты, витамины.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(творог)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+
+concept_cottage_cheese => nrel_kkal : 71_301_kkal
+(*
+	<- interval_value;;
+	=> nrel_measurement: ([71 ккал] => [301 ккал]);;
+	=> nrel_main_idtf: [71 - 301 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+
+
+concept_cottage_cheese => nrel_fat_content: 5_23_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [0 - 23 %](*<- lang_ru;;*);;
+	*);;
+
+concept_cottage_cheese => nrel_storage_time: 4_days;;
+
+
+
+concept_cottage_cheese => nrel_storage_conditions: cottage_cheese_condition
+(*
+=> nrel_main_idtf:
+[от 0 до +7 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_cottage_cheese<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//cottage.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+
+
+
+concept_fatty_cottage_cheese<-{concept_classic_cottage_cheese}
+(*
+	->concept_bold_cottage_cheese;;
+	->concept_fatless_cottage_cheese;;
+	=>nrel_main_idtf:[Разбиение по жирности.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_cottage_cheese;;
+*);;

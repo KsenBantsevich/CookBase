@@ -1,0 +1,275 @@
+nrel_kkal
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [калорийность*]
+		(* <- lang_ru;; *);;
+
+
+nrel_fat_content
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [жирность*]
+		(* <- lang_ru;; *);;
+
+
+nrel_storage_time
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [срок хранения*]
+		(* <- lang_ru;; *);;
+
+nrel_storage_conditions
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [условия хранения*]
+		(* <- lang_ru;; *);;
+
+
+
+
+concept_kkal
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [калорийность]
+		(* <- lang_ru;; *);;
+
+
+concept_fat_content
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [жирность]
+		(* <- lang_ru;; *);;
+
+
+concept_storage_time
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [время хранения]
+		(* <- lang_ru;; *);;
+
+
+concept_storage_conditions
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [условия хранения]
+		(* <- lang_ru;; *);;
+
+
+concept_time
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [время]
+		(* <- lang_ru;; *);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

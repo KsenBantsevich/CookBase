@@ -1,0 +1,52 @@
+sc_node_not_relation -> concept_acidophilus;;
+
+concept_acidophilus => nrel_main_idtf: [ацидофилин](*<- lang_ru;;*);;
+concept_acidophilus => nrel_main_idtf: [acidophilus](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_acidophilus;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Ацидофилин  — кисломолочный продукт, который изготавливается путём сквашивания пастеризованного коровьего молока при помощи особых бактерий (ацидофильная палочка, кефирные грибки, молочнокислый стрептококк).  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ацидофилин)](*<- lang_ru;;*);;
+    
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_acidophilus;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Наряду с ацидофилином производят ацидофильное молоко, ацидофильную простоквашу и ацидофильную пасту.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(ацидофилин)](*<- lang_ru;;*);;
+  
+*);;
+
+
+
+
+concept_acidophilus => nrel_kkal : 74_kkal
+(*
+
+	=> nrel_main_idtf: [74 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+
+concept_acidophilus => nrel_storage_time: 25_days;;
+
+
+concept_acidophilus => nrel_storage_conditions: acidophilus_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+

@@ -1,0 +1,78 @@
+sc_node_not_relation -> concept_baked_milk;;
+
+concept_baked_milk => nrel_main_idtf: [топлёное молоко](*<- lang_ru;;*);;
+concept_baked_milk => nrel_main_idtf: [baked milk](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_baked_milk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Топлёное молоко — молочный продукт, который производится из цельного молока путём его кипячения и последующего длительного равномерного нагревания.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(топлёное молоко)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_baked_milk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Топлёное молоко употребляют в основном в виде напитка. Также используется для изготовления варенца, ряженки и в кулинарии (печенье, пироги, кремы).](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(топлёное молоко)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_baked_milk => nrel_kkal : 84_kkal
+(*
+=> nrel_main_idtf: [84 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_baked_milk => nrel_fat_content: n6_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [до 6 %](*<- lang_ru;;*);;
+	*);;
+
+concept_baked_milk => nrel_storage_time: 5_day
+(*
+=> nrel_main_idtf:
+[5 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_baked_milk => nrel_storage_conditions: baked_milk_condition
+(*
+=> nrel_main_idtf:
+[до +8 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_baked_milk<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//baked_milk.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

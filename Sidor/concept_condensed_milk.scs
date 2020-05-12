@@ -1,0 +1,76 @@
+sc_node_not_relation -> concept_condensed_milk;;
+
+concept_condensed_milk => nrel_main_idtf: [сгущённое молоко](*<- lang_ru;;*);;
+concept_condensed_milk => nrel_main_idtf: [сгущёнка](*<- lang_ru;;*);;
+concept_condensed_milk => nrel_main_idtf: [condensed milk](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_condensed_milk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сгущённое молоко — концентрированное молоко, обычно с сахаром.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сгущённое молоко)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_condensed_milk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В советское время сгущённое молоко традиционно фасовалось в жестяные консервные банки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сгущённое молоко)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_condensed_milk => nrel_kkal : 321_kkal
+(*
+=> nrel_main_idtf: [321 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_condensed_milk => nrel_fat_content: 8_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [8 %](*<- lang_ru;;*);;
+	*);;
+
+concept_condensed_milk => nrel_storage_time: 12_month
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+concept_condensed_milk => nrel_storage_conditions: condensed_milk_condition
+(*
+=> nrel_main_idtf:
+[от 0 до +10 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_condensed_milk<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//condenced_milk.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

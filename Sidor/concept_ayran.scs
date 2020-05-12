@@ -1,0 +1,70 @@
+sc_node_not_relation -> concept_ayran;;
+concept_ayran => nrel_main_idtf: [айран](*<- lang_ru;;*);;
+concept_ayran => nrel_main_idtf: [ayran](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ayran;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Айран — разновидность кисломолочного напитка на основе тураха, катыка. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(айран)](*<- lang_ru;;*);;
+    
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_ayran;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Айран — прародитель современных йогуртов.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(айран)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+concept_ayran => nrel_inclusion:concept_chalop;;
+
+
+//Айран обычно содержит 94 % воды, 1,2—1,5 % жира, 1,7 % белка и 0,75 % молочной кислоты.
+
+concept_ayran<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//ayran.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+
+
+concept_ayran => nrel_kkal: 24_kkal;;
+
+
+
+
+concept_ayran => nrel_fat_content: 1_2_1_5_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [1,2 - 1,5 %](*<- lang_ru;;*);;
+	*);;
+
+concept_ayran => nrel_storage_time: 90_days;;
+
+
+concept_ayran => nrel_storage_conditions: ayran_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+

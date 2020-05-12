@@ -1,0 +1,82 @@
+sc_node_not_relation -> concept_sour_cream;;
+
+concept_sour_cream => nrel_main_idtf: [сметана](*<- lang_ru;;*);;
+concept_sour_cream => nrel_main_idtf: [sour cream](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_sour_cream;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сметана – это молочный продукт, приготавливаемый из сливок с последующим молочнокислым брожением.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сметана)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_sour_cream;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Для сохранения полезных свойств сметану рекомендуется добавлять в готовые блюда, например, супы: щи, борщи, солянки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сметана)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_high_fat_margarine<-{concept_low_fat_margarine}
+(*
+	->concept_low_calorie_margarine;;
+	=>nrel_main_idtf:[Виды маргарина в зависимости от массовой доли жира.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_margarine;;
+*);;
+
+
+
+
+
+concept_sour_cream => nrel_kkal : 115_536_kkal
+(*
+<- interval_value;;
+=> nrel_main_idtf: [115 - 536 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_sour_cream => nrel_fat_content: 10_58_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;	
+	=> nrel_main_idtf: [10-58 %](*<- lang_ru;;*);;
+	*);;
+
+concept_sour_cream => nrel_storage_time: 30_days;;
+
+concept_sour_cream => nrel_storage_conditions: sour_cream_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_sour_cream<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//sourcream.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,72 @@
+sc_node_not_relation -> concept_cheese;;
+
+concept_cheese => nrel_main_idtf: [сыр](*<- lang_ru;;*);;
+concept_cheese => nrel_main_idtf: [cheese](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сыр — пищевой продукт, получаемый из сыропригодного молока с использованием свёртывающих молоко ферментов и молочнокислых бактерий или путём плавления молочных продуктов и сырья немолочного происхождения с применением солей-плавителей. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сыр)](*<- lang_ru;;*);;
+    
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Добавление разного вида сыра придает пикантность, сливочность или терпкость готовому блюду. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сыр)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+
+concept_cheese => nrel_inclusion:concept_feta;;
+concept_cheese => nrel_inclusion:concept_mascarpone;;
+concept_cheese => nrel_inclusion:concept_gouda;;
+concept_cheese => nrel_inclusion:concept_gruyere;;
+concept_cheese => nrel_inclusion:concept_gorgonzola;;
+concept_cheese => nrel_inclusion:concept_brynza;;
+concept_cheese => nrel_inclusion:concept_burrata;;
+concept_cheese => nrel_inclusion:concept_camembert;;
+concept_cheese => nrel_inclusion:concept_mozzarella;;
+concept_cheese => nrel_inclusion:concept_suluguni;;
+concept_cheese => nrel_inclusion:concept_dorbyu;;
+concept_cheese => nrel_inclusion:concept_philadelphia;;
+concept_cheese => nrel_inclusion:concept_tofu;;
+concept_cheese => nrel_inclusion:concept_halumi;;
+concept_cheese => nrel_inclusion:concept_parmesan;;
+
+
+concept_hard_cheese<-{concept_soft_cheese}
+(*
+	->concept_pickled_cheese;;
+	->concept_smoked_cheese;;
+	->concept_cottage_cheese;;
+	->concept_processed_cheese;;
+	->concept_semi_hard_cheese;;
+	=>nrel_main_idtf:[Виды сыра по методу выработки.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_cheese;;
+*);;
+
+
+concept_cow_milk_cheese<-{concept_sheep_milk_cheese}
+(*
+  	->concept_goat_cheese;;
+  	->concept_buffalo_cheese;;
+	->concept_reindeer_milk_cheese;;
+  	->concept_camel_milk_cheese;;
+  	->concept_yak_milk_cheese;;
+	
+	=>nrel_main_idtf:[Разбиение сыра по виду молока.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_cheese;;
+*);;

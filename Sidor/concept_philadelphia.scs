@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_philadelphia;;
+
+concept_melted_butter => nrel_main_idtf: [филадельфия](*<- lang_ru;;*);;
+concept_melted_butter => nrel_main_idtf: [philadelphia](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_philadelphia;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [«Филадельфия» - наиболее известная в Америке марка сливочного сыра и принадлежит американской компании Крафт Фудс.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(филадельфия)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_philadelphia;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Этот сыр состоит из обезжиренного коровьего пастеризованного молока и молочного жира, концентрата сывороточного белка, сырной культуры, соли, сыворотки, стабилизаторов (ксантановая камедь и/или камедь рожкового дерева и/или гуаровая камедь), сорбиновой кислоты (в качестве консерванта), пальмитата витамина А.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(филадельфия)](*<- lang_ru;;*);;
+*);;
+
+
+concept_philadelphia<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//philadelphia.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

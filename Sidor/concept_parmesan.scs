@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_parmesan;;
+
+concept_parmesan => nrel_main_idtf: [пармезан](*<- lang_ru;;*);;
+concept_parmesan => nrel_main_idtf: [parmesan](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_parmesan;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Пармезан — итальянский сорт твёрдого сыра долгого созревания. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(пармезан)](*<- lang_ru;;*);;
+    
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_parmesan;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Пармезан употребляется как самостоятельное блюдо или используется в виде добавок к пасте, пицце, супам и салатам, его также едят с бальзамическим уксусом.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(пармезан)](*<- lang_ru;;*);;
+
+*);;
+
+concept_parmesan => nrel_kkal : 431_kkal
+(*
+=> nrel_main_idtf: [431 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_parmesan => nrel_fat_content: 35_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [ 35 %](*<- lang_ru;;*);;
+	*);;
+
+concept_parmesan => nrel_storage_time: 6_month
+(*
+=> nrel_main_idtf:
+[6 месяцев]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_parmesan => nrel_storage_conditions: parmesan_condition
+(*
+=> nrel_main_idtf:
+[от +6 до +8  C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_parmesan<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//parmesan.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

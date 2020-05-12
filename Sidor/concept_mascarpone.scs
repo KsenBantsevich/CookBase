@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_mascarpone;;
+
+concept_mascarpone => nrel_main_idtf: [маскарпоне](*<- lang_ru;;*);;
+concept_mascarpone => nrel_main_idtf: [mascarpone](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mascarpone;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Маскарпоне — сливочный сыр.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(маскарпоне)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_mascarpone;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Маскарпоне часто используется в приготовлении чизкейков.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(маскарпоне)](*<- lang_ru;;*);;
+
+      
+*);;
+
+concept_cream_cheese->concept_mascarpone;;
+
+concept_mascarpone => nrel_kkal : 412_kkal
+(*
+=> nrel_main_idtf: [412 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_mascarpone => nrel_fat_content: 70_82_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;	
+	=> nrel_main_idtf: [70-82 %](*<- lang_ru;;*);;
+	*);;
+
+concept_mascarpone => nrel_storage_time: 3_days;;
+
+concept_mascarpone => nrel_storage_conditions: mascarpone_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;

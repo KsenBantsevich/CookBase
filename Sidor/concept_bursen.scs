@@ -1,0 +1,62 @@
+sc_node_not_relation -> concept_bursen;;
+
+concept_bursen => nrel_main_idtf: [бурсен](*<- lang_ru;;*);;
+concept_bursen => nrel_main_idtf: [bursen](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_bursen;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Бурсен  — мягкий сливочный сыр, который производится с различными вкусовыми добавками. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(бурсен)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_bursen;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Бурсен гармонирует с пастой, салатами, помидорами, крекерами, хлебом, сырыми овощами (морковь, сельдерей, перец), курицей, а также сухими белыми или фруктовыми красными винами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(бурсен)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_bursen => nrel_kkal : 392_kkal
+(*
+=> nrel_main_idtf: [392 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_bursen => nrel_fat_content: 40_fat
+	(*;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [40 %](*<- lang_ru;;*);;
+	*);;
+
+
+
+
+concept_bursen<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//boursin.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,13 @@
+subject_domain_of_milk_products
+=> nrel_main_idtf:
+[Предметная область молочные продуты]
+(* <- lang_ru;;*);
+[Subject domain of milk products]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_dairy_product;
+concept_fermented_milk_product;;
+

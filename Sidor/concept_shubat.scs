@@ -1,0 +1,72 @@
+sc_node_not_relation -> concept_shubat;;
+
+concept_shubat => nrel_main_idtf: [шубат](*<- lang_ru;;*);;
+concept_shubat => nrel_main_idtf: [shubat](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_shubat;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Шубат  — кисломолочный напиток из верблюжьего молока.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(шубат)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_shubat;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В деревянную кадушку наливают свежее верблюжье молоко, предварительно залив закваску, затем завязывают или закупоривают крышку, оставляя затем для скисания на сутки. Шубат, в отличие от кумыса не взбалтывают, а хорошо перемешивают перед тем как подать на стол.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(шубат)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_shubat => nrel_kkal : 88_kkal
+(*
+=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_shubat => nrel_storage_time: 1_day
+(*
+=> nrel_main_idtf:
+[1 день]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_shubat => nrel_storage_conditions: shubat_condition
+(*
+=> nrel_main_idtf:
+[до +5 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_shubat<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//shubat.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,67 @@
+sc_node_not_relation -> concept_camembert;;
+
+concept_camembert => nrel_main_idtf: [камамбер](*<- lang_ru;;*);;
+concept_camembert => nrel_main_idtf: [camembert](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_camembert;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Камамбер — сорт мягкого жирного сыра, изготавливаемый из коровьего молока.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(камамбер)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_camembert;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Тот сыр, который мы сейчас называем камамбером, возник лишь в конце XIX века.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(камамбер)](*<- lang_ru;;*);;
+*);;
+
+
+
+concept_camembert => nrel_kkal : 299_kkal
+(*
+=> nrel_main_idtf: [299 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_camembert => nrel_fat_content: 60_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [60 %](*<- lang_ru;;*);;
+	*);;
+
+concept_camembert => nrel_storage_time: 10_day
+(*
+=> nrel_main_idtf:
+[10 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+concept_camembert<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//kamamber.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

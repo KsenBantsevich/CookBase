@@ -1,0 +1,72 @@
+sc_node_not_relation -> concept_matsun;;
+
+concept_matsun => nrel_main_idtf: [мацун](*<- lang_ru;;*);;
+concept_matsun => nrel_main_idtf: [matsun](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_matsun;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Мацун — кисломолочный напиток армянского происхождения из ферментированного молока, традиционный элемент армянской и грузинской национальных кухонь. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(мацун)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_matsun;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Среди полезных свойств мацун стоит отметить антиоксидантный эффект, благодаря которому увеличивается продолжительность жизни и улучшается состояние кожи, также напиток обладает противовоспалительным и антивирусным воздействием. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(мацун)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_matsun => nrel_kkal : 54_kkal
+(*
+=> nrel_main_idtf: [54 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_matsun => nrel_fat_content: 4_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [4 %](*<- lang_ru;;*);;
+	*);;
+
+concept_matsun => nrel_storage_time: 14_day;;
+
+
+
+concept_matsun => nrel_storage_conditions: matsun_condition
+(*
+=> nrel_main_idtf:
+[от 0 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_matsun<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//matsun.JPG"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

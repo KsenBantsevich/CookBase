@@ -1,0 +1,70 @@
+sc_node_not_relation -> concept_haloumi;;
+
+concept_haloumi => nrel_main_idtf: [халуми](*<- lang_ru;;*);;
+concept_haloumi => nrel_main_idtf: [haloumi](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_haloumi;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Халуми — левантийский сыр, известный в Европе по кипрской кухне. Он изготавливается из смеси козьего молока и молока овец, хотя иногда содержит и коровье молоко.  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(халуми)](*<- lang_ru;;*);;
+    
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_haloumi;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Особенность приготовления халлуми состоит в том, что он может быть обжарен до красивого золотисто-коричневого цвета благодаря своей более высокой, чем у других сыров, температуре плавления.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(халуми)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_haloumi => nrel_kkal : 322_kkal
+(*
+=> nrel_main_idtf: [322 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_haloumi => nrel_fat_content: 25_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [25 %](*<- lang_ru;;*);;
+	*);;
+
+concept_haloumi => nrel_storage_time: 1_month
+(*
+=> nrel_main_idtf:
+[1  месяц]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+
+concept_haloumi<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//haloumi.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,74 @@
+sc_node_not_relation -> concept_mozzarella;;
+
+concept_mozzarella => nrel_main_idtf: [моцарелла](*<- lang_ru;;*);;
+concept_mozzarella => nrel_main_idtf: [mozzarella](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_mozzarella;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Моцарелла — мягкий молодой рассольный сыр, один из знаковых ингредиентов итальянской кухни. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(моцарелла)](*<- lang_ru;;*);;
+    
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_mozzarella;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Моцарелла в первую очередь используется при приготовлении пиццы, а также в различных салатах, запеканках, лазаньях.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(моцарелла)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_mozzarella => nrel_kkal : 280_kkal
+(*
+=> nrel_main_idtf: [280 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_mozzarella => nrel_fat_content: 40_50_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [40 - 50 %](*<- lang_ru;;*);;
+	*);;
+
+concept_mozzarella => nrel_storage_time: 3_days;;
+
+
+
+
+concept_mozzarella => nrel_storage_conditions: mozzarella_condition
+(*
+=> nrel_main_idtf:
+[до +7 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_mozzarella<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//mozzarella.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

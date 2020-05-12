@@ -1,0 +1,68 @@
+sc_node_not_relation -> concept_buttermilk;;
+
+concept_buttermilk => nrel_main_idtf: [пахта](*<- lang_ru;;*);;
+concept_buttermilk => nrel_main_idtf: [buttermilk](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_buttermilk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Пахта — молочный обезжиренный продукт, получаемый после сбивания масла.. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(пахта)](*<- lang_ru;;*);;
+
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_buttermilk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Пахта — традиционный ингредиент для ирландского хлеба на соде, её часто используют в выпечке кексов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(пахта)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_buttermilk => nrel_kkal : 40_kkal
+(*
+=> nrel_main_idtf: [40 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_buttermilk => nrel_fat_content: d2_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [до 2 %](*<- lang_ru;;*);;
+	*);;
+
+concept_buttermilk => nrel_storage_time: 2_week
+(*
+=> nrel_main_idtf:
+[2 недели]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+
+concept_buttermilk<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//buttermilk.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

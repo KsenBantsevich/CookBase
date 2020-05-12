@@ -1,0 +1,69 @@
+sc_node_not_relation -> concept_cream;;
+
+concept_cream => nrel_main_idtf: [сливки](*<- lang_ru;;*);;
+concept_cream => nrel_main_idtf: [cream](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cream;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сливки — молочный продукт, получаемый из цельного молока путём сепарации жировой фракции.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сливки)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_cream;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сливки широко применяются в лечебном питании. Однако в виду повышенной жирности сливки не рекомендуется употреблять людям, испытывающим проблемы с ожирением или имеющим нарушения в работе органов сердечно-сосудистой системы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сливки)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+
+concept_cream => nrel_fat_content: 10_40_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;	
+	=> nrel_main_idtf: [10-40 %](*<- lang_ru;;*);;
+	*);;
+
+concept_cream => nrel_storage_time: 30_days
+(*
+=> nrel_main_idtf:
+[30 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+concept_cream => nrel_storage_conditions: cream_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_cream<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//cream.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

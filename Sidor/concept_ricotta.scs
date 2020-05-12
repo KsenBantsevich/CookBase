@@ -1,0 +1,77 @@
+sc_node_not_relation -> concept_ricotta;;
+
+concept_ricotta => nrel_main_idtf: [рикотта](*<- lang_ru;;*);;
+concept_ricotta => nrel_main_idtf: [ricotta](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ricotta;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Рикотта – разновидность сыра из сыворотки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(рикотта)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_ricotta;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Рикотта бесспорно считается многофункциональным сыром: его используют в приготовлении десертов, основных блюд, салатов. Это основа для всевозможных кремов для выпечки, отличная начинка для всех видов пирогов, равиоли и пасты, придающая блюду нежный сливочный вкус.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(рикотта)](*<- lang_ru;;*);;
+
+*);;
+
+
+concept_ricotta => nrel_inclusion:concept_ricotta_fresca;;
+concept_ricotta => nrel_inclusion:concept_ricotta_forte;;
+concept_ricotta => nrel_inclusion:concept_ricotta_affumicata;;
+concept_ricotta => nrel_inclusion:concept_ricotta_romana;;
+concept_ricotta => nrel_inclusion:concept_ricotta_al_forno;;
+
+
+concept_ricotta => nrel_kkal : 174_kkal
+(*
+=> nrel_main_idtf: [174 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_ricotta => nrel_fat_content: 50_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [50 %](*<- lang_ru;;*);;
+	*);;
+
+concept_ricotta => nrel_storage_time: 3_days;;
+
+
+concept_ricotta => nrel_storage_conditions: ricotta_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_ricotta<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//ricotta.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

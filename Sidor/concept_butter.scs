@@ -1,0 +1,89 @@
+sc_node_not_relation -> concept_butter;;
+
+concept_butter => nrel_main_idtf: [масло сливочное](*<- lang_ru;;*);;
+concept_butter => nrel_main_idtf: [butter](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_butter;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сливочное масло — пищевой продукт, изготавливаемый сбиванием сливок, полученных из коровьего молока.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(масло сливочное)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_butter;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Масла с наполнителями изготавливают из свежих сливок с добавлением в качестве вкусовых и ароматических веществ какао, мёда, ванилина и сахара, натуральных фруктовых и ягодных соков.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(масло сливочное)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_traditional_butter<-{concept_amateur_butter}
+(*
+	->concept_peasant_butter;;
+	->concept_sandwich_butter;;
+	->concept_tea_butter;;
+	=>nrel_main_idtf:[Разбиение в зависимости от массовой доли жира.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_butter;;
+*);;
+
+
+
+
+
+concept_butter => nrel_kkal : 717_kkal
+(*
+=> nrel_main_idtf: [717 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_butter => nrel_fat_content: 50_82_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [50-82,5 %](*<- lang_ru;;*);;
+	*);;
+
+concept_butter => nrel_storage_time: 5_month
+(*
+=> nrel_main_idtf:
+[5 месяцев]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+concept_butter => nrel_storage_conditions: butter_condition
+(*
+=> nrel_main_idtf:
+[от -30 до -6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_butter<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//maslo.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_kefir;;
+
+concept_kefir => nrel_main_idtf: [кефир](*<- lang_ru;;*);;
+concept_kefir => nrel_main_idtf: [kefir](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_kefir;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Кефир — кисломолочный напиток, получаемый из цельного или обезжиренного коровьего молока путём кисломолочного и спиртового брожения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(кефир)](*<- lang_ru;;*);;
+    
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_kefir;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Кефир полезен за счет своего многогранного состава.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(кефир)](*<- lang_ru;;*);;
+
+*);;
+
+concept_kefir => nrel_inclusion:concept_biokefir;;
+
+concept_kefir => nrel_kkal : 41_kkal
+(*
+=> nrel_main_idtf: [41 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_kefir => nrel_fat_content: 1_6_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [1 - 6 %](*<- lang_ru;;*);;
+	*);;
+
+concept_kefir => nrel_storage_time: 14_day;;
+
+
+
+concept_kefir => nrel_storage_conditions: kefir_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +4 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_kefir<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//kefir.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

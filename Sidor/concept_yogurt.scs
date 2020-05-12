@@ -1,0 +1,68 @@
+sc_node_not_relation -> concept_yogurt;;
+
+concept_yogurt => nrel_main_idtf: [йогурт](*<- lang_ru;;*);;
+concept_yogurt => nrel_main_idtf: [yogurt](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_yogurt;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Йогуртом называется кисломолочный продукт с повышенным содержанием сухих обезжиренных веществ молока, произведенный с использованием смеси заквасочных микроорганизмов - термофильных молочнокислых стрептококков и болгарской молочнокислой палочки. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(йогурт)](*<- lang_ru;;*);;
+
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_yogurt;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Йогурт является средством подавления анаэробного брожения в организме..](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(йогурт)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+
+
+concept_yogurt => nrel_inclusion:concept_Turkish_yogurt;;
+concept_yogurt => nrel_inclusion:concept_Greek_yogurt;;
+concept_yogurt => nrel_inclusion:concept_Icelandic_yogurt;;
+concept_yogurt => nrel_inclusion:concept_Australian_yogurt;;
+
+
+
+concept_drinking_yogurt<-{concept_thick_yogurt}
+(*
+	=>nrel_main_idtf:[Разбиение по густоте йогурта.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_yogurt;;
+*);;
+
+
+
+concept_natural_yogurt<-{concept_yogurt_with_additives}
+(*
+	=>nrel_main_idtf:[Разбиение по наличию добавок.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_yogurt;;
+*);;
+
+
+concept_goat_milk_yogurt<-{concept_sheep_milk_yogurt}
+(*
+	->concept_cow_milk_yogurt;;
+	->concept_almond_milk_yogurt;;
+
+	=>nrel_main_idtf:[Разбиение по виду молока.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_yogurt;;
+*);;
+
+concept_thermostat_yogurt<-{concept_tank_yogurt}
+(*
+	=>nrel_main_idtf:[Разбиение по признаку обработки йогурта.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_yogurt;;
+*);;

@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_milk;;
+
+concept_milk => nrel_main_idtf: [молоко](*<- lang_ru;;*);;
+concept_milk => nrel_main_idtf: [milk](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_milk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Молоко — питательная жидкость, вырабатываемая молочными железами самок млекопитающих. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(молоко)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_milk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В настоящее время молоко входит в состав многих продуктов, используемых человеком, а его производство стало крупной отраслью промышленности.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(молоко)](*<- lang_ru;;*);;
+*);;
+
+
+concept_milk<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//milk.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
