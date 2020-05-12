@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_melted_butter;;
+
+concept_melted_butter => nrel_main_idtf: [топлёное масло](*<- lang_ru;;*);;
+concept_melted_butter => nrel_main_idtf: [melted butter](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_melted_butter;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Топлёное масло — молочный жир, получаемый из сливочного масла методом нагрева. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(топлёное масло)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_melted_butter;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [По ГОСТу в топлёном масле содержится не менее 99 % жира и не более 1 % воды.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(топлёное масло)](*<- lang_ru;;*);;
+*);;
+
+
+concept_melted_butter<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//melted_butter.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

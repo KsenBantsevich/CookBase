@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_ice_cream;;
+
+concept_ice_cream => nrel_main_idtf: [мороженое](*<- lang_ru;;*);;
+concept_ice_cream => nrel_main_idtf: [ice cream](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ice_cream;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Мороженое – замороженная сладкая смесь из молочных продуктов с различными добавками. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(мороженое)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_ice_cream;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Мороженое реализуется как в розничной торговле (магазины, киоски, лавки, лотки, специальные фургоны, автоматы мороженого), так и на предприятиях общественного питания (рестораны, кафе, фастфуд, кафетерии). ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.мороженое)](*<- lang_ru;;*);;
+*);;
+
+
+concept_ice_cream<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//ice_cream.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

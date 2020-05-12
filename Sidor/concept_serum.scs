@@ -1,0 +1,67 @@
+sc_node_not_relation -> concept_serum;;
+
+concept_serum => nrel_main_idtf: [сыворотка](*<- lang_ru;;*);;
+concept_serum => nrel_main_idtf: [serum](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_serum;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сыворотка– это жидкость, которая остается после сворачивания и процеживания молока. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сыворотка)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_serum;;
+    <= nrel_sc_text_translation: ...
+        (*
+            ->[ Считается, что белки молочной сыворотки усваиваются гораздо лучше, чем белки куриных яиц.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сыворотка)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_serum => nrel_kkal : 18_kkal
+(*
+=> nrel_main_idtf: [18 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+
+concept_serum => nrel_storage_time: 5_day;;
+
+
+
+concept_serum => nrel_storage_conditions: serum_condition
+(*
+=> nrel_main_idtf:
+[до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_serum<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//serum.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

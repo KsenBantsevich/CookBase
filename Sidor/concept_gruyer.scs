@@ -1,0 +1,78 @@
+sc_node_not_relation -> concept_gruyere;;
+concept_gruyere => nrel_main_idtf: [грюйер](*<- lang_ru;;*);;
+concept_gruyere => nrel_main_idtf: [gruyere](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gruyere;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Грюйер - традиционный сыр, производимый в округе Грюйерур в Швейцарии и получивший своё название по региону, где он производится.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(грюйер)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_gruyere;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Грюйер - это твёрдый жёлтый сыр без дырок, имеющий острый пикантный аромат и слегка ореховый вкус.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(грюйер)](*<- lang_ru;;*);;
+
+*);;
+
+
+concept_gruyere => nrel_kkal : 413_kkal
+(*
+=> nrel_main_idtf: [413 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_gruyere => nrel_fat_content: 40_51_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [40 - 51 %](*<- lang_ru;;*);;
+	*);;
+
+concept_gruyere => nrel_storage_time: 120_days
+(*
+=> nrel_main_idtf:
+[120 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_gruyere => nrel_storage_conditions: gruyere_condition
+(*
+=> nrel_main_idtf:
+[от +5 до +10 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_gruyere<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//gruyer.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+
+
+

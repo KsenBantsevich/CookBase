@@ -1,0 +1,66 @@
+sc_node_not_relation -> concept_blancmange;;
+concept_blancmange => nrel_main_idtf: [бланманже](*<- lang_ru;;*);;
+concept_blancmange => nrel_main_idtf: [blancmange](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_blancmange;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Бланманже — холодный десерт, желе из миндального или коровьего молока, сахара и желатина. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(бланманже)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_blancmange;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Происхождение бланманже точно не известно, одна из теорий гласит, что блюдо появилось после того, как арабы привезли рис и миндаль в Европу в раннем Средневековье.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(бланманже)](*<- lang_ru;;*);;
+*);;
+
+
+
+
+concept_dessert -> concept_blancmange;;
+
+
+concept_blancmange => nrel_kkal : 166_kkal
+(*
+=> nrel_main_idtf: [166 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_blancmange => nrel_storage_time: 4_days;;
+
+
+
+concept_blancmange=> nrel_storage_conditions: blancmange_condition
+(*
+=> nrel_main_idtf:
+[до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_blancmange<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//blancmange.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

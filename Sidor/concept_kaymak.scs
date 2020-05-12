@@ -1,0 +1,67 @@
+sc_node_not_relation -> concept_kaymak;;
+
+concept_kaymak => nrel_main_idtf: [каймак](*<- lang_ru;;*);;
+concept_kaymak => nrel_main_idtf: [kaymak](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_kaymak;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Каймак — молочный продукт, консистенции от сметаны до сливочного масла. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(каймак)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_kaymak;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [В Турции традиционно каймак подается с хлебом и мёдом на завтрак и с традиционными турецкими сладостями, а также используется в приготовлении некоторых блюд.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(каймак)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_kaymak => nrel_kkal : 323_kkal
+(*
+=> nrel_main_idtf: [323 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_kaymak => nrel_fat_content: 40_70_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [40 - 70  %](*<- lang_ru;;*);;
+	*);;
+
+concept_kaymak => nrel_storage_time: 5_day;;
+
+
+
+
+
+
+
+concept_kaymak<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//kaymak.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

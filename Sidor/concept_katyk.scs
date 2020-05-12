@@ -1,0 +1,71 @@
+sc_node_not_relation -> concept_katyk;;
+
+concept_katyk => nrel_main_idtf: [катык](*<- lang_ru;;*);;
+concept_katyk => nrel_main_idtf: [katyk](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_katyk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Катык — кисломолочный продукт, распространённый у тюркских народов и в Болгарии. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(катык)](*<- lang_ru;;*);;
+   
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_katyk;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Катык подавляет развитие гнилостной микрофлоры кишечника, восстанавливает её необходимый баланс.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(катык)](*<- lang_ru;;*);;
+*);;
+
+
+
+concept_katyk => nrel_kkal : 56_kkal
+(*
+=> nrel_main_idtf: [56 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_katyk => nrel_fat_content: n3_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [3,2 %](*<- lang_ru;;*);;
+	*);;
+
+concept_katyk => nrel_storage_time: 90_days;;
+
+
+
+concept_katyk => nrel_storage_conditions: katyk_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_katyk<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//katyk.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

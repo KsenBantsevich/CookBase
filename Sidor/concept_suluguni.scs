@@ -1,0 +1,80 @@
+sc_node_not_relation -> concept_suluguni;;
+
+concept_suluguni => nrel_main_idtf: [сулугуни](*<- lang_ru;;*);;
+concept_suluguni => nrel_main_idtf: [suluguni](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_suluguni;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сулугуни  — рассольный сыр из Самегрело (Грузия). ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сулугуни)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_suluguni;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сулугуни — натуральный продукт, прекрасно усваиваемый организмом, не имеющий вредных компонентов. Он запрещен только людям с непереносимостью лактозы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сулугуни)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+
+
+
+concept_suluguni => nrel_kkal : 286_kkal
+(*
+=> nrel_main_idtf: [286 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_suluguni => nrel_fat_content: 45_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [45 %](*<- lang_ru;;*);;
+	*);;
+
+concept_suluguni => nrel_storage_time: 25_days
+(*
+=> nrel_main_idtf:
+[25 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_suluguni => nrel_storage_conditions: suluguni_condition
+(*
+=> nrel_main_idtf:
+[ до +5 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_suluguni<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//suluguni.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,65 @@
+sc_node_not_relation -> concept_tan;;
+
+concept_tan => nrel_main_idtf: [тан](*<- lang_ru;;*);;
+concept_tan => nrel_main_idtf: [tan](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Тан — кисломолочный напиток, приготовляемый из коровьего или козьего молока с добавлением закваски молочнокислых бактерий (болгарская палочка, термофильный стрептококк), молочных дрожжей, воды и поваренной соли.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(тан)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_tan;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сегодня в магазинах под наименованием «тан» часто продаются напитки, порой лишь отдалённо напоминающие оригинал и представляющие собой разбавленные водой произвольные кисломолочные напитки.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(тан)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_tan => nrel_kkal : 24_kkal
+(*
+=> nrel_main_idtf: [24 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_tan => nrel_storage_time: 90_days;;
+
+
+
+concept_tan => nrel_storage_conditions: tan_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_tan<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//tan.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

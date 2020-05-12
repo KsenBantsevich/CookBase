@@ -1,0 +1,78 @@
+sc_node_not_relation -> concept_curd_cheese;;
+
+concept_curd_cheese => nrel_main_idtf: [творожный сырок](*<- lang_ru;;*);;
+concept_curd_cheese => nrel_main_idtf: [curd cheese](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_curd_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Творожный сырок — творожный десерт, изготавливаемый из творожной массы и покрытый глазурью.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(творожный сырок)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_curd_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Традиционно в состав сырков входит творог, сахар, сливочное масло, ванилин.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сырок)](*<- lang_ru;;*);;
+*);;
+
+
+
+
+concept_curd_cheese => nrel_kkal : 320_kkal
+(*
+=> nrel_main_idtf: [320 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_curd_cheese => nrel_fat_content: 5_25_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [5 - 25 %](*<- lang_ru;;*);;
+	*);;
+
+concept_curd_cheese => nrel_storage_time: 15_days
+(*
+=> nrel_main_idtf:
+[15 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_curd_cheese => nrel_storage_conditions: curd_cheese_condition
+(*
+=> nrel_main_idtf:
+[до +4 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_curd_cheese<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//curd.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

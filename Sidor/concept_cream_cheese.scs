@@ -1,0 +1,75 @@
+sc_node_not_relation -> concept_cream_cheese;;
+
+concept_cream_cheese => nrel_main_idtf: [сливочный сыр](*<- lang_ru;;*);;
+concept_cream_cheese => nrel_main_idtf: [cream cheese](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cream_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сливочный сыр  — мягкий, сладкий, с умеренно выраженным вкусом сыр из молока и сливок. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(сливочный сыр)](*<- lang_ru;;*);;
+
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_cream_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Сливочный сыр применяется для приготовления таких популярных блюд, как роллы, чизкейк и торт «Красный бархат».](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(сливочный сыр)](*<- lang_ru;;*);;
+
+*);;
+
+concept_cream_cheese => nrel_kkal : 342_kkal
+(*
+=> nrel_main_idtf: [342 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+concept_cream_cheese => nrel_inclusion:concept_philadelphia;;
+concept_cream_cheese => nrel_inclusion:concept_mascarpone;;
+concept_cream_cheese => nrel_inclusion:concept_bursen;;
+
+concept_cream_cheese => nrel_fat_content: 69_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [ 69 %](*<- lang_ru;;*);;
+	*);;
+
+concept_cream_cheese => nrel_storage_time: 1_week
+(*
+=> nrel_main_idtf:
+[1 неделя]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_cream_cheese => nrel_storage_conditions: cream_cheese_condition
+(*
+=> nrel_main_idtf:
+[от +1 до +8  C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_cream_cheese<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//cream_cheese.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

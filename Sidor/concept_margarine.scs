@@ -1,0 +1,98 @@
+sc_node_not_relation -> concept_margarine;;
+
+concept_margarine => nrel_main_idtf: [маргарин](*<- lang_ru;;*);;
+concept_margarine => nrel_main_idtf: [margarine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_margarine;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Маргарин — эмульсионный продукт, вырабатываемый из натуральных фракционированных или модифицированных растительных масел или гидрогенизированных растительных или животных жиров.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(маргарин)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_margarine;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Маргарин широко используется как заменитель сливочного масла в кондитерской и хлебопекарной промышленности, в кулинарии, домашней выпечке, а также употребляется непосредственно в пищу.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(маргарин)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_high_fat_margarine<-{concept_low_fat_margarine}
+(*
+	->concept_low_calorie_margarine;;
+	=>nrel_main_idtf:[Виды маргарина в зависимости от массовой доли жира.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_margarine;;
+*);;
+
+
+concept_sandwich_margarine<-{concept_table_margarine}
+(*
+	->concept_industrial_processing_margarine;;
+	=>nrel_main_idtf:[Разбиение по признаку предназначения.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_margarine;;
+*);;
+
+
+concept_solid_squared_margarine<-{concept_soft_bulk_margarine}
+(*
+	->concept_whipping_margarine;;
+	=>nrel_main_idtf:[Разбиение по консистенции.](* <- lang_ru;; *);;
+	<=nrel_subdividing:concept_margarine;;
+*);;
+
+
+
+
+concept_margarine => nrel_kkal : 717_kkal;;
+
+
+
+concept_margarine => nrel_fat_content: 40_82_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;	
+	=> nrel_main_idtf: [40-82 %](*<- lang_ru;;*);;
+	*);;
+
+concept_margarine => nrel_storage_time: 90_days
+(*
+=> nrel_main_idtf:
+[90 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+concept_margarine => nrel_storage_conditions: margarine_condition
+(*
+=> nrel_main_idtf:
+[от -20 до +10 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_margarine<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//margarine.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_processed_cheese;;
+
+concept_processed_cheese => nrel_main_idtf: [плавленый сыр](*<- lang_ru;;*);;
+concept_processed_cheese => nrel_main_idtf: [processed cheese](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_processed_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Плавленый сыр — молочный продукт, получаемый в результате переработки обычного сыра или творога.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(плавленый сыр)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_processed_cheese;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Плавленый сыр может быть приготовлен и в домашних условиях. Ингредиенты: молоко, творог, сливочное масло, яйцо, сода, соль.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(плавленый сыр)](*<- lang_ru;;*);;
+
+*);;
+

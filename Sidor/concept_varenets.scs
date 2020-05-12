@@ -1,0 +1,63 @@
+sc_node_not_relation -> concept_varenets;;
+concept_varenets => nrel_main_idtf: [варенец](*<- lang_ru;;*);;
+concept_varenets => nrel_main_idtf: [varenets](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_varenets;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Варенец представляет собой кисломолочный продукт, который готовится из топленого молока.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(варенец)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_varenets;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Нередко варенец добавляют в тесто, предназначенное для создания сладких пирогов, блинчиков или оладий. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(варенец)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_varenets => nrel_kkal : 50_kkal
+(*
+=> nrel_main_idtf: [50 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_varenets => nrel_fat_content: d2_5_fat
+	(*
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [до 2,5 %](*<- lang_ru;;*);;
+	*);;
+
+concept_varenets => nrel_storage_time: 2_week;;
+
+
+
+concept_varenets<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//varenets.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+

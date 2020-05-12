@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_fermented_milk_product;;
+
+concept_fermented_milk_product => nrel_main_idtf: [кисломолочный продукт](*<- lang_ru;;*);;
+concept_fermented_milk_product => nrel_main_idtf: [fermented milk product](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fermented_milk_product;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Кисломолочные продукты — группа молочных продуктов, вырабатываемых из цельного коровьего молока, молока овец, коз, кобыл и других животных или его производных (сливок, обезжиренного молока и сыворотки) путём ферментации.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(кисломолочный продукт)](*<- lang_ru;;*);;
+   
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_fermented_milk_product;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Также часто кисломолочные продукты обогащаются различными пробиотическими культурами.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(кисломолочный продукт)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+
+concept_fermented_milk_product => nrel_inclusion:concept_yogurt;;
+concept_fermented_milk_product => nrel_inclusion:concept_cottage_cheese;;
+concept_fermented_milk_product => nrel_inclusion:concept_sour_cream;;
+concept_fermented_milk_product => nrel_inclusion:concept_ayran;;
+concept_fermented_milk_product => nrel_inclusion:concept_acidophilus;;
+concept_fermented_milk_product => nrel_inclusion:concept_varenets;;
+concept_fermented_milk_product => nrel_inclusion:concept_prostokvasha;;
+concept_fermented_milk_product => nrel_inclusion:concept_kefir;;
+concept_fermented_milk_product => nrel_inclusion:concept_katyk;;
+concept_fermented_milk_product => nrel_inclusion:concept_kaymak;;
+concept_fermented_milk_product => nrel_inclusion:concept_suzma;;
+concept_fermented_milk_product => nrel_inclusion:concept_shubat;;
+concept_fermented_milk_product => nrel_inclusion:concept_tan;;
+concept_fermented_milk_product => nrel_inclusion:concept_matsun;;

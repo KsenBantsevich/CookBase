@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_burrata;;
+concept_burrata => nrel_main_idtf: [буррата](*<- lang_ru;;*);;
+concept_burrata => nrel_main_idtf: [burrata](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_burrata;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Буррата — это мягкий, нежный итальянский сыр, изготовленный из цельного коровьего молока, в идеале молоко буйволицы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(буррата)](*<- lang_ru;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_burrata;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Готовую бурату по традиции заворачивают в листья златоцветника, перевязывая верхушку, и увлажняют сывороткой. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(буррата)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_burrata => nrel_kkal : 330_kkal
+(*
+	=> nrel_main_idtf: [330 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+
+
+concept_burrata => nrel_fat_content: 60_fat;;
+
+concept_burrata => nrel_storage_time: 4_days;;
+
+
+concept_burrata => nrel_storage_conditions: burrata_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+concept_burrata<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//burrata.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

@@ -1,0 +1,74 @@
+sc_node_not_relation -> concept_gorgonzola;;
+concept_gorgonzola => nrel_main_idtf: [горгонзола](*<- lang_ru;;*);;
+concept_gorgonzola => nrel_main_idtf: [gorgonzola](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gorgonzola;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Горгонзола – итальянский сыр с плесенью.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(горгонзола)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_gorgonzola;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Ризотто, поленто и паста с горгонзолой – одни из любимейших итальянцами блюд. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(горгонзола)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+concept_gorgonzola <= nrel_inclusion: 
+	[48-51 %]
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_measurement: ([48 %] => [51%]);;	
+	*);;
+
+
+concept_cottage_cheese => nrel_kkal : 71_301_kkal
+(*
+	<- interval_value;;
+	=> nrel_measurement: ([71 ккал] => [301 ккал]);;
+	=> nrel_main_idtf: [71 - 301 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+
+
+concept_cottage_cheese => nrel_fat_content: 5_23_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_measurement: ([0 %] => [23 %]);;
+	=> nrel_main_idtf: [0 - 23 %](*<- lang_ru;;*);;
+	*);;
+
+concept_cottage_cheese => nrel_storage_time: 4_days
+(*
+=> nrel_main_idtf:
+[4 дня]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_cottage_cheese => nrel_storage_conditions: cottage_cheese_condition
+(*
+=> nrel_main_idtf:
+[от 0 до +7 C]
+(*<- lang_ru;;*);;
+*);;

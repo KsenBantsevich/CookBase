@@ -1,0 +1,63 @@
+sc_node_not_relation -> concept_gouda;;
+concept_gouda => nrel_main_idtf: [гауда](*<- lang_ru;;*);;
+concept_gouda => nrel_main_idtf: [gouda](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_gouda;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Гауда — твёрдый голландский сыр, изготавливаемый из коровьего молока.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(гауда)](*<- lang_ru;;*);;
+  
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_gouda;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сыр гауда назван так в честь города Гауда, где он продавался на рынке в течение веков.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(гауда)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_gouda => nrel_kkal : 356_kkal
+(*
+	=> nrel_main_idtf: [356 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+
+
+concept_gouda => nrel_fat_content: 48_51_fat
+	(*
+	<- interval_value;;
+	<- concept_fat_content;;
+	=> nrel_main_idtf: [48 - 51 %](*<- lang_ru;;*);;
+	*);;
+
+concept_gouda => nrel_storage_time: 30_days
+(*
+=> nrel_main_idtf:
+[30 дней]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+concept_gouda => nrel_storage_conditions: gouda_condition
+(*
+=> nrel_main_idtf:
+[от 0 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+

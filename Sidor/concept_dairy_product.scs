@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_dairy_product;;
+
+concept_dairy_product => nrel_main_idtf: [молочный продукт](*<- lang_ru;;*);;
+concept_dairy_product => nrel_main_idtf: [dairy product](*<- lang_en;;*);;
+concept_dairy_product => nrel_main_idtf: [milk product](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_dairy_product;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Молочные продукты — пищевые продукты, вырабатываемые из молока.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(молочный продукт)](*<- lang_ru;;*);;
+
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_dairy_product;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Иногда молочные продукты вызывают аллергию или индивидуальную непереносимость белка лактозы.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(молочный продукт)](*<- lang_ru;;*);;
+ 
+*);;
+
+
+concept_dairy_product => nrel_inclusion:concept_fermented_milk_product;;
+concept_dairy_product => nrel_inclusion:concept_cheese;;
+concept_dairy_product => nrel_inclusion:concept_butter;;
+concept_dairy_product => nrel_inclusion:concept_buttermilk;;
+concept_dairy_product => nrel_inclusion:concept_condensed_milk;;
+concept_dairy_product => nrel_inclusion:concept_margarine;;
+concept_dairy_product => nrel_inclusion:concept_cream;;
+concept_dairy_product => nrel_inclusion:concept_whey;;
+concept_dairy_product => nrel_inclusion:concept_blancmange;;
+concept_dairy_product => nrel_inclusion:concept_ice_cream;;
+concept_dairy_product => nrel_inclusion:concept_milk;;
+concept_dairy_product => nrel_inclusion:concept_baked_milk;;
+
+
+

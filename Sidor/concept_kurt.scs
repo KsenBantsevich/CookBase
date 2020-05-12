@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_kurt;;
+
+concept_kurt => nrel_main_idtf: [курт](*<- lang_ru;;*);;
+concept_kurt => nrel_main_idtf: [kurt](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_kurt;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Курут — тюркский, персидский, а также монгольский сухой кисломолочный продукт из сушёной сузьмы. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(курт)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_kurt;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Традиционно курт брали с собой путники, паломники, пастухи и путешественники.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(курт)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_kurt => nrel_kkal : 260_kkal
+(*
+=> nrel_main_idtf: [260 ккал](*<- lang_ru;;*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_kurt => nrel_storage_time: 5_8_year
+(*
+=> nrel_main_idtf:
+[5 - 8 лет]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+
+concept_kurt<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//kurt.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

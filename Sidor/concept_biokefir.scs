@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_biokefir;;
+
+concept_biokefir => nrel_main_idtf: [биокефир](*<- lang_ru;;*);;
+concept_biokefir => nrel_main_idtf: [biokefir](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_biokefir;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Биокефир — это кефир, однако с добавлением особенных бактерий, которые выполняют целый ряд очень важных функций в системе пищеварения. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(биокефир)](*<- lang_ru;;*);;
+    <= nrel_using_constants: ...
+        (*
+->concept_addition;; 
+->concept_special_bacteria;;
+->nrel_perform;;
+->concept_number;;
+->concept_function;;
+->concept_digestive_system;;
+ 
+        *);;
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_biokefir;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [За счет постоянного употребления биокефира нормализуется пищеварение и устраняются такие неприятные явления как бурчание и вздутие живота, которые вызывает дисбаланс бактерий.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(биокефир)](*<- lang_ru;;*);;
+ <= nrel_using_constants: ...
+        (*
+->concept_digestion;;
+->nrel_normalize;;
+->nrel_unpleasant;; 
+->concept_phenomena;;
+->concept_grumbling;;
+->concept_bloating;;
+->concept_imbalance;;
+->concept_bacteria;;
+->nrel_use;;
+
+        *);;
+*);;
+
+
+
+
+
+

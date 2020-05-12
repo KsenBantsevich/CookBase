@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_prostokvasha;;
+
+concept_prostokvasha => nrel_main_idtf: [простокваша](*<- lang_ru;;*);;
+concept_prostokvasha => nrel_main_idtf: [prostokvasha](*<- lang_en;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_prostokvasha;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Простоква́ша — кисломолочный продукт, образующийся из молока в результате молочнокислого брожения.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(простокваша)](*<- lang_ru;;*);;
+
+*);;
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_prostokvasha;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [ Простокваша является ценным источником микроэлементов и витаминов, а его употребление способствует нормализации микрофлоры кишечника.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(простокваша)](*<- lang_ru;;*);;
+
+*);;

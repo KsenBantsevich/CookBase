@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_koumiss;;
+
+concept_koumiss => nrel_main_idtf: [кумыс](*<- lang_ru;;*);;
+concept_koumiss => nrel_main_idtf: [koumiss](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_koumiss;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Кумыс — кисломолочный напиток изготавливаемый в большинстве случаев из кобыльего молока, получается в результате молочнокислого и спиртового брожения при помощи болгарских и ацидофильных молочнокислых палочек и дрожжей.  ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(кумыс)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_koumiss;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Кумыс используют при туберкулёзе, цинге, гастритах, заболеваниях поджелудочной железы, малокровия, неврастении, сердечно-сосудистых заболеваний и брюшного тифа.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(кумыс)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+concept_koumiss => nrel_kkal : 50_kkal;;
+
+
+
+concept_koumiss => nrel_fat_content: 40_50_fat;;
+
+concept_koumiss => nrel_storage_time: 5_day;;
+
+
+
+concept_koumiss => nrel_storage_conditions: koumiss_condition
+(*
+=> nrel_main_idtf:
+[от +2 до +6 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_koumiss<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//koumiss.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;

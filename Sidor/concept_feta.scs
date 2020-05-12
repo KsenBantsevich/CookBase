@@ -1,0 +1,74 @@
+sc_node_not_relation -> concept_feta;;
+
+concept_feta => nrel_main_idtf: [фета](*<- lang_ru;;*);;
+concept_feta => nrel_main_idtf: [feta](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_feta;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Фета — традиционный греческий сыр белого цвета из овечьего молока, с добавлением козьего.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(фета)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement -> ...
+(*
+   
+    -> rrel_key_sc_element: concept_feta;;
+    <= nrel_sc_text_translation: ...
+        (*
+            -> [Сыр Фета – достаточно солёный продукт, чрезмерное его употребление грозит задержкой жидкости в организме, отёками и проблемами с лишним весом.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(фета)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+
+concept_feta => nrel_kkal : 264_kkal
+(*
+	=> nrel_main_idtf: [264 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
+*);;
+
+
+
+concept_feta => nrel_storage_time: 3_days
+(*
+=> nrel_main_idtf:
+[3 дня]
+(*<- lang_ru;;*);;
+<- concept_time;;
+*);;
+
+
+
+concept_feta => nrel_storage_conditions: feta_condition
+(*
+=> nrel_main_idtf:
+[до +5 C]
+(*<- lang_ru;;*);;
+*);;
+
+
+
+concept_feta<-rrel_key_sc_element:...
+	(*
+		<-illustration;;<=nrel_sc_text_translation:...
+			(*
+			    ->rrel_example: "file://pictures//fety.jpg"
+			(*
+		=>nrel_format:format_jpg;;
+		*);;
+
+*);;
+
+*);;
+
