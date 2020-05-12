@@ -21,9 +21,8 @@ concept_round_goby<-sc_node_not_relation;
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
 
-        [Бычок - кругляк - это мелкая рыба семейства окуневые.] (* <- lang_ru;; *);;
-
-    *);;
+        [Бычок - кругляк - это мелкая рыба <b><sc_element sys_idtf="concept_family_percidae"> семейства окуневые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -61,49 +60,29 @@ statement -> ...(*
     => nrel_main_idtf: [Утверждение( Бычок - кругляк, тропическая рыба, озеро Белое, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
 *);;
 
-statement -> ...
+concept_round_goby => nrel_kkal : 88_kkal
 (*
-    -> rrel_key_sc_element: concept_round_goby; nrel_carbohydrates_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание углеводов в бычке-кругляке на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание углеводов*, Бычок - кругляк )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_round_goby => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: concept_round_goby; nrel_protein_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание белков в бычке - кругляке на 100 г продукта: 17,5 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание белков*, Бычок - кругляк )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_round_goby => nrel_protein_content : 17_g
+(*
+	=> nrel_main_idtf: [17 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_round_goby => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: concept_round_goby; nrel_fats_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание жиров в бычке - кругляке на 100 г продукта: 2 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание жиров*, Бычок - кругляк)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_round_goby; nrel_kkal;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Пищевая ценность бычка - кругляка на 100 г продукта: 88 ккал. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( пищевая ценность*, Бычок - кругляк )](*<- lang_ru;;*);;
-   
-*);;
 
 concept_round_goby -> rrel_example: [ Мясо бычка - кругляка насыщенно витамином РР и микроэлементами хрома, цинка, фтора, никеля и серы. ](* <- lang_ru;; *);;
 concept_round_goby => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

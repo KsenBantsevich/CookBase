@@ -21,9 +21,8 @@ concept_european_ruffe<-sc_node_not_relation;
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
 
-        [Европейский ерш - это представитель семейства окуневые.] (* <- lang_ru;; *);;
-
-    *);;
+        [Европейский ерш - это представитель <b><sc_element sys_idtf="concept_family_percidae"> семейства окуневые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -62,49 +61,29 @@ statement -> ...(*
     => nrel_main_idtf: [Утверждение( Европейский ерш, тропическая рыба, озеро Сарглан, озеро Воже, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
 *);;
 
-statement -> ...
+concept_european_ruffe => nrel_kkal : 88_kkal
 (*
-    -> rrel_key_sc_element: concept_european_ruffe; nrel_carbohydrates_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание углеводов в европейском ерше на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание углеводов*, Европейский ерш )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_european_ruffe => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: concept_european_ruffe; nrel_protein_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание белков в европейском ерше на 100 г продукта: 17,5 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание белков*, Европейский ерш )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_european_ruffe => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_european_ruffe => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: concept_european_ruffe; nrel_fats_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание жиров в европейском ерше на 100 г продукта: 2 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание жиров*, Европейский ерш)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_european_ruffe; nrel_kkal;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Пищевая ценность европейский ерш на 100 г продукта: 88 ккал. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( пищевая ценность*, Европейский ерш )](*<- lang_ru;;*);;
-   
-*);;
 
 concept_european_ruffe -> rrel_example: [ Мясо европейского ерша насыщенно витамином РР и микроэлементами фтора и хлора. ](* <- lang_ru;; *);;
 concept_european_ruffe => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

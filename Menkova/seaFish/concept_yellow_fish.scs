@@ -13,8 +13,8 @@ concept_yellow_sole <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Камбала желтопёрая - это представитель семейства камбаловые .] (* <- lang_ru;; *);;
-    *);;
+        [ Камбала желтопёрая - это представитель <b><sc_element sys_idtf="concept_family_pleuronectidae"> семейства камбаловые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +36,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_yellow_sole => nrel_kkal : 80_kkal
 (*
-    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_yellow_sole;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в камбале жестопёрой на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, камбала желтопёрая)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [80 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_yellow_sole => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:	nrel_kkal;concept_yellow_sole;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность камбалы жестопёрой на 100 г продукта: 80 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, камбала желтопёрая)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_yellow_sole => nrel_protein_content : 15_g
+(*
+	=> nrel_main_idtf: [15 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_yellow_sole => nrel_fats_content : 3_g
 (*
-    -> rrel_key_sc_element:	nrel_protein_content;concept_yellow_sole;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в камбале желтопёрой на 100 г продукта: 15 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, камбала желтопёрая)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:	nrel_fats_content;concept_yellow_sole;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в камбале желтопёрой на 100 г продукта: 3 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, камбала желтопёрая)](* <- lang_ru;; *);;
-   
-*);;
 
  concept_yellow_sole -> rrel_example: [ Камбала желтоперая составляет большую часть рыбы, употребляемой в пищу, у датчан. ](* <- lang_ru;; *);;
  concept_yellow_sole => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

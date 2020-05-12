@@ -13,9 +13,8 @@ concept_acipenser <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Осетр - это представитель семейства осетровые .] (* <- lang_ru;; *);;
-    *);;
+      -> [ Осетр - это представитель <b><sc_element sys_idtf="concept_family_sturgeon"> семейства осетровые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -55,52 +54,31 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_acipenser => nrel_kkal : 135_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_acipenser;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность осетра на 100 г продукта: 135 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Осетр )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [135 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_acipenser => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_acipenser;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в осетре на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Осетр )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_acipenser => nrel_protein_content : 21_g
+(*
+	=> nrel_main_idtf: [21 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_acipenser => nrel_fats_content : 5_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_acipenser;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в осетре на 100 г продукта: 21 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Осетр )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_acipenser;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в осетре на 100 г продукта: 5 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Осетр )](* <- lang_ru;; *);;
-   
-*);;
-
- concept_acipenser -> rrel_example: [ Мясо осетра насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
- concept_acipenser => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+concept_acipenser -> rrel_example: [ Мясо осетра насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+concept_acipenser => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
 concept_acipenser <= nrel_subdividing: ...
 (*  		
 	    <-concept_baked_acipenser;;

@@ -14,10 +14,10 @@ concept_burbot <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Налим - это представитель семейства тресковые .] (* <- lang_ru;; *);;
-    *);;
+        [ Налим - это представитель <b><sc_element sys_idtf="concept_family_code"> семейства тресковые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
-   <- rrel_key_sc_element: ... (*
+<- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
                 ->rrel_example: "file://PICTURES/burbot.jpg"(*
                     =>nrel_format:format_jpg;;
@@ -53,49 +53,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_burbot => nrel_kkal : 80_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_burbot;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность налима на 100 г продукта: 80 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Налим )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [80 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_burbot => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_burbot;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в налиме на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Налим )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_burbot => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_burbot => nrel_fats_content : 1_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_burbot;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в налиме на 100 г продукта: 18,8 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Налим )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_burbot;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в налиме на 100 г продукта: 0,6 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Налим )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_burbot -> rrel_example: [ Мясо налима насыщенно витаминами группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
  concept_burbot => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

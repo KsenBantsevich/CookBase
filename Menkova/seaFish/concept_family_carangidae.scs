@@ -15,10 +15,8 @@ concept_family_carangidae <-sc_node_not_relation;
      concept_compressed_body;
      concept_eyes_on_one_side
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example: 
-        [Семейство ставридовые - это подвид морских рыб, который характеризуется дополнительными плавничками, расположенными по одному позади второго спинного и анального плавников.] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ... (*->[Семейство ставридовые - это подвид <b><sc_element sys_idtf="concept_sea_fish"> морских рыб </b></sc_element>, который характеризуется дополнительными плавничками, расположенными по одному позади второго спинного и анального плавников.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*

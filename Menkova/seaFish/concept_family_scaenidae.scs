@@ -13,10 +13,7 @@ concept_family_sciaenidae <-sc_node_not_relation;
 	 concept_subspecies;
      concept_laterally_compressed_body
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example: 
-        [Семейство горбылевые - это подвид морских рыб, который характеризуется удлиненным, сжатым с боков телом.] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ... (*->[Семейство горбылевые - это подвид <b><sc_element sys_idtf="concept_sea_fish"> морских рыб </b></sc_element>, который характеризуется удлиненным, сжатым с боков телом.] (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -40,7 +37,7 @@ concept_family_sciaenidae <-sc_node_not_relation;
 };; 
 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
+->
 [ Представители семейства горбылевые являются обитателями теплых и тропических вод, обитают преимущественно в районах Мексиканского залива, Калифорнийского залива, Атлантического океана, Тихого и Индийского океанов.](*<-lang_ru;;*);;
       *);;
   *);
@@ -56,7 +53,7 @@ concept_family_sciaenidae <-sc_node_not_relation;
 };; 
 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
+      ->
 [ Мясо представителей семейства горбылевые малокостистое, нежирное, по вкусу и запаху напоминает пресноводных рыб.](*<-lang_ru;;*);;
       *);;
   *);;

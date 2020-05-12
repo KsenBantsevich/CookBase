@@ -22,9 +22,8 @@ concept_carassius<-sc_node_not_relation;
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
 
-        [ Карась - это пресноводная рыба, которая является представителем семейства карповые.] (* <- lang_ru;; *);;
-
-    *);;
+        [ Карась - это пресноводная рыба, которая является представителем <b><sc_element sys_idtf="concept_family_cyprinidae"> семейства карповые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -65,48 +64,27 @@ statement -> ...(*
     => nrel_main_idtf: [Утверждение( Карась, тропическая рыба, река Лена, озеро Воже, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
 *);;
 
-statement -> ...
+concept_carassius => nrel_kkal : 87_kkal
 (*
-    -> rrel_key_sc_element: concept_carassius; nrel_carbohydrates_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание углеводов в карасе на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание углеводов*, Карасе )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [87 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_carassius => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: concept_carassius; nrel_protein_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание белков в карасе на 100 г продукта: 17,7 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание белков*, Карасе )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_carassius => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_carassius => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: concept_carassius; nrel_fats_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание жиров в карасе на 100 г продукта: 1,8 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание жиров*, Карась)](*<- lang_ru;;*);;
-   
-*);;
-
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_carassius; nrel_kkal;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Пищевая ценность карася на 100 г продукта: 87 ккал. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( пищевая ценность*, Карась )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
 concept_carassius -> rrel_example: [ Мясо карася насыщенно витаминами А, В1, В2, С, Е, РР и микроэлементами кальция, магния и натрия. ](* <- lang_ru;; *);;

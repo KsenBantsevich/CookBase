@@ -14,10 +14,8 @@ concept_family_scorpaenidae <-sc_node_not_relation;
      concept_frashwater_perch;
      concept_pink_cover
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example: 
-        [Семейство скорпеновые - это подвид океанических рыб, которые по форме сходны с пресноводным окунем, но у них большие голова и глаза, кожно-чешуйчатый покров розового цвета.] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ... (*->[Семейство скорпеновые - это подвид <b><sc_element sys_idtf="concept_sea_fish"> морских рыб </b></sc_element>, которые по форме сходны с <b><sc_element sys_idtf="concept_frashwater_perch"> пресноводным окунем </b></sc_element>, но у них большие голова и глаза, кожно-чешуйчатый покров розового цвета.]
+ (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -55,9 +53,7 @@ concept_family_scorpaenidae <-sc_node_not_relation;
     concept_bone
 };; 
 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-[ Мясо представителей семейства скорпеновые без мелких костей.](*<-lang_ru;;*);;
+ <= nrel_sc_text_translation: ... (* ->[ Мясо представителей семейства скорпеновые без мелких костей.](*<-lang_ru;;*);;
       *);;
   *);;
 

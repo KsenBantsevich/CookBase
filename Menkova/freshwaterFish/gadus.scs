@@ -14,8 +14,8 @@ concept_gadus <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Треска - это представитель семейства тресковые .] (* <- lang_ru;; *);;
-    *);;
+        [ Треска - это представитель <b><sc_element sys_idtf="concept_family_code"> семейства тресковые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -45,7 +45,7 @@ concept_gadus <-sc_node_not_relation;
       *);;
   *);;
 
- concept_gadus -> rrel_example: [ Максимальая длина трески достигает 120 сантиметров. ](* <- lang_ru;; *);;
+ concept_gadus -> rrel_example: [ Максимальмая длина трески достигает 120 сантиметров. ](* <- lang_ru;; *);;
 statement -> ...
 (*
     -> rrel_key_sc_element:concept_gadus; concept_tropical_fish; concept_dnepr_river; concept_white_lake; concept_red_lake;;
@@ -57,49 +57,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_gadus=> nrel_kkal : 78_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_gadus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность трески на 100 г продукта: 78 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Треска )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [78 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_gadus => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_gadus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в треске на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Треска )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_gadus => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_gadus => nrel_fats_content : 1_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_gadus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в треске на 100 г продукта: 17,7 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Треска )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_gadus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в треске на 100 г продукта: 0,7 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Треска )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_gadus -> rrel_example: [ Мясо трески насыщенно витаминами А, D, Е, В, РР, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
  concept_gadus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

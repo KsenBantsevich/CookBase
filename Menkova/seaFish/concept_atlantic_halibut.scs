@@ -11,10 +11,8 @@ concept_atlantic_halibut <-sc_node_not_relation;
 	 concept_family_pleuronectidae;
 	 concept_representative
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Палтус атлантический - это представитель семейства камбаловые .] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ...(*->[Палтус атлантический - это представитель <b><sc_element sys_idtf="concept_family_pleuronectidae">семейства камбаловые</b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);; 
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -24,6 +22,8 @@ concept_atlantic_halibut <-sc_node_not_relation;
 			*);;
        *);;
     *);;
+
+
 
 statement -> ...
 (*
@@ -36,48 +36,27 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_atlantic_halibut => nrel_kkal : 102_kkal
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_atlantic_halibut;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность палтуса атлантического на 100 г продукта: 102 ккал ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Палтус атлантический )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [102 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_atlantic_halibut => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_atlantic_halibut;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в палтусе атлантическом на 100 г продукта: 0 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Палтус атлантический )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_atlantic_halibut => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_atlantic_halibut => nrel_fats_content : 5_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_atlantic_halibut;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в палтусе атлантическом на 100 г продукта: 19 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Палтус атлантический )](*<- lang_ru;;*);;
-   
-*);;
-
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_atlantic_halibut;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в палтусе атлантическом на 100 г продукта: 5 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Палтус атлантический)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
 

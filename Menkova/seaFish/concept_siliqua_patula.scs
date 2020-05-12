@@ -13,8 +13,8 @@ concept_siliqua_patula <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Морской черенок - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
-    *);;
+        [ Морской черенок - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +36,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_siliqua_patula => nrel_kkal : 98_kkal
 (*
-    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_siliqua_patula;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в морском черенок на 100 г продукта: 0г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, морской черенок )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [98 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_siliqua_patula => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:	nrel_kkal;concept_siliqua_patula;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность морского черенок на 100 г продукта: 98 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, морской черенок)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_siliqua_patula => nrel_protein_content : 22_g
+(*
+	=> nrel_main_idtf: [22 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_siliqua_patula => nrel_fats_content : 0_g
 (*
-    -> rrel_key_sc_element:	nrel_protein_content;concept_siliqua_patula;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в морском черенок на 100 г продукта: 22 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, морской черенок)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:	nrel_fats_content;concept_siliqua_patula;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в морском черенке на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, морской черенок)](* <- lang_ru;; *);;
-   
-*);;
 
  concept_siliqua_patula -> rrel_example: [ Мясо морского черенка богато витаминами В1, В2, В3, В6, В12, РР, а также микроэлементами кальция, калия и магния. ](* <- lang_ru;;*);;
  concept_siliqua_patula => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

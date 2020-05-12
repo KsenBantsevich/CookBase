@@ -12,9 +12,9 @@ concept_nephropidae <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Омар - это представитель семейства ракообразные.] (* <- lang_ru;; *);;
-    *);;
+      -> 
+        [ Омар - это представитель <b><sc_element sys_idtf="concept_family_crustacea"> семейства ракообразные </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -37,49 +37,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_nephropidae => nrel_kkal : 77_kkal
 (*
-    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_nephropidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в омаре на 100 г продукта: 0 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, омар)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [77 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_nephropidae => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:	nrel_kkal;concept_nephropidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность омара на 100 г продукта: 77 ккал ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, омар)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_nephropidae => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_nephropidae => nrel_fats_content : 1_g
 (*
-    -> rrel_key_sc_element:	nrel_protein_content;concept_nephropidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в омаре на 100 г продукта: 19 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, омар)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:	nrel_fats_content;concept_nephropidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в омаре на 100 г продукта: 1 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, омар)](*<- lang_ru;;*);;
-   
-*);;
 
  concept_nephropidae -> rrel_example: [ Мясо омара является мировым деликатесом. ](* <- lang_ru;; *);;
  concept_nephropidae -> rrel_example: [ Мясо омара богато витаминами В5, Е, РР, а также микроэлементами магния, кальция, меди и цинка. ](* <- lang_ru;;*);;

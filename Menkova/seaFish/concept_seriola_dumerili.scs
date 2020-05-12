@@ -5,8 +5,8 @@ concept_seriola_dumerili <- rrel_key_sc_element:...(*
 	<-definition;;
 	=>nrel_main_idtf:[Oпр.(Коронадо)] (* <- lang_ru;;*);;
 	<=nrel_sc_text_translation:...(*
-		-> [ Коронадо - это представитель семейства ставридовые .] (* <- lang_ru;; *);;
-	*);;
+		-> [ Коронадо - это представитель <b><sc_element sys_idtf="concept_family_carangidae"> семейства ставридовые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	<=nrel_using_constants:...(*
 		-> concept_family_carangidae;concept_representative;;
 	*);;
@@ -31,49 +31,30 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_seriola_dumerili => nrel_kkal : 88_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_seriola_dumerili;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность коронадо на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, коронадо )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_seriola_dumerili => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_seriola_dumerili;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в коронадо на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, коронадо)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_seriola_dumerili => nrel_protein_content : 17_g
+(*
+	=> nrel_main_idtf: [17 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_seriola_dumerili => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_seriola_dumerili;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в коронадо на 100 г продукта: 17.5 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, коронадо )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_seriola_dumerili;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в коронадо на 100 г продукта: 2 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, коронадо)](* <- lang_ru;; *);;
-   
-*);;
+
 
  concept_seriola_dumerili -> rrel_example: [ Мясо коронадо насыщенно витаминами и минералами PP, CI, Zn. ](* <- lang_ru;; *);;
  concept_seriola_dumerili => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

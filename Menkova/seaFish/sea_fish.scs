@@ -15,8 +15,8 @@ concept_sea_fish<-sc_node_not_relation;
 };;
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [Морская рыба - это рыба, которая всю жизнь или большую её часть проводит в морской воде.] (* <- lang_ru;; *);;
-    *);;
+        [Морская рыба - это <b><sc_element sys_idtf="concept_fish"> рыба </b></sc_element>, которая всю жизнь или большую её часть проводит в морской воде.] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*

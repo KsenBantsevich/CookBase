@@ -16,9 +16,8 @@ concept_family_sea_salmonidae <-sc_node_not_relation;
      concept_round_scales
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example: 
-        [Семейство морские лососёвые - это подвид морских рыб, который отличается длинным телом, сжатым с боков и покрытое круглой чешуей.] (* <- lang_ru;; *);;
-    *);;
+      ->[Семейство морские лососёвые - это подвид <b><sc_element sys_idtf="concept_sea_fish"> морских рыб </b></sc_element>, который отличается длинным телом, сжатым с боков и покрытое круглой чешуей.] 
+         (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*

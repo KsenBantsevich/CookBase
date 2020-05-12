@@ -14,8 +14,8 @@ concept_salmon <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Семга - это представитель семейства лососевые .] (* <- lang_ru;; *);;
-    *);;
+        [ Семга - это представитель <b><sc_element sys_idtf="concept_family_salmonidae"> семейства лососёвые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -54,49 +54,29 @@ concept_salmon <-sc_node_not_relation;
     => nrel_main_idtf: [Утверждение( Семга, тропическая рыба, река Волга, озеро Воже, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
 *);;
 
-statement -> ...
+concept_salmon => nrel_kkal : 140_kkal
 (*
-    -> rrel_key_sc_element: concept_salmon; nrel_carbohydrates_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание углеводов в семге на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание углеводов*, Семга)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [140 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_salmon => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: concept_salmon; nrel_protein_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание белков в семге на 100 г продукта: 20,5 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание белков*, Семга )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_salmon => nrel_protein_content : 21_g
+(*
+	=> nrel_main_idtf: [21 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_salmon => nrel_fats_content : 7_g
 (*
-    -> rrel_key_sc_element: concept_salmon; nrel_fats_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание жиров в семге на 100 г продукта: 6,5 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание жиров*, Семга)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [7 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_salmon; nrel_kkal;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Пищевая ценность семги на 100 г продукта: 140 ккал. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( пищевая ценность*, Семга)](*<- lang_ru;;*);;
-   
-*);;
 
 concept_salmon -> rrel_example: [ Мясо семги насыщенно витаминами А, С, D, РР и микроэлементами никеля, железа, цинка и хлора. ](* <- lang_ru;; *);;
 concept_salmon => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
@@ -108,5 +88,3 @@ concept_salmon <= nrel_subdividing: ...
 	    	<-concept_smoked_salmon;;
         <-concept_fried_salmon;; 	
 *);;
-
-

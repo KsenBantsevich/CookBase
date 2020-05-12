@@ -14,8 +14,8 @@ concept_family_salmonidae<-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [Семейство лососевые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
-    *);;
+        [Семейство лососевые - это подвид <b><sc_element sys_idtf="concept_freshwater_fish"> пресноводных рыб </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
     <- explanation;;

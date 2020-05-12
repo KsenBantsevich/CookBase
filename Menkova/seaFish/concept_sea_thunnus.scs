@@ -12,9 +12,8 @@ concept_sea_thunnus <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Морской тунец - это представитель семейства морские скумбриевые.] (* <- lang_ru;; *);;
-    *);;
+      -> [ Морской тунец - это представитель <b><sc_element sys_idtf="concept_family_sea_scomber"> семейства морские скумбриевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +35,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_sea_thunnus => nrel_kkal : 96_kkal
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_thunnus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в морском тунце на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, морской тунец )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [96 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_sea_thunnus => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_sea_thunnus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность морского тунца на 100 г продукта: 96 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, морской тунец)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sea_thunnus => nrel_protein_content : 23_g
+(*
+	=> nrel_main_idtf: [23 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_sea_thunnus => nrel_fats_content : 1_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_sea_thunnus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в морском тунце на 100 г продукта: 22,5 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, морской тунец)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_sea_thunnus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в морском тунце на 100 г продукта: 0,7 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, морской тунец)](* <- lang_ru;; *);;
-   
-*);;
 
  concept_sea_thunnus -> rrel_example: [ Мясо морского тунца богато витаминами А, D, E. ](* <- lang_ru;;*);;
  concept_sea_thunnus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

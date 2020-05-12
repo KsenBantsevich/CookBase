@@ -5,8 +5,8 @@ concept_selene <- rrel_key_sc_element:...(*
 	<-definition;;
 	=>nrel_main_idtf:[Oпр.(Вомер)] (* <- lang_ru;;*);;
 	<=nrel_sc_text_translation:...(*
-		-> [ Вомер - это представитель семейства ставридовые.] (* <- lang_ru;; *);;
-	*);;
+		-> [ Вомер - это представитель <b><sc_element sys_idtf="concept_family_carangidae"> семейства ставридовые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	<=nrel_using_constants:...(*
 		-> concept_family_carangidae;concept_representative;;
 	*);;
@@ -31,49 +31,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_selene => nrel_kkal : 78_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_selene;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность вомера на 100 г продукта: 78 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, вомер )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [78 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_selene => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_selene;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в вомере на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, вомер )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_selene => nrel_protein_content : 16_g
+(*
+	=> nrel_main_idtf: [16 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_selene => nrel_fats_content : 3_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_selene;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в вомере на 100 г продукта: 16 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, вомер )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_selene;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в вомере на 100 г продукта: 3 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, вомер )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_selene -> rrel_example: [ Мясо вомера насыщенно витаминами группы В: В1, В3, В6 и В9. ](* <- lang_ru;; *);;
  concept_selene => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -21,9 +21,8 @@ concept_sander<-sc_node_not_relation;
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
 
-        [ Судак - это представитель семейства окуневые.] (* <- lang_ru;; *);;
-
-    *);;
+        [ Судак - это представитель <b><sc_element sys_idtf="concept_family_percidae"> семейства окуневые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -63,49 +62,29 @@ statement -> ...(*
     => nrel_main_idtf: [Утверждение( Судак, тропическая рыба, озеро Сарглан, озеро Красное, озеро Кизи, озеро Кета, река Волга)](*<- lang_ru;;*);;
 *);;
 
-statement -> ...
+concept_sander => nrel_kkal : 140_kkal
 (*
-    -> rrel_key_sc_element: concept_sander; nrel_carbohydrates_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание углеводов в судаке на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание углеводов*, Судак )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [140 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_sander => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: concept_sander; nrel_protein_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание белков в судаке на 100 г продукта: 21,6 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание белков*, Судак )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sander => nrel_protein_content : 22_g
+(*
+	=> nrel_main_idtf: [22 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_sander => nrel_fats_content : 6_g
 (*
-    -> rrel_key_sc_element: concept_sander; nrel_fats_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание жиров в судаке на 100 г продукта: 6 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание жиров*, Судак )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [6 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_sander; nrel_kkal;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Пищевая ценность судака на 100 г продукта: 140 ккал. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( пищевая ценность*, Судак )](*<- lang_ru;;*);;
-   
-*);;
 
 concept_sander -> rrel_example: [ Мясо судака насыщенно витаминами А, С, Е, D, РР,  а также группы В: B1, B3, B6, B9, B12 и микроэлементами цинка. ](* <- lang_ru;; *);;
 concept_sander => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

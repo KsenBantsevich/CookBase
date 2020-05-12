@@ -14,8 +14,8 @@ concept_cusk <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Менек - это представитель семейства тресковые .] (* <- lang_ru;; *);;
-    *);;
+        [ Менек - это представитель <b><sc_element sys_idtf="concept_family_code"> семейства тресковые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -51,49 +51,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_cusk => nrel_kkal : 87_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_cusk;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность менька на 100 г продукта: 87 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Менек )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [87 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_cusk => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_cusk;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в меньке на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Менек )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_cusk => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_cusk => nrel_fats_content : 1_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_cusk;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в меньке на 100 г продукта: 19 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Менек )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_cusk;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в меньке на 100 г продукта: 0,7 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Менек )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_cusk -> rrel_example: [ Мясо менька насыщенно витаминами А, С, Е, В, РР, а также микроэлементами цинка, йода и натрия. ](* <- lang_ru;; *);;
  concept_cusk => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -12,9 +12,8 @@ concept_scophthalmus_kalkan <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Калкан - это представитель семейства камбаловые .] (* <- lang_ru;; *);;
-    *);;
+      -> [ Калкан - это представитель <b><sc_element sys_idtf="concept_family_pleuronectidae"> семейства камбаловые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +35,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_scophthalmus_kalkan => nrel_kkal : 92_kkal
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_scophthalmus_kalkan;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность калкана на 100 г продукта: 92 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, калкан )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [92 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_scophthalmus_kalkan => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_scophthalmus_kalkan;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в калкане на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, калкан )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_scophthalmus_kalkan => nrel_protein_content : 17_g
+(*
+	=> nrel_main_idtf: [17 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_scophthalmus_kalkan => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_scophthalmus_kalkan;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в калкане на 100 г продукта: 17 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, калкан )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_scophthalmus_kalkan;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в калкане на 100 г продукта: 2 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, калкан)](* <- lang_ru;; *);;
-   
-*);;
 
  concept_scophthalmus_kalkan -> rrel_example: [ Мясо калкана насыщено витамином Е и витаминами группы В (в особенности B3, B6, B5 и  B2). ](* <- lang_ru;; *);;
  concept_scophthalmus_kalkan => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

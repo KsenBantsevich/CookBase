@@ -12,9 +12,8 @@ concept_petinoidea <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Гребешок - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
-    *);;
+      ->  [ Гребешок - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +35,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_petinoidea => nrel_kkal : 92_kkal
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_petinoidea;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в гребешке на 100 г продукта: 3 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, гребешок )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [92 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_petinoidea => nrel_carbohydrates_content : 3_g
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_petinoidea;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность гребешка на 100 г продукта: 92 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, гребешок)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_petinoidea => nrel_protein_content : 17_g
+(*
+	=> nrel_main_idtf: [17 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_petinoidea => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_petinoidea;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в гребешке на 100 г продукта: 17 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, гребешок)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_petinoidea;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в гребешке на 100 г продукта: 2 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, гребешок)](* <- lang_ru;; *);;
-   
-*);;
 
  concept_petinoidea -> rrel_example: [ Мясо гребешка богато витаминами В1, В2, РР, а также микроэлементами цинка. ](* <- lang_ru;;*);;
  concept_petinoidea => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

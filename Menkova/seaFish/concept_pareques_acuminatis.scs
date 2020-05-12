@@ -5,14 +5,14 @@ concept_pareques_acuminatis <- rrel_key_sc_element:...(*
 	<-definition;;
 	=>nrel_main_idtf:[Oпр.(Рифовая обиспа)] (* <- lang_ru;;*);;
 	<=nrel_sc_text_translation:...(*
-		-> [ Рифовая обиспа - это представитель семейства горбылевые .] (* <- lang_ru;; *);;
-	*);;
+		-> [ Рифовая обиспа - это представитель <b><sc_element sys_idtf="concept_family_sciaenidae">семейства горбылевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	<=nrel_using_constants:...(*
 		-> concept_family_sciaenidae;concept_representative;;
 	*);;
 *);;
 
-concept_argyrosomus_regius <- rrel_key_sc_element: ... (*
+concept_pareques_acuminatis <- rrel_key_sc_element: ... (*
 	<-illustration;;<=nrel_sc_text_translation:...(*
 		->rrel_example: "file://PICTURES/pareques_regius.jpg"(*
 			=>nrel_format:format_jpg;;
@@ -31,49 +31,30 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_pareques_acuminatis => nrel_kkal : 91_kkal
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_pareques_acuminatis;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность рифовой обиспы на 100 г продукта: 91 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, Рифовая обиспа )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [91 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_pareques_acuminatis => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_pareques_acuminatis;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в рифовой обиспе на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, Рифовая обиспа)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_pareques_acuminatis => nrel_protein_content : 16_g
+(*
+	=> nrel_main_idtf: [16 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_pareques_acuminatis => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_pareques_acuminatis;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в рифовой обиспе на 100 г продукта: 16 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, Рифовая обиспа )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_pareques_acuminatis;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в рифовой обиспе на 100 г продукта: 2 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, Рифовая обиспа)](* <- lang_ru;; *);;
-   
-*);;
+
 
  concept_pareques_acuminatis -> rrel_example: [ Мясо рифовой обиспы насыщенно витаминами группы В: В1, В2, В6, В12. ](* <- lang_ru;; *);;
  concept_pareques_acuminatis => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

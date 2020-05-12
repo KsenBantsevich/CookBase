@@ -11,10 +11,8 @@ concept_european_trachurus <-sc_node_not_relation;
 	 concept_family_carangidae;
 	 concept_representative
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Европейская ставрида - это представитель семейства ставридовые.] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ...(*->[Европейская ставрида - это представитель <b><sc_element sys_idtf="concept_family_carangidae"> семейства ставридовые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -24,6 +22,7 @@ concept_european_trachurus <-sc_node_not_relation;
                 *);;
             *);;
     *);;
+
 
 statement -> ...
 (*
@@ -36,50 +35,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_european_trachurus => nrel_kkal : 119_kkal
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_european_trachurus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в европейской ставриде на 100 г продукта: 0 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, европейская ставрида)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [119 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_european_trachurus => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_kkal; concept_european_trachurus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность европейской ставриды на 100 г продукта: 119 ккал ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, европейская ставрида)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_european_trachurus => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-
-statement -> ...
+concept_european_trachurus => nrel_fats_content : 5_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_european_trachurus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в европейской ставриде на 100 г продукта: 19 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, европейская ставрида)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_european_trachurus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в европейской ставриде на 100 г продукта: 5 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, европейская ставрида)] (*<- lang_ru;;*);;
-   
-*);;
 
 
 concept_european_trachurus-> rrel_example: [ У европейской ставриды мясо нежное, без больших костей и насыщенное витаминами C, E, B1, B2, B6, B9 и PP. ](* <- lang_ru;; *);;

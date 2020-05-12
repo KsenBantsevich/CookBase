@@ -14,9 +14,8 @@ concept_freshwater_fish<-sc_node_not_relation;
 	 concept_life
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [Пресноводная рыба - это рыба, которая всю жизнь или большую её часть проводит в пресноводном водоеме.] (* <- lang_ru;; *);;
-    *);;
+      -> [Пресноводная рыба - это <b><sc_element sys_idtf="concept_fish"> рыба </b></sc_element>, которая всю жизнь или большую её часть проводит в пресноводном водоеме.]
+      (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
     <- explanation;;

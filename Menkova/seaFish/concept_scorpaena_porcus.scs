@@ -5,8 +5,8 @@ concept_scorpaena_porcus <- rrel_key_sc_element:...(*
 	<-definition;;
 	=>nrel_main_idtf:[Oпр.( Морской ёрш )] (* <- lang_ru;;*);;
 	<=nrel_sc_text_translation:...(*
-		-> [ Морской ёрш - это представитель семейства скорпеновые .] (* <- lang_ru;; *);;
-	*);;
+		-> [ Морской ёрш - это представитель <b><sc_element sys_idtf="concept_family_scorpaenidae"> семейства скорпеновые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	<=nrel_using_constants:...(*
 		-> concept_family_scorpaenidae;concept_representative;;
 	*);;
@@ -31,49 +31,30 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_scorpaena_porcus => nrel_kkal : 88_kkal
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_scorpaena_porcus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность морского ерша на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, Морской ёрш )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_scorpaena_porcus => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_scorpaena_porcus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в морском ерше на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, Морской ёрш)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_scorpaena_porcus => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_scorpaena_porcus => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_scorpaena_porcus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в морском ерше на 100 г продукта: 17.5 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, Морской ёрш )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_scorpaena_porcus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в морском ерше на 100 г продукта: 2 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, Морскй ёрш)](* <- lang_ru;; *);;
-   
-*);;
+
 
  concept_scorpaena_porcus -> rrel_example: [ Мясо морского ерша насыщенно витамином РР и цинком. ](* <- lang_ru;; *);;
  concept_scorpaena_porcus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

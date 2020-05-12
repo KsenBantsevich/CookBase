@@ -13,10 +13,8 @@ concept_family_crustacea <-sc_node_not_relation;
 	 concept_subspecies;
      concept_family_crustacea
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example: 
-        [Семейство ракообразные - это крупная группа членистоногих, которая относится к виду морские рыбы.] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ... (*->[Семейство ракообразные - это крупная группа членистоногих, которая относится к виду <b><sc_element sys_idtf="concept_sea_fish"> морские рыбы </b></sc_element> .]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*

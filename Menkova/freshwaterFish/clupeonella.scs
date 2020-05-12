@@ -14,8 +14,8 @@ concept_clupeonella <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Тюлька - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
-    *);;
+        [ Тюлька - это представитель <b><sc_element sys_idtf="concept_family_salmonidae"> семейства сельдевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -53,38 +53,29 @@ concept_clupeonella <-sc_node_not_relation;
    
 *);;
 
-statement -> ...
+concept_clupeonella => nrel_kkal : 88_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_clupeonella;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность тюльки на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Тюлька )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [88 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_clupeonella => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_clupeonella;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в тюльке на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Тюлька )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_clupeonella => nrel_protein_content : 17_g
+(*
+	=> nrel_main_idtf: [17 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_clupeonella => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_clupeonella;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в тюльке на 100 г продукта: 17,5  г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Тюлька )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
+
 
 statement -> ...
 (*

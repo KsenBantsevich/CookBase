@@ -14,8 +14,8 @@ concept_sprat <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Шпрот - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
-    *);;
+        [ Шпрот - это представитель <b><sc_element sys_idtf="concept_family_salmonidae"> семейства сельдевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -51,49 +51,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_sprat => nrel_kkal : 120_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_sprat;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность шпрота на 100 г продукта: 230 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Шпрот )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [120 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_sprat=> nrel_carbohydrates_content : 1_g
 (*
--> rrel_key_sc_element:nrel_carbohydrates_content;concept_sprat;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в шпроте на 100 г продукта: 0,4 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Шпрот )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sprat => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_sprat => nrel_fats_content : 9_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_sprat;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в шпроте на 100 г продукта: 17,4  г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Шпрот )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [9 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_sprat;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в шпроте на 100 г продукта: 9 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Шпрот )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_sprat -> rrel_example: [ Мясо шпрота насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
  concept_sprat => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;

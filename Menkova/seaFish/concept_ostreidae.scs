@@ -12,9 +12,9 @@ concept_ostreidae <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Устрица - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
-    *);;
+      -> 
+        [ Устрица - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +36,31 @@ statement -> ...
    
 *);;
 
-statement -> ...
+
+concept_ostreidae => nrel_kkal : 95_kkal
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_ostreidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в устрице на 100 г продукта: 0,3 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, устрица )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [95 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_ostreidae => nrel_carbohydrates_content : 1_g
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_ostreidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность устрицы на 100 г продукта: 95 ккал ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, устрица)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_ostreidae => nrel_protein_content : 14_g
+(*
+	=> nrel_main_idtf: [14 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_ostreidae => nrel_fats_content : 6_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_ostreidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в устрице на 100 г продукта: 14 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, устрица)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [6 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_ostreidae;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в устрице на 100 г продукта: 6 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, устрица)](*<- lang_ru;;*);;
-   
-*);;
+
 
  concept_ostreidae -> rrel_example: [ Мясо устрицы богато витаминами А, В1, В2, С, D. ](* <- lang_ru;;*);;
  concept_ostreidae => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

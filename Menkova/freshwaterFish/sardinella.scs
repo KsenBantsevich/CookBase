@@ -14,8 +14,8 @@ concept_sardinella <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Сардинелла - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
-    *);;
+        [ Сардинелла - это представитель <b><sc_element sys_idtf="concept_family_salmonidae"> семейства сельдевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -50,49 +50,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_sardinella => nrel_kkal : 210_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_sardinella;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность сардинеллы на 100 г продукта: 210 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Сардинелла )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [210 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_sardinella => nrel_carbohydrates_content : 0_g
 (*
--> rrel_key_sc_element:nrel_carbohydrates_content;concept_sardinella;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в сардинелле на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Сардинелла )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sardinella => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_sardinella => nrel_fats_content : 9_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_sardinella;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в сардинелле на 100 г продукта: 19  г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Сардинелла )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [9 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_sardinella;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в сардинелле на 100 г продукта: 8,5 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Шпрот )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_sardinella -> rrel_example: [ Мясо сардинеллы насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
  concept_sardinella => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;

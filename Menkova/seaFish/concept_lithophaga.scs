@@ -12,9 +12,9 @@ concept_lithophaga <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Морской финик - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
-    *);;
+      -> 
+        [ Морской финик - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +36,30 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_lithophaga => nrel_kkal : 93_kkal
 (*
-    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_lithophaga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в морском финике на 100 г продукта: 1 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, морской финик )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [93 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_lithophaga => nrel_carbohydrates_content : 1_g
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_lithophaga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность морского финика на 100 г продукта: 93 ккал ] (*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, морской финик)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_lithophaga => nrel_protein_content : 14_g
+(*
+	=> nrel_main_idtf: [14 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_lithophaga => nrel_fats_content : 5_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content; concept_lithophaga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в морском финике на 100 г продукта: 14 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, морской финик)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_lithophaga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в морском финике на 100 г продукта: 5 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, морской финик)](*<- lang_ru;;*);;
-   
-*);;
+
 
  concept_lithophaga -> rrel_example: [ Мясо морского финика богато витаминами РР и группы В: В1, В2, В3, В6, В12, а также микроэлементами цинка, калия и магния. ](* <- lang_ru;;*);;
  concept_lithophaga => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

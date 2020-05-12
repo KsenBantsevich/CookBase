@@ -4,15 +4,14 @@ concept_argyrosomus_regius=>nrel_main_idtf: [ Серебристый горбы�
 concept_argyrosomus_regius <- rrel_key_sc_element:...(*
 	<-definition;;
 	=>nrel_main_idtf:[Oпр.(Серебристый горбыль)] (* <- lang_ru;;*);;
-	<=nrel_sc_text_translation:...(*
-		-> [ Серебристый горбыль - это представитель семейства горбылевые .] (* <- lang_ru;; *);;
-	*);;
+	<=nrel_sc_text_translation:...(*->[Серебристый горбыль - это представитель <b><sc_element sys_idtf="concept_family_sciaenidae">семейства горбылевые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	<=nrel_using_constants:...(*
 		-> concept_family_sciaenidae;concept_representative;;
 	*);;
-*);;
+*);
 
-concept_argyrosomus_regius <- rrel_key_sc_element: ... (*
+ <- rrel_key_sc_element: ... (*
 	<-illustration;;<=nrel_sc_text_translation:...(*
 		->rrel_example: "file://PICTURES/argyrosomus.jpg"(*
 			=>nrel_format:format_jpg;;
@@ -31,49 +30,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_argyrosomus_regius => nrel_kkal : 104_kkal
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_argyrosomus_regius;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность серебристого горбыля на 100 г продукта: 104 ккал ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, Серебристый горбыль )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [104 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_argyrosomus_regius => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_argyrosomus_regius;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в серебристом горбыле на 100 г продукта: 0 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, Серебристый горбыль)](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_argyrosomus_regius => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_argyrosomus_regius => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_argyrosomus_regius;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в серебристом горбыле на 100 г продукта: 17.8 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, Серебристый горбыль )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [2 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_protein_content;concept_argyrosomus_regius;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в серебристом горбыле на 100 г продукта: 2 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, Серебристый горбыль)](*<- lang_ru;;*);;
-   
-*);;
 
  concept_argyrosomus_regius -> rrel_example: [ Мясо серебристого горбыля насыщенно витаминами А, В9, В12, РР и С. ](* <- lang_ru;; *);;
  concept_argyrosomus_regius => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

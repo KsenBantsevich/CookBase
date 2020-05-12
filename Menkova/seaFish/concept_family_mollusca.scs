@@ -16,10 +16,8 @@ concept_family_sea_mollusca <-sc_node_not_relation;
      concept_head;
      concept_leg
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example: 
-        [Семейство морские моллюски - это подвид морских рыб, который отличается наличием двустворчатого панциря или головы и ноги.] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ... (*->[Семейство морские моллюски - это подвид <b><sc_element sys_idtf="concept_sea_fish"> морских рыб </b></sc_element> , который отличается наличием двустворчатого панциря или головы и ноги.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*

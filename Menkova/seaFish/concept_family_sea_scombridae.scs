@@ -15,10 +15,9 @@ concept_family_sea_scombridae <-sc_node_not_relation;
      concept_eye;
      concept_bone_ring
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example: 
-        [Семейство морские скумбриевые - это подвид морских рыб, который отличается костным кольцом вокруг глаз.] (* <- lang_ru;; *);;
-    *);;
+ <= nrel_sc_text_translation: ... (*->
+        [Семейство морские скумбриевые - это подвид <b><sc_element sys_idtf="concept_sea_fish"> морских рыб </b></sc_element>, который отличается костным кольцом вокруг глаз.]
+         (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*

@@ -12,9 +12,9 @@ concept_mytilus <-sc_node_not_relation;
 	 concept_representative
 };; 
  <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [ Мидия - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
-    *);;
+      -> 
+        [ Мидия - это представитель <b><sc_element sys_idtf="concept_family_sea_mollusca">семейства морские моллюски</b></sc_element> .] 
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -37,49 +37,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_mytilus => nrel_kkal : 77_kkal
 (*
-    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_mytilus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в мидии на 100 г продукта: 3,3 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание углеводов*, мидия )] (*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [77 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_mytilus => nrel_carbohydrates_content : 3_g
 (*
-    -> rrel_key_sc_element:	nrel_kkal;concept_mytilus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность мидии на 100 г продукта: 77 ккал ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (пищевая ценность*, мидия)] (*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_mytilus => nrel_protein_content : 12_g
+(*
+	=> nrel_main_idtf: [12 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_mytilus => nrel_fats_content : 2_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_mytilus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в мидии на 100 г продукта: 11,5 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание белков*, мидия)] (*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [2 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_mytilus;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в мидии на 100 г продукта: 2 г](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf:[Утверждение (содержание жиров*, мидия)] (*<- lang_ru;;*);;
-   
-*);;
 
  concept_mytilus -> rrel_example: [ Мясо мидии богато витаминами В1, В2, С, Е, РР, а также микроэлементами магния, кальция, меди и цинка. ](* <- lang_ru;;*);;
  concept_mytilus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

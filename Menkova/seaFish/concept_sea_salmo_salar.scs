@@ -13,8 +13,8 @@ concept_sea_salmo_salar <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Морской атлантический лосось - это представитель семейства морские лососёвые.] (* <- lang_ru;; *);;
-    *);;
+        [ Морской атлантический лосось - это представитель <b><sc_element sys_idtf="concept_family_sea_salmonidae"> семейства морские лососёвые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +36,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_sea_salmo_salar => nrel_kkal : 180_kkal
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_salmo_salar;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в морском атлантическом лососе на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, морской атлантический лосось )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [180 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_sea_salmo_salar => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_sea_salmo_salar;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность морского атлантического лосося на 100 г продукта: 180 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, морской атлантический лосось)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sea_salmo_salar => nrel_protein_content : 20_g
+(*
+	=> nrel_main_idtf: [20 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_sea_salmo_salar => nrel_fats_content : 11_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_sea_salmo_salar;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в морском атлантическом лососе на 100 г продукта: 20 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, морской атлантический лосось)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [11 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_sea_salmo_salar;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в морском атлантическом лососе на 100 г продукта: 11 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, морской атлантический лосось)](* <- lang_ru;; *);;
-   
-*);;
 
  concept_sea_salmo_salar -> rrel_example: [ Мясо морского атлантического лосося богато витаминами РР и группы В: В1, В2, В3, В6, В12, а также микроэлементами натрия и магния. ](* <- lang_ru;;*);;
  concept_sea_salmo_salar => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;

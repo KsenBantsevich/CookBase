@@ -22,9 +22,8 @@ concept_carp<-sc_node_not_relation;
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
 
-        [ Сазан - это пресноводная рыба, которая является представителем семейства карповые.] (* <- lang_ru;; *);;
-
-    *);;
+        [ Сазан - это пресноводная рыба, которая является представителем <b><sc_element sys_idtf="concept_family_cyprinidae"> семейства карповые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -64,48 +63,27 @@ statement -> ...(*
     => nrel_main_idtf: [Утверждение( Лещ, тропическая рыба, река Лена, озеро Воже, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
 *);;
 
-statement -> ...
+concept_carp=> nrel_kkal : 97_kkal
 (*
-    -> rrel_key_sc_element: concept_carp; nrel_carbohydrates_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание углеводов в сазане на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание углеводов*, Сазан )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [97 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_carp => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: concept_carp; nrel_protein_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание белков в сазане на 100 г продукта: 18,2 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание белков*, Сазан )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_carp => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_carp => nrel_fats_content : 3_g
 (*
-    -> rrel_key_sc_element: concept_carp; nrel_fats_content;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Содержание жиров в сазане на 100 г продукта: 2,7 г. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( содержание жиров*, Сазан )](*<- lang_ru;;*);;
-   
-*);;
-
-statement -> ...
-(*
-    -> rrel_key_sc_element: concept_carp; nrel_kkal;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [ Пищевая ценность сазана на 100 г продукта: 97 ккал. ](*<- lang_ru;;*);;
-        *);;
-    => nrel_main_idtf: [Утверждение( пищевая ценность*, Сазан )](*<- lang_ru;;*);;
-   
+	=> nrel_main_idtf: [3 граммa](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
 concept_carp -> rrel_example: [ Европейский сазан является самым часто встречаемым сазаном. ](* <- lang_ru;; *);;

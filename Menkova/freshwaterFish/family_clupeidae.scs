@@ -12,10 +12,9 @@ concept_family_clupeidae <-sc_node_not_relation;
 	 concept_freshwater_fish;
 	 concept_subspecies
 };; 
- <= nrel_sc_text_translation: ... (*
-      -> rrel_example:
-        [Семейство сельдевые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
-    *);;
+  <= nrel_sc_text_translation: ... (*
+      ->  [Семейство сельдевые - это подвид <b><sc_element sys_idtf="concept_freshwater_fish"> пресноводных рыб </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
     <- explanation;;

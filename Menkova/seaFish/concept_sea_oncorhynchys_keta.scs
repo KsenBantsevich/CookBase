@@ -13,8 +13,8 @@ concept_sea_oncorhynchys_keta <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Морская кета - это представитель семейства морские лососёвые.] (* <- lang_ru;; *);;
-    *);;
+        [ Морская кета - это представитель <b><sc_element sys_idtf="concept_family_sea_salmonidae"> семейства морские лососёвые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 
 <- rrel_key_sc_element: ... (*
@@ -36,49 +36,30 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_sea_oncorhynchys_keta => nrel_kkal : 127_kkal
 (*
-    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_oncorhynchys_keta;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в морской кете на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, морская кета )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [127 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_sea_oncorhynchys_keta => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element: nrel_kkal;concept_sea_oncorhynchys_keta;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность морской кете на 100 г продукта: 127 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, морская кета)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_sea_oncorhynchys_keta => nrel_protein_content : 19_g
+(*
+	=> nrel_main_idtf: [19 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_sea_oncorhynchys_keta => nrel_fats_content : 5_g
 (*
-    -> rrel_key_sc_element: nrel_protein_content;concept_sea_oncorhynchys_keta;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в морской кете на 100 г продукта: 19 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, морская кета)](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element: nrel_fats_content;concept_sea_oncorhynchys_keta;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в морской кете на 100 г продукта: 5,6 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, морская кета)](* <- lang_ru;; *);;
-   
-*);;
+
 
  concept_sea_oncorhynchys_keta -> rrel_example: [ Мясо морской кеты богато витаминами А, С, В6, В12, а также микроэлементами натрия и железа. ](* <- lang_ru;;*);;
  concept_sea_oncorhynchys_keta => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

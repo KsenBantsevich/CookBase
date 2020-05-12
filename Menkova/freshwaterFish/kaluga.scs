@@ -14,8 +14,8 @@ concept_kaluga <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Калуга - это представитель семейства осетровые .] (* <- lang_ru;; *);;
-    *);;
+        [ Калуга - это представитель <b><sc_element sys_idtf="concept_family_sturgeon"> семейства осетровые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -51,52 +51,32 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_kaluga=> nrel_kkal : 200_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_kaluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность калуги на 100 г продукта: 200 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Калуга )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [200 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_kaluga => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_kaluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в калуге на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Калуга )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_kaluga => nrel_protein_content : 18_g
+(*
+	=> nrel_main_idtf: [18 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_kaluga => nrel_fats_content : 10_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_kaluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в калуге на 100 г продукта: 18 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Калуга )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [10 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_kaluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в калуге на 100 г продукта: 10 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Калуга )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_kaluga -> rrel_example: [ Мясо калуги насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
- concept_kaluga => nrel_healthy_fat_content: (concept_fat <- concept_4_8);;
+ concept_kaluga => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;
  concept_kaluga -> rrel_example: [ Различают проходную, лиманную и быстрорастущую калугу. ](* <- lang_ru;; *);;
  concept_kaluga <= nrel_subdividing: ...
 (*  		

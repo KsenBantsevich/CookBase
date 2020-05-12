@@ -14,8 +14,8 @@ concept_beluga <-sc_node_not_relation;
 };; 
  <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [ Белуга - это представитель семейства осетровые .] (* <- lang_ru;; *);;
-    *);;
+        [ Белуга - это представитель <b><sc_element sys_idtf="concept_family_sturgeon"> семейства осетровые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
    *);
 <- rrel_key_sc_element: ... (*
         <-illustration;;<=nrel_sc_text_translation:...(*
@@ -55,49 +55,29 @@ statement -> ...
    
 *);;
 
-statement -> ...
+concept_beluga => nrel_kkal : 147_kkal
 (*
-    -> rrel_key_sc_element:nrel_kkal;concept_beluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Пищевая ценность белуги на 100 г продукта: 147 ккал ](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (пищевая ценность*, Белуга )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [147 ккал](*<- lang_ru;;*);;
+	<- concept_kkal;;
 *);;
 
-statement -> ...
+concept_beluga => nrel_carbohydrates_content : 0_g
 (*
-    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_beluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание углеводов в белуге на 100 г продукта: 0 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание углеводов*, Белуга )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_beluga => nrel_protein_content : 21_g
+(*
+	=> nrel_main_idtf: [21 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
+concept_beluga => nrel_fats_content : 1_g
 (*
-    -> rrel_key_sc_element:nrel_protein_content;concept_beluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание белков в белуге на 100 г продукта: 21 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание белков*, Белуга )](* <- lang_ru;; *);;
-   
+	=> nrel_main_idtf: [1 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
 *);;
 
-statement -> ...
-(*
-    -> rrel_key_sc_element:nrel_fats_content;concept_beluga;;
-    <= nrel_sc_text_translation:...
-        (*
-            -> [Содержание жиров в белуге на 100 г продукта: 0,7 г](* <- lang_ru;; *);;
-        *);;
-    => nrel_main_idtf: [Утверждение (содержание жиров*, Белуга )](* <- lang_ru;; *);;
-   
-*);;
 
  concept_beluga -> rrel_example: [ Мясо белуги насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
  concept_beluga => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
