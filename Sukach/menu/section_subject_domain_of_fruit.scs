@@ -11,3 +11,4 @@ section_subject_domain_of_fruit= [*^"file://Subject_domains/subject_domain_of_fr
 
 section_subject_domain_of_fruit
 	-> rrel_key_sc_element: section_subject_domain_of_fruit;;
+

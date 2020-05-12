@@ -1,0 +1,12 @@
+subject_domain_of_berries
+=> nrel_main_idtf:
+[Предметная область ягод]
+(* <- lang_ru;;*);
+[Subject domain of berries]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_berries;;
+

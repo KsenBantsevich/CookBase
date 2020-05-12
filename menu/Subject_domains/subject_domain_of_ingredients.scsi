@@ -15,7 +15,8 @@ concept_ingredient;
 
 -> rrel_not_maximum_studied_object_class:
 concept_vegetables;
-concept_fruits;
+concept_fruit;
+concept_berries;
 concept_fish;
 concept_meat;
 concept_nuts;
@@ -25,7 +26,8 @@ concept_alcohol;
 
 =>nrel_private_subject_domain:
 subject_domain_of_vegetables;
-subject_domain_of_fruits;
+subject_domain_of_fruit;
+subject_domain_of_berries;
 subject_domain_of_meat;
 subject_domain_of_fish;
 subject_domain_of_nuts;

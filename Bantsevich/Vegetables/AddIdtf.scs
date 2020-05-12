@@ -1,17 +1,17 @@
 concept_berries
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [ягоды]
+	=> nrel_main_idtf: [ягода]
 		(* <- lang_ru;; *);;
 
 
 concept_nuts
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [орехи]
+	=> nrel_main_idtf: [орех]
 		(* <- lang_ru;; *);;
 
 concept_cereals
 	<- sc_node_not_relation;
-	=> nrel_main_idtf: [крупы]
+	=> nrel_main_idtf: [крупа]
 		(* <- lang_ru;; *);;
 
 concept_sunflower_seeds

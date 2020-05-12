@@ -1,0 +1,13 @@
+section_subject_domain_of_meat
+	=> nrel_main_idtf: 
+		[Раздел. Предметная область мяса]
+		(* <- lang_ru;;*);
+		[Section. Subject domain of meat]
+		(* <- lang_en;; *);
+	<- not_enough_formed_structure;
+	<- atomic_section;;
+
+section_subject_domain_of_meat= [*^"file://Subject_domains/subject_domain_of_meat.scsi"*];;
+
+section_subject_domain_of_meat
+	-> rrel_key_sc_element: section_subject_domain_of_meat;;

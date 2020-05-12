@@ -9,7 +9,7 @@ section_subject_domain_of_milk_products
 <- not_enough_formed_structure;
 <- atomic_section;;
 
-section_subject_domain_of_milk_products = [*^"file://Subject_domainss/subject_domain_of_milk_products.scsi"*];;
+section_subject_domain_of_milk_products = [*^"file://Subject_domains/subject_domain_of_milk_products.scsi"*];;
 
 
 section_subject_domain_of_milk_products

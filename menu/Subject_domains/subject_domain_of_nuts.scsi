@@ -1,0 +1,12 @@
+subject_domain_of_nuts
+=> nrel_main_idtf:
+[Предметная область орехов]
+(* <- lang_ru;;*);
+[Subject domain of nuts]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_nuts;;
+
