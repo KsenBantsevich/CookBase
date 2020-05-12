@@ -1,0 +1,38 @@
+concept_mangosteen
+	=>nrel_idtf:[mangosteen] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Мангостин] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_mangosteen;;
+	<= nrel_sc_text_translation: ...(*->[Мангостин - плод дерева мангостан.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Мангостин)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mangosteen;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Мангостин напоминает яблоко с толстой фиолетовой или коричневой кожурой, внутри которого находится белая съедобная мякоть в виде сочных долек белого цвета, похожих на чеснок.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Мангостин)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_mangosteen=>nrel_sugar_content : 16_g
+(*
+	=> nrel_main_idtf:[15 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_mangosteen;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//mangosteen.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Мангостин)](*<- lang_ru;;*);;
+*);;
+

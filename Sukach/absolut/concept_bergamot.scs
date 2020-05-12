@@ -1,0 +1,38 @@
+concept_bergamot
+	=>nrel_idtf:[bergamot] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Бергамот] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_bergamot;;
+	<= nrel_sc_text_translation: ...(*->[Бергамот - цитрусовая культура.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Бергамот)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bergamot;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Бергамот является гибридом померанца и цитрона.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Бергамот)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_bergamot=>nrel_sugar_content : 6_g
+(*
+	=> nrel_main_idtf:[6 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_bergamot;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//bergamot.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Бергамот)](*<- lang_ru;;*);;
+*);;
+

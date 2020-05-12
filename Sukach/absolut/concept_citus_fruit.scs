@@ -1,0 +1,49 @@
+concept_citrus_fruit
+	<-sc_node_not_relation;
+	=>nrel_idtf:[citrus fruit] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Цитрусовый фрукт] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_citrus_fruit;;
+	<= nrel_sc_text_translation: ...(*->[Цитрусовые фрукты - плоды вечнозеленых растений и кустарников рода Цитрус.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Цитрусовые фрукты)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_citrus_fruit;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Цитрусовые фрукты употребляются в свежем виде. Помимо употребления в свежем виде из плодов готовят соки, компоты, варенье, цукаты, мармелад, конфеты, эссенции. Они входят в состав разнообразных ликеров, смешанных напитков.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Цитрусовый фрукт)](*<- lang_ru;;*);;
+	
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_citrus_fruit;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//citrus.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Цитрусовый фрукт)](*<- lang_ru;;*);;
+*);;
+
+
+concept_citrus_fruit=>nrel_inclusion:
+	{
+	concept_mandarin;
+	concept_pomelo;
+	concept_grapefruit;
+	concept_lime;
+	concept_limequat;
+	concept_lemon;
+	concept_kumquat;
+	concept_tangelo;
+	concept_calamansi;
+	concept_bergamot;
+	concept_citron;
+	concept_bitter_orange;
+	concept_orange;
+	concept_buddhas_hand
+	};;
+
+concept_citrus_fruit->rrel_example:concept_orange;;

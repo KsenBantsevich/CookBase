@@ -1,0 +1,38 @@
+concept_jackfruit
+	=>nrel_idtf:[jackfruit] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Джекфрут] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_jackfruit;;
+	<= nrel_sc_text_translation: ...(*->[Джекфрут - плоды хлебного дерева.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Джекфрут)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_jackfruit;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Джекфрут – это самый тяжелый фрукт из всех существующих.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Джекфрут)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_jackfruit=>nrel_sugar_content : 10_g
+(*
+	=> nrel_main_idtf:[10 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_jackfruit;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//jackfruit.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Джекфрут)](*<- lang_ru;;*);;
+*);;
+

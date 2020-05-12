@@ -1,0 +1,47 @@
+concept_diospyros
+	=>nrel_idtf:[diospyros] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Хурма] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_diospyros;;
+	<= nrel_sc_text_translation: ...(*->[Хурма - плод растений семейства Эбеновые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Хурма)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_diospyros;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Мякоть хурмы обладает специфической вяжущей консистенцией.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Хурма)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_diospyros=>nrel_sugar_content : 13_g
+(*
+	=> nrel_main_idtf:[13 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_diospyros=>nrel_fiber_content : 3.6_g
+(*
+	=> nrel_main_idtf:[3.6 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_diospyros;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//diospyros.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Хурма)](*<- lang_ru;;*);;
+*);;
+

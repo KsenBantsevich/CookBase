@@ -1,0 +1,37 @@
+concept_citron
+	=>nrel_idtf:[citron] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Цитрон] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_citron;;
+	<= nrel_sc_text_translation: ...(*->[Цитрон - цитрусовая культура.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Цитрон)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_citron;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Цитрон имеет самые крупные из всех цитрусовых плоды.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Цитрон)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_citron=>nrel_sugar_content : 5_g
+(*
+	=> nrel_main_idtf:[5 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_citron;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//citron.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Цитрон)](*<- lang_ru;;*);;
+*);;
+

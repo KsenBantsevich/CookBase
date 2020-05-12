@@ -1,0 +1,38 @@
+concept_limequat
+	=>nrel_idtf:[limequat] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Лаймкват] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_limequat;;
+	<= nrel_sc_text_translation: ...(*->[Лаймкват - плод вечнозеленого растения рода Цитрус.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Лаймкват)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_limequat;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Лаймкват является гибридом лайма и кумквата.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Лаймкват)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_limequat=>nrel_sugar_content : 12_g
+(*
+	=> nrel_main_idtf:[12 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_limequat;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//limequat.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Лаймкват)](*<- lang_ru;;*);;
+*);;
+

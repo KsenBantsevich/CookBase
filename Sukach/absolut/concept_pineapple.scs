@@ -1,0 +1,56 @@
+concept_pineapple
+	=>nrel_idtf:[pineapple] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Ананас] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pineapple;;
+	<= nrel_sc_text_translation: ...(*->[Ананас – это травянистое растение с довольно колючими стеблем и листьями.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Ананас)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pineapple;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Спелый ананас отличается мягким, специфичным вкусом, который сложно перепутать с другими плодами.  ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Ананас)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pineapple;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ананас используют для приготовления варенья, конфет, консервов, напитков, десертов, коктейлей, желе. Ананас служит одним из составляющих для салатов (как фруктовых, так и овощных, и мясных), соусов, морепродуктов, супов, мясных маринадов, блюд из курицы и другого вида мяса. Очень часто ананас кладут в блюда, которые готовят в духовке. ](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Ананас, применение)](*<- lang_ru;;*);;
+
+*);;
+
+concept_pineapple=>nrel_sugar_content : 10_g
+(*
+	=> nrel_main_idtf:[10 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_pineapple=>nrel_fiber_content : 1.4_g
+(*
+	=> nrel_main_idtf:[1.4 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pineapple;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//pineapple.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Ананас)](*<- lang_ru;;*);;
+*);;
+

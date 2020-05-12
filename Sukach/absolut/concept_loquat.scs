@@ -1,0 +1,38 @@
+concept_loquat
+	=>nrel_idtf:[loquat] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Мушмула] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_loquat;;
+	<= nrel_sc_text_translation: ...(*->[Мушмула относится к подсемейству Яблоневые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Мушмула)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_loquat;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Плоды мушмулы с плотной кожицей, похожи на маленькие яблочки или абрикосы, оранжевого цвета.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Мушмула)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_loquat=>nrel_sugar_content : 13_g
+(*
+	=> nrel_main_idtf:[13 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_loquat;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//loquat.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Мушмула)](*<- lang_ru;;*);;
+*);;
+

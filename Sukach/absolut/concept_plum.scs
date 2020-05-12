@@ -1,0 +1,47 @@
+concept_plum
+	=>nrel_idtf:[plum] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Слива] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_plum;;
+	<= nrel_sc_text_translation: ...(*->[Слива - плод растений семейства Розовые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Слива)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_plum;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Слива является естественным гибридом тёрна и алычи.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Слива)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_plum=>nrel_sugar_content : 10_g
+(*
+	=> nrel_main_idtf:[10 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_plum=>nrel_fiber_content : 1.4_g
+(*
+	=> nrel_main_idtf:[1.4 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_plum;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//plum.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Слива)](*<- lang_ru;;*);;
+*);;
+

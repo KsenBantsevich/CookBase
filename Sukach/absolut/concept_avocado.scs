@@ -1,0 +1,45 @@
+concept_avocado
+	=>nrel_idtf:[avocado] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Авокадо] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_avocado;;
+	<= nrel_sc_text_translation: ...(*->[Авокадо - плод растения вида Персея.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Авокадо)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_avocado;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Мякоть авокадо богата витаминами и важными минеральными веществами.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Авокадо)](*<- lang_ru;;*);;
+*);;
+
+concept_avocado=>nrel_sugar_content : 0.7_g
+(*
+	=> nrel_main_idtf:[0,7 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_avocado=>nrel_fiber_content : 7_g
+(*
+	=> nrel_main_idtf:[7 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_avocado;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//avocado.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Авокадо)](*<- lang_ru;;*);;
+*);;
+

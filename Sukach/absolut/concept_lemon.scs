@@ -1,0 +1,39 @@
+concept_lemon
+	=>nrel_idtf:[lemon] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Лимон] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_lemon;;
+	<= nrel_sc_text_translation: ...(*->[Лимон - плод вечнозеленого растения рода Цитрус.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Лимон)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_lemon;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Лимон обладает бактерицидным и противовоспалительным действием.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Лимон)](*<- lang_ru;;*);;
+	
+*);;
+
+
+concept_lemon=>nrel_sugar_content : 3_g
+(*
+	=> nrel_main_idtf:[3 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_lemon;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//lemon.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Лимон)](*<- lang_ru;;*);;
+*);;
+

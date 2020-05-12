@@ -1,0 +1,47 @@
+concept_durian
+	=>nrel_idtf:[durian] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Дуриан] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_durian;;
+	<= nrel_sc_text_translation: ...(*->[Дуриан - плод растений семейства Мальвовые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Дуриан)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_durian;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Дуриан имеет очень неприятный запах, но обладает приятными вкусовыми качествами и богатым природным составом.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Дуриан)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_durian=>nrel_sugar_content : 17_g
+(*
+	=> nrel_main_idtf:[17 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_durian=>nrel_fiber_content : 3.8_g
+(*
+	=> nrel_main_idtf:[3.8 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_durian;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//durian.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Дуриан)](*<- lang_ru;;*);;
+*);;
+

@@ -1,0 +1,47 @@
+concept_grapefruit
+	=>nrel_idtf:[grapefruit] (* <- lang_en;; *);
+	=>nrel_main_idtf:[Грейпфрут] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_grapefruit;;
+	<= nrel_sc_text_translation: ...(*->[Грейпфрут - плод вечнозеленого растения рода Цитрус.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (Грейпфрут)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_grapefruit;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Грейпфрут является гибридом апельсина и помело.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Грейпфрут)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_grapefruit=>nrel_sugar_content : 7_g
+(*
+	=> nrel_main_idtf:[7 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_grapefruit=>nrel_fiber_content : 1.8_g
+(*
+	=> nrel_main_idtf:[1.8 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_grapefruit;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//grapefruit.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (Грейпфрут)](*<- lang_ru;;*);;
+*);;
+
