@@ -20,7 +20,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_tomato;;
-	<= nrel_sc_text_translation: ...(*->[томат — одна из самых популярных <b><sc_element sys_idtf="concept_vegetables">овощных культур</b></sc_element>; выращивается ради съедобных 
+	<= nrel_sc_text_translation: ...(*->[Томат — одна из самых популярных <b><sc_element sys_idtf="concept_vegetables">овощных культур</b></sc_element>; выращивается ради съедобных 
 	плодов — сочных многогнёздных ягод различной формы и окраски.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 
 	=> nrel_main_idtf: [Опр.(томат)](*<- lang_ru;;*);;
@@ -64,12 +64,12 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_tomato;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_tomato;;
     <= nrel_sc_text_translation: ...(*->rrel_example:[Недозрелые помидоры следует хранить дома при комнатной температуре. Спелые – в холодильнике в полиэтиленовом пакете с отверстиями.
          Из холодильника помидоры надо доставать за полчаса до приготовления, чтобы они могли естественным путем нагреться.](*<-lang_ru;;*);;*);;
 
      
-	=> nrel_main_idtf: [Утв.(томат, хранение)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв.(томат, срок и условия хранения*)](*<- lang_ru;;*);;
 	
 *);;
 

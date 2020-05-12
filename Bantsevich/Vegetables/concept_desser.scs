@@ -8,7 +8,7 @@ concept_desser
 definition ->...
 (*
 	->rrel_key_sc_element: concept_desser;;
-	<= nrel_sc_text_translation: ...(*->[десертные овощи – группа <b><sc_element sys_idtf="concept_vegetables">овощей</b></sc_element>
+	<= nrel_sc_text_translation: ...(*->[Десертные овощи – группа <b><sc_element sys_idtf="concept_vegetables">овощей</b></sc_element>
      богатых витаминами, созревающих раньше других, обладающих высокими вкусовыми 
                 качествами и подаваемых на десерт.]   (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр. (десертные овощи)](*<- lang_ru;;*);;

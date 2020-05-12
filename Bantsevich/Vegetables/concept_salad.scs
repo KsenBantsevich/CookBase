@@ -23,7 +23,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_salad;;
-	<= nrel_sc_text_translation: ...(*->[салат латук - <b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element>,в основом использующаяся как витаминная зелень, 
+	<= nrel_sc_text_translation: ...(*->[Салат латук - <b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element>,в основом использующаяся как витаминная зелень, 
 	у которой в пищу используют листья, кочан, утолщённый стебель.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(салат латук)](*<- lang_ru;;*);;
 	
@@ -54,10 +54,10 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_salad;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_salad;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Хранится салат в холодильнике 4-6 дней.](*<-lang_ru;;*);;*);;
      
-	=> nrel_main_idtf: [Утв.(салат латук, хранение)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв.(салат латук, срок и условия хранения*)](*<- lang_ru;;*);;
 	
 *);;
 

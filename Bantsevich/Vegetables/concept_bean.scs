@@ -53,13 +53,13 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_bean;;
+	->rrel_key_sc_element: nrel_storage_conditions;concept_bean;;
 
 
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Свежие бобы могут храниться в холодильнике несколько дней. Чтобы сохранить овощ надолго необходимо заморозить бобы в
 	 морозильной камере или высушить.] (*<-lang_ru;;*);;*);;
 
-    => nrel_main_idtf: [Утв.(бобы, хранение)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Утв.(бобы, срок и условия хранения* )](*<- lang_ru;;*);;
 
 	
 *);;

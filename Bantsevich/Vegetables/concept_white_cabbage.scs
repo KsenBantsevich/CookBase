@@ -25,10 +25,10 @@ definition ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_white_cabbage;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_white_cabbage;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике капусту можно хранить до 1 месяца.](*<-lang_ru;;*);;*);;
    
-	=> nrel_main_idtf: [Утв.(капуста белокочанная, хранение)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утв.(капуста белокочанная, срок и условия хранения*)](*<- lang_ru;;*);;
 	
 *);;
 

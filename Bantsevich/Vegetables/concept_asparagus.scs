@@ -64,11 +64,11 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_asparagus;;
+	->rrel_key_sc_element: nrel_storage_conditions;concept_asparagus;;
     <= nrel_sc_text_translation: ...(*->rrel_example:[Срок хранения спаржи в холодильнике может быть до 3 дней. Чтобы она дольше хранилась, стоит поставить ее в воду.]       
 	(*<-lang_ru;;*);;*);;
 
-   => nrel_main_idtf: [Утв.(спаржа, хранение)](*<- lang_ru;;*);;
+   => nrel_main_idtf: [Утв.(спаржа, срок и условия хранения* )](*<- lang_ru;;*);;
 
 	
 *);;

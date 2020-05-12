@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_potato;;
-	<= nrel_sc_text_translation: ...(*->[картофель - самый популярный в Беларуси <b><sc_element sys_idtf="concept_tubers">клубнеплодный</b></sc_element>
+	<= nrel_sc_text_translation: ...(*->[Картофель - самый популярный в Беларуси <b><sc_element sys_idtf="concept_tubers">клубнеплодный</b></sc_element>
 	<b><sc_element sys_idtf="concept_vegetables">овощ</b></sc_element>. ](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 
 	=> nrel_main_idtf: [Опр.(картофель)](*<- lang_ru;;*);;
@@ -56,6 +56,18 @@ statement ->...
 	=> nrel_main_idtf: [Утв.(картофель,употребление)](*<- lang_ru;;*);;
 
 *);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_potato;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Время хранения колеблется от 1-2 недель до 10-ти месяцев. Оно зависит от сорта картофеля. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(картофель, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
 
 concept_potato=>nrel_protein_content : 2_g
 (*

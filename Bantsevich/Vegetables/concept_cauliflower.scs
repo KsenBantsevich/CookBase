@@ -67,11 +67,22 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_cauliflower;;
 	
-     	<= nrel_sc_text_translation: ...(*->rrel_example:[цветная капуста уникальна тем, что она усваивается организмом лучше всех остальных видов капусты.](*<-lang_ru;;*);;*);;
+     	<= nrel_sc_text_translation: ...(*->rrel_example:[Цветная капуста уникальна тем, что она усваивается организмом лучше всех остальных видов капусты.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Утв.(цветная капуста, полезность)](*<- lang_ru;;*);;
 
 *);;
 
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_cauliflower;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Лучше всего хранить цветную капусту на средней полке холодильника или в ящике для овощей.
+	 Срок хранения цветной капусты в холодильнике составляет около 10-14 дней. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(цветная капуста, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
 
 concept_cauliflower=>nrel_protein_content : 2_g
 (*

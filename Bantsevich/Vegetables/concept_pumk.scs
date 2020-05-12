@@ -8,7 +8,7 @@ concept_pumk
 definition ->...
 (*
 	->rrel_key_sc_element: concept_pumk;;
-	<= nrel_sc_text_translation: ...(*->[тыквенные овощи - это <b><sc_element sys_idtf="concept_vegetables">овощные</b></sc_element> растения, у которых в пищу используется плод 
+	<= nrel_sc_text_translation: ...(*->[Тыквенные овощи - это <b><sc_element sys_idtf="concept_vegetables">овощные</b></sc_element> растения, у которых в пищу используется плод 
 	– тыквина. ](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(тыквенные овощи)](*<- lang_ru;;*);;
 	
@@ -17,7 +17,7 @@ definition ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_pumk;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[тыквенные овощи довольно широко используются в питании. Их тушат, запекают, жарят, едят сырыми,
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Тыквенные овощи довольно широко используются в питании. Их тушат, запекают, жарят, едят сырыми,
      добавляют в салаты, маринуют и солят и даже делают икру и пюре. ](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Утв.(тыквенные овощи)](*<- lang_ru;;*);;
     
@@ -27,7 +27,7 @@ statement ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_pumk;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[тыквенные овощи богаты калием и железом.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Тыквенные овощи богаты калием и железом.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Утв.(тыквенные овощи)](*<- lang_ru;;*);;
     
 	

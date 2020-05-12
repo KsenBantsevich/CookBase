@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_radish;;
-	<= nrel_sc_text_translation: ...(*->[редис - съедобное растение, выращиваемое во многих станах мира в открытом и закрытом грунте.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->[Редис - съедобное растение, выращиваемое во многих станах мира в открытом и закрытом грунте.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Опр.(редис)](*<- lang_ru;;*);;
 	
 *);;
@@ -51,6 +51,17 @@ statement ->...
 
     => nrel_main_idtf: [Утв.(редис, использование)](*<- lang_ru;;*);;
   
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_radish;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В отсеке для овощей редис останется свежим в течение 10-15 дней. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(редис, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
 *);;
 
 concept_radish=>nrel_protein_content : 1_g

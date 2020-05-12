@@ -46,7 +46,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_sweet_pepper;;
     
-	<= nrel_sc_text_translation: ...(*->rrel_example:[cладкий болгарский перец имеет нейтральный слегка сладковатый вкус.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Сладкий болгарский перец имеет нейтральный слегка сладковатый вкус.](*<-lang_ru;;*);;*);;
 
     
     => nrel_main_idtf: [Утв.(cладкий стручковый перец, вкус)](*<- lang_ru;;*);;
@@ -67,12 +67,12 @@ statement ->...
 *);;
 statement ->...
 (*
-	->rrel_key_sc_element: concept_sweet_pepper;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_sweet_pepper;;
     <= nrel_sc_text_translation: ...(*->rrel_example:[Перец можно хранить в холодильнике от 30 до 50 суток.](*<-lang_ru;;*);;*);;
 
 	
     
-    => nrel_main_idtf: [Утв.(cладкий стручковый перец, хранение )](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Утв.(cладкий стручковый перец, срок и условия хранения* )](*<- lang_ru;;*);;
 
    	
 *);;

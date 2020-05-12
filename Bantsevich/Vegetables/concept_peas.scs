@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_peas;;
-	<= nrel_sc_text_translation: ...(*->[горох - питательный и полезный представитель овощных растений семейства <b><sc_element sys_idtf="concept_pulses">бобовых</b></sc_element>.]
+	<= nrel_sc_text_translation: ...(*->[Горох - питательный и полезный представитель овощных растений семейства <b><sc_element sys_idtf="concept_pulses">бобовых</b></sc_element>.]
 	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр. (горох)](*<- lang_ru;;*);;
 	
@@ -26,7 +26,7 @@ definition ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_peas;;
-    <= nrel_sc_text_translation: ...(*->rrel_example:[горох обладает мягким, сладковатым вкусом и мясистой консистенцией.](*<-lang_ru;;*);;*);;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Горох обладает мягким, сладковатым вкусом и мясистой консистенцией.](*<-lang_ru;;*);;*);;
 
 	
    => nrel_main_idtf: [Утв.(горох, вкус)](*<- lang_ru;;*);;
@@ -38,7 +38,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_peas;;
    
-	<= nrel_sc_text_translation: ...(*->rrel_example:[горох применяется в кулинарии в свежем виде, сушеном, замороженном и консервированном.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Горох применяется в кулинарии в свежем виде, сушеном, замороженном и консервированном.](*<-lang_ru;;*);;*);;
 
     
    => nrel_main_idtf: [Утв.(горох, употребление)](*<- lang_ru;;*);;
@@ -60,13 +60,13 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_peas;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_peas;;
     <= nrel_sc_text_translation: ...(*->rrel_example:[Свежий зеленый горошек в стручках хранится до одной недели (без стручков он хранится гораздо дольше). 
 	Замороженный горох (в стручках или без них) хранится в морозильной камере на протяжении 10 месяцев.](*<-lang_ru;;*);;*);;
 
 
 
-   => nrel_main_idtf: [Утв.(горох, хранение)](*<- lang_ru;;*);;	
+   => nrel_main_idtf: [Утв.(горох, срок и условия хранения*)](*<- lang_ru;;*);;	
 *);;
 
 concept_peas=>nrel_protein_content : 5_g

@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_horseradish;;
-	<= nrel_sc_text_translation: ...(*->[хрен -<b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element>, выращиваемая ради корневища, 
+	<= nrel_sc_text_translation: ...(*->[Хрен -<b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element>, выращиваемая ради корневища, 
     употребляемого в пищу.]    (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 
 
@@ -38,7 +38,7 @@ statement ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_horseradish;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[хрен в виде свежих тертых корневищ или листьев применяется как пряно-вкусовая добавка к разным 
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Хрен в виде свежих тертых корневищ или листьев применяется как пряно-вкусовая добавка к разным 
 	<b><sc_element sys_idtf="concept_dish">блюдам</b></sc_element>. 
     Из корневищ изготавливают одноименную популярную приправу, а также он используется как компонент других пряных соусов и приправ.] (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
     
@@ -50,7 +50,7 @@ statement ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_horseradish;;
-  <= nrel_sc_text_translation: ...(*->rrel_example:[хрен используется как пряность при <b><sc_element sys_idtf="nrel_conservation">
+  <= nrel_sc_text_translation: ...(*->rrel_example:[Хрен используется как пряность при <b><sc_element sys_idtf="nrel_conservation">
 	консервировании	</b></sc_element>  <b><sc_element sys_idtf="concept_vegetables"> овощей</b></sc_element> и <b><sc_element sys_idtf="concept_mushrooms">
 	грибов</b></sc_element>.] (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 
@@ -58,6 +58,16 @@ statement ->...
 *);;
 
 
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_horseradish;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике срок хранения хрена составит до 6 месяцев.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(хрен, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
 
 concept_horseradish<=>nrel_go_together:concept_sausage;concept_meat;concept_scrapple;;
 

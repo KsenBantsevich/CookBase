@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_sorrel;;
-	<= nrel_sc_text_translation: ...(*->[щавель кислый – ценное пищевое растение.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->[Щавель кислый – ценное пищевое растение.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Опр. (щавель кислый)](*<- lang_ru;;*);;
 	
 *);;
@@ -55,6 +55,17 @@ statement ->...
   
      
 	=> nrel_main_idtf: [Утв.(щавель кислый,сочетание)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_sorrel;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Срок хранения в свежем виде в холодильнике составляет 1-2 дня. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(щавель кислый, срок и условия хранения* )](*<- lang_ru;;*);;
+
 	
 *);;
 

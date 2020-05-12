@@ -65,12 +65,12 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_beans;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_beans;;
     
 
-    <= nrel_sc_text_translation: ...(*->rrel_example:[фасоль можно хранить в холодильнике в течение всего года.](*<-lang_ru;;*);;*);;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Фасоль можно хранить в холодильнике в течение всего года.](*<-lang_ru;;*);;*);;
 
-   => nrel_main_idtf: [Утв.(фасоль, хранение)](*<- lang_ru;;*);;
+   => nrel_main_idtf: [Утв.(фасоль, срок и условия хранения* )](*<- lang_ru;;*);;
 
 	
 *);;

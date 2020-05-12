@@ -8,7 +8,7 @@ concept_roots
 definition ->...
 (*
 	->rrel_key_sc_element: concept_roots;;
-	<= nrel_sc_text_translation: ...(*->[корнеплоды - <b><sc_element sys_idtf="concept_vegetables">овощные культуры</b></sc_element>,выращиваемые ради
+	<= nrel_sc_text_translation: ...(*->[Корнеплоды - <b><sc_element sys_idtf="concept_vegetables">овощные культуры</b></sc_element>,выращиваемые ради
 	 подземных сочных органов растения. Корнеплодами также называются и те части, которые собственно употребляются в пищу 
 	 человеком и идут на корм животным.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(корнеплоды)](*<- lang_ru;;*);;
@@ -27,7 +27,7 @@ statement ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_roots;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[корнеплоды едят сырыми, вареными, тушеными, сушеными и консервированными.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Корнеплоды едят сырыми, вареными, тушеными, сушеными и консервированными.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Утв.(корнеплоды,употребление)](*<- lang_ru;;*);;
 	
 *);;

@@ -66,12 +66,12 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_sweetcorn;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_sweetcorn;;
   
 
     <= nrel_sc_text_translation: ...(*->rrel_example:[Срок хранения кукурузы в початках в холодильнике составляет от 3 до 10 дней.](*<-lang_ru;;*);;*);;
 
-   => nrel_main_idtf: [Утв.(cахарная кукуруза, хранение)](*<- lang_ru;;*);;	
+   => nrel_main_idtf: [Утв.(cахарная кукуруза, срок и условия хранения*)](*<- lang_ru;;*);;	
 *);;
 
 

@@ -20,7 +20,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_thyme;;
-	<= nrel_sc_text_translation: ...(*->[тимьян — пряность, обладающая сильным приятным ароматом и острым пряным вкусом.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->[Тимьян — пряность, обладающая сильным приятным ароматом и острым пряным вкусом.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Опр. (тимьян)](*<- lang_ru;;*);;
 	
 *);;
@@ -40,7 +40,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_thyme;;
 	
-    <= nrel_sc_text_translation: ...(*->rrel_example:[тимьян полностью раскрывает свой аромат при длительной тепловой обработке, поэтому его кладут в начале приготовления.]
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Тимьян полностью раскрывает свой аромат при длительной тепловой обработке, поэтому его кладут в начале приготовления.]
             (*<-lang_ru;;*);;*);;  
   
   
@@ -66,13 +66,13 @@ statement ->...
 
 statement ->...
 (*
-	->rrel_key_sc_element: concept_thyme;;
+	->rrel_key_sc_element:nrel_storage_conditions; concept_thyme;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Хранить продукт рекомендуется в герметичной посуде в прохладном и сухом месте. Чтобы сохранить аромат семян и зелени, измельчать и размалывать их 
     следует непосредственно перед употреблением.](*<-lang_ru;;*);;*);;
    
   
   
-  	=> nrel_main_idtf: [Утв.(тимьян, хранение)](*<- lang_ru;;*);;
+  	=> nrel_main_idtf: [Утв.(тимьян, срок и условия хранения*)](*<- lang_ru;;*);;
 	
 *);;
 

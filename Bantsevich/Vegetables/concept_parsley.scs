@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_parsley;;
-	<= nrel_sc_text_translation: ...(*->[петрушка - <b><sc_element sys_idtf="concept_vegetables">овощное растение</b></sc_element>, культивируемое во многих
+	<= nrel_sc_text_translation: ...(*->[Петрушка - <b><sc_element sys_idtf="concept_vegetables">овощное растение</b></sc_element>, культивируемое во многих
 	 странах Европы, севере США.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 
 	=> nrel_main_idtf: [Опр.(петрушка)](*<- lang_ru;;*);;	
@@ -58,6 +58,19 @@ statement ->...
     => nrel_main_idtf: [Утв.(петрушка)](*<- lang_ru;;*);;  
 
 *);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_parsley;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[ Срок хранения петрушки в холодильнике несколько недель, примерно от 2 до 3, в нижнем отделении холодильника. Если заморозить зелень, 
+	то она будет еще несколько месяцев сохранять полезные свойства. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(петрушка, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
 
 concept_parsley <= nrel_subdividing:
 {		

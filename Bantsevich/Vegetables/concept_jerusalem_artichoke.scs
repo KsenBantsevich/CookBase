@@ -23,7 +23,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_jerusalem_artichoke;;
-	<= nrel_sc_text_translation: ...(*->[топинамбур - ценное продовольственное, кормовое, техническое растение, родом из Северной Америки.]
+	<= nrel_sc_text_translation: ...(*->[Топинамбур - ценное продовольственное, кормовое, техническое растение, родом из Северной Америки.]
          (*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Опр.(топинамбур, происхождение)](*<- lang_ru;;*);;
 	
@@ -38,6 +38,21 @@ statement ->...
     => nrel_main_idtf: [Утв.(топинамбур)](*<- lang_ru;;*);;
 
 *);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_jerusalem_artichoke;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике топинамбур может храниться около 2-3 недель. При этом клубни необходимо поместить в герметичные 
+	пластиковые контейнеры или пищевые пакеты.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(топинамбур, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
 
 concept_jerusalem_artichoke=>nrel_protein_content : 2_g
 (*

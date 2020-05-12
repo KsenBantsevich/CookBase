@@ -8,7 +8,7 @@ concept_pulses
 definition ->...
 (*
 	->rrel_key_sc_element: concept_pulses;;
-	<= nrel_sc_text_translation: ...(*->[бобовые овощи - культурные растения семейства бобовых, выращиваемые для получения <b><sc_element sys_idtf="concept_vegetables">овощей
+	<= nrel_sc_text_translation: ...(*->[Бобовые овощи - культурные растения семейства бобовых, выращиваемые для получения <b><sc_element sys_idtf="concept_vegetables">овощей
 	</b></sc_element>в виде молодых бобов.]
     (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(бобовые овощи)](*<- lang_ru;;*);;
@@ -18,7 +18,7 @@ definition ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_pulses;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[бобовые овощи употребляют в пищу в свежем, консервированном, 
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Бобовые овощи употребляют в пищу в свежем, консервированном, 
     сушеном виде, после термической обработки; они являются типичным компонентом для многих национальных кухонь.](*<-lang_ru;;*);;*);;
 	
 		
@@ -42,7 +42,7 @@ statement ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_pulses;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[бобовые овощные культуры уникальны с точки зрения своей питательной ценности.
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Бобовые овощные культуры уникальны с точки зрения своей питательной ценности.
                                  бобовые овощи чрезвычайно богаты полноценными белками.Также бобовые овощи богаты углеводами, клетчаткой, витаминами 
                                   железом, калием, фосфором, кальцием, магнием, метионином, фосфолипидами.](*<-lang_ru;;*);;*);;
 

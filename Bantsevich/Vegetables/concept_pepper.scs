@@ -29,7 +29,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_pepper;;
-	<= nrel_sc_text_translation: ...(*->[острый перец с жгучим вкусом - плод сортов тропического кустарника.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->[Острый перец с жгучим вкусом - плод сортов тропического кустарника.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Опр. (острый стручковый перец )](*<- lang_ru;;*);;
   
 	
@@ -38,7 +38,7 @@ definition ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_pepper;;
-    <= nrel_sc_text_translation: ...(*->rrel_example:[острый перец используют в свежем виде, тушеным и жареным, консервируют, засушивают и замораживают.](*<-lang_ru;;*);;*);;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Острый перец используют в свежем виде, тушеным и жареным, консервируют, засушивают и замораживают.](*<-lang_ru;;*);;*);;
 
 	
 
@@ -59,6 +59,18 @@ statement ->...
    => nrel_main_idtf: [Утв.(острый стручковый перец,блюда)](*<- lang_ru;;*);;
 
 *);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_pepper;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[ Свежим перец хранится в нижнем отсеке холодильника (до 5 дней в пакете и до 2-х недель в герметичном контейнере). ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(острый стручковый перец, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);; 
 
 concept_pepper<=>nrel_go_together:concept_garlic;concept_basil;concept_dill;;
 

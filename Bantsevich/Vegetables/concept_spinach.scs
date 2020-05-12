@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_spinach;;
-	<= nrel_sc_text_translation: ...(*->[шпинат - один из самых распространённых и питательных видов <b><sc_element sys_idtf="concept_vegetables">овощной</b></sc_element> 
+	<= nrel_sc_text_translation: ...(*->[Шпинат - один из самых распространённых и питательных видов <b><sc_element sys_idtf="concept_vegetables">овощной</b></sc_element> 
 	зелени.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(шпинат)](*<- lang_ru;;*);;
 	
@@ -44,6 +44,17 @@ statement ->...
   
      
 	=> nrel_main_idtf: [Утв.(шпинат, использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_spinach;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике (отсек для зелени или овощей) шпинат может храниться в течение 4-5 дней.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(шпинат, срок и условия хранения* )](*<- lang_ru;;*);;
+
 	
 *);;
 

@@ -17,7 +17,7 @@ illustration -> ...
 definition ->...
 (*
 	->rrel_key_sc_element: concept_melissa;;
-	<= nrel_sc_text_translation: ...(*->[мелисса - растение, которое используют главным образом в качестве приправы или для приготовления освежающих и лечебных напитков.](*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->[Мелисса - растение, которое используют главным образом в качестве приправы или для приготовления освежающих и лечебных напитков.](*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Опр. (мелисса)](*<- lang_ru;;*);;
 	
 *);;
@@ -50,7 +50,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_melissa;;
 	
-    <= nrel_sc_text_translation: ...(*->rrel_example:[мелисса служит основой большинства тонизирующих напитков, от чаев и настоев до коктейлей (в том числе и алкогольных). Она применяется 
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Мелисса служит основой большинства тонизирующих напитков, от чаев и настоев до коктейлей (в том числе и алкогольных). Она применяется 
         как отдушка для ликеров, настоек и уксусов.](*<-lang_ru;;*);;*);;
    
   
@@ -94,6 +94,16 @@ statement ->...
 	
 *);;
 
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_melissa;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Срок годности составляет 3 года. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(мелисса, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
 
 
 concept_melissa=>nrel_protein_content : 4_g

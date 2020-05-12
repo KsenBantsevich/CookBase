@@ -8,7 +8,7 @@ concept_leafy
 definition ->...
 (*
 	->rrel_key_sc_element: concept_leafy;;
-	<= nrel_sc_text_translation: ...(*->[листовые овощи - это такие <b><sc_element sys_idtf="concept_vegetables">овощные культуры</b></sc_element>, у которых в пищу используются листья.]
+	<= nrel_sc_text_translation: ...(*->[Листовые овощи - это такие <b><sc_element sys_idtf="concept_vegetables">овощные культуры</b></sc_element>, у которых в пищу используются листья.]
     (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(листовые овощи)](*<- lang_ru;;*);;
 	
@@ -17,7 +17,7 @@ definition ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_leafy;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[листовые овощи – довольно широкая категория овощей, зачастую пересекающаяся с другими, ведь у ряда овощных культур 
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Листовые овощи – довольно широкая категория овощей, зачастую пересекающаяся с другими, ведь у ряда овощных культур 
                    съедобна не только какая-то определенная часть растения, а несколько]
      (*<-lang_ru;;*);;*);;
 	=> nrel_main_idtf: [Утв.(листовые овощи, категория)](*<- lang_ru;;*);;

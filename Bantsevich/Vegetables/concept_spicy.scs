@@ -8,7 +8,7 @@ concept_spicy
 definition ->...
 (*
 	->rrel_key_sc_element: concept_spicy;;
-	<= nrel_sc_text_translation: ...(*->[пряные овощи - это группа <b><sc_element sys_idtf="concept_vegetables">овощей</b></sc_element>, обладающих специфическим ароматом и 
+	<= nrel_sc_text_translation: ...(*->[Пряные овощи - это группа <b><sc_element sys_idtf="concept_vegetables">овощей</b></sc_element>, обладающих специфическим ароматом и 
     вкусовыми качествами, которые позволяют использовать их для придания особого оттенка вкуса и аромата <b><sc_element sys_idtf="concept_dish">блюдам</b></sc_element>.]
     (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(пряные овощи)](*<- lang_ru;;*);;
@@ -18,7 +18,7 @@ definition ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_spicy;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[пряные овощи содержат большое количество эфирных масел и других вкусо-ароматических веществ, 
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пряные овощи содержат большое количество эфирных масел и других вкусо-ароматических веществ, 
                     именно они обеспечивают пряным овощам их выраженный вкус и аромат. ] (*<-lang_ru;;*);;*);;
  
 	=> nrel_main_idtf: [Утв.(пряные овощи, вкус)](*<- lang_ru;;*);;
@@ -31,7 +31,7 @@ statement ->...
 statement ->...
 (*
 	->rrel_key_sc_element: concept_spicy;;
-	<= nrel_sc_text_translation: ...(*->rrel_example:[пряные овощи применяются в засолке, консервировании, их маринуют и сушат. ] (*<-lang_ru;;*);;*);;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Пряные овощи применяются в засолке, консервировании, их маринуют и сушат. ] (*<-lang_ru;;*);;*);;
     
 	=> nrel_main_idtf: [Утв.(пряные овощи, применение)](*<- lang_ru;;*);;
     

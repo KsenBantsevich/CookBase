@@ -8,7 +8,7 @@ concept_cereal
 definition ->...
 (*
 	->rrel_key_sc_element: concept_cereal;;
-	<= nrel_sc_text_translation: ...(*->[злаковые (или зерновые) овощи – отдельная категория <b><sc_element sys_idtf="concept_vegetables">овощей</b></sc_element>, которую представляет 
+	<= nrel_sc_text_translation: ...(*->[Злаковые (или зерновые) овощи – отдельная категория <b><sc_element sys_idtf="concept_vegetables">овощей</b></sc_element>, которую представляет 
 	единственное растение.]
     (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(злаковые (или зерновые) овощи)](*<- lang_ru;;*);;
