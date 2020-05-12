@@ -1,0 +1,17 @@
+subject_domain_of_alcohol
+=> nrel_main_idtf:
+[Предметная область алкоголя]
+(* <- lang_ru;;*);
+[Subject domain of alcohol]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_alcohol;
+-> rrel_not_maximum_studied_object_class:
+	concept_low_alcoholic_drink;    
+	concept_strong_alcoholic_drink;
+        concept_cocktail;;
+	
+
