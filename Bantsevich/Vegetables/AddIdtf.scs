@@ -1,8 +1,3 @@
-concept_fruits
-	<- sc_node_not_relation;
-	=> nrel_main_idtf: [фрукты]
-		(* <- lang_ru;; *);;
-
 concept_berries
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: [ягоды]
@@ -136,8 +131,5 @@ concept_mint
 	=> nrel_main_idtf: [мята]
 		(* <- lang_ru;; *);;
 
-concept_milk_product
-	<- sc_node_not_relation;
-	=> nrel_main_idtf: [молочный продукт]
-		(* <- lang_ru;; *);;
+
 
