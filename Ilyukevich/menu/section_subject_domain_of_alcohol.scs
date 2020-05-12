@@ -1,0 +1,15 @@
+section_subject_domain_of_alcohol
+=> nrel_main_idtf: 
+	[Раздел. Предметная область алкоголя]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of alcohol]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_alcohol = [*^"file://Subject_domains/subject_domain_of_alcohol.scsi"*];;
+
+section_subject_domain_of_alcohol
+
+-> rrel_key_sc_element: subject_domain_of_alcohol;;
