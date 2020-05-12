@@ -1,0 +1,85 @@
+concept_paguroidea <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской рак ](*<-lang_ru;;*);
+      [ Paguroidea ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской рак )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_crustacea;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морской рак - это представитель семейства ракообразные.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/paguroidea.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_paguroidea; concept_tropical_fish; concept_sea_of_okhotsk; concept_bering_sea; concept_north_sea; concept_mediterranean_sea; concept_shallow_water;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской рак является и тропическим представителем и обитает в Северном, Средиземном, Охотском и Беринговом морях, преимущественно на мелководье. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Морской рак, тропическая рыба, Северное море, Средиземное море, Охотское море, Берингово море, мелководье )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_paguroidea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в морском раке на 100 г продукта: 0,5 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, мосркой рак)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_paguroidea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность морского рака на 100 г продукта: 89 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, морской рак)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_paguroidea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в морском раке на 100 г продукта: 18,8 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, морской рак)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_paguroidea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в морском раке на 100 г продукта: 1,3 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, морской рак)](*<- lang_ru;;*);;
+   
+*);;
+
+ concept_paguroidea -> rrel_example: [ Мясо морского рака следует запекать или коптить, тогда оно наиболее мягкое и сладковатое. ](* <- lang_ru;; *);;
+ concept_paguroidea -> rrel_example: [ Мясо морского рака богато витаминами А, К, В1, В12б Е, РР, а также микроэлементами магния, кальция, меди и цинка. ](* <- lang_ru;;*);;
+ concept_paguroidea => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,44 @@
+concept_family_sturgeon <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство осетровые]
+      (*<-lang_ru;;*);
+       [Family sturgeon]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство осетровые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_freshwater_fish;
+	 concept_subspecies
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Семейство осетровые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Семейство осетровые, большая рыба, вытянутое тело, длина )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_large_fish;
+    concept_elongated_body;
+	concept_length
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Рыбы семейства осетровые являются довольно большимим рыбами, у которых вытянутое в длину тело.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_sturgeon-> rrel_example: [ В семействе осетровые встречаются такие известные рыбы, как осетр, белуга и стерлядь.](* <- lang_ru;; *);;
+
+concept_family_sturgeon <= nrel_subdividing: ...
+(*  		
+		<-concept_acipenser;;
+		<-concept_beluga;;
+		<-concept_kaluga;;
+        <-concept_sterlet;;
+        	
+*);;

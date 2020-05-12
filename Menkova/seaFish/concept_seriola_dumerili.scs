@@ -1,0 +1,79 @@
+concept_seriola_dumerili=>nrel_idtf: [ Seriola dumerili ](*<-lang_en;;*);;
+concept_seriola_dumerili=>nrel_main_idtf: [ Коронадо ](*<-lang_ru;;*);;
+
+concept_seriola_dumerili <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.(Коронадо)] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Коронадо - это представитель семейства ставридовые .] (* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_carangidae;concept_representative;;
+	*);;
+*);;
+
+concept_seriola_dumerili <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/koronado.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_seriola_dumerili; concept_tropical_fish; concept_warm_water; concept_tropical_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Коронадо относится к теплолюбивым рыбам и обитает в теплых водах тропических морей. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Коронадо, тропическая рыба, теплая вода, тропические моря )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_seriola_dumerili;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность коронадо на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, коронадо )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_seriola_dumerili;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в коронадо на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, коронадо)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_seriola_dumerili;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в коронадо на 100 г продукта: 17.5 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, коронадо )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_seriola_dumerili;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в коронадо на 100 г продукта: 2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, коронадо)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_seriola_dumerili -> rrel_example: [ Мясо коронадо насыщенно витаминами и минералами PP, CI, Zn. ](* <- lang_ru;; *);;
+ concept_seriola_dumerili => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

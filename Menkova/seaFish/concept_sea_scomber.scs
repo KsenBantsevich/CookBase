@@ -1,0 +1,84 @@
+concept_sea_scomber <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морская скумбрия ](*<-lang_ru;;*);
+      [ Sea scomber ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морская скумбрия )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_scomber;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морская скумбрия - это представитель семейства морские скумбриевые.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/06.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_scomber; concept_tropical_fish; concept_baltic_sea; concept_arctic_sea; concept_mediterranean_sea; concept_white_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морская скумбрия является тропическим представителем и обитает в Балтийском, Северном, Средиземном и Белом морях. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Морская скумбрия, тропическая рыба, Балтийское море, Северное море, Средиземное море, Белое море )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_scomber;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в морской скумбрии пеламиде на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, морская скумбрия )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_sea_scomber;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность морской скумбрии на 100 г продукта: 191 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, морская скумбрия)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_sea_scomber;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в морской скумбрии на 100 г продукта: 18 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, морская скумбрия)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_sea_scomber;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в морской скумбрии на 100 г продукта: 13,2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, морская скумбрия)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_sea_scomber -> rrel_example: [ Мясо морской скумбрии богато витаминами В1, B2, B3, B6, B12, C, E, H, PP и микроэлементами цинка, йода, кальция и калия . ](* <- lang_ru;;*);;
+ concept_sea_scomber => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;

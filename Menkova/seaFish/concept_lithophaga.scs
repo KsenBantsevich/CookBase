@@ -1,0 +1,84 @@
+concept_lithophaga <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской финик ](*<-lang_ru;;*);
+      [ Lithophada ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской финик)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морской финик - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+			->rrel_example: "file://PICTURES/lithophada.jpg"(*
+				=>nrel_format:format_jpg;;
+			*);;
+    	*);;
+	*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_lithophaga; concept_tropical_fish; concept_pacific_ocean; concept_black_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской финик является тропическим представителем и обитает на мелководье Черного моря и Тихого океанов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Морской финик, тропическая рыба, Тихий океан, Черное море )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_lithophaga;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в морском финике на 100 г продукта: 1 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, морской финик )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_lithophaga;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность морского финика на 100 г продукта: 93 ккал ] (*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, морской финик)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content; concept_lithophaga;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в морском финике на 100 г продукта: 14 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, морской финик)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_lithophaga;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в морском финике на 100 г продукта: 5 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, морской финик)](*<- lang_ru;;*);;
+   
+*);;
+
+ concept_lithophaga -> rrel_example: [ Мясо морского финика богато витаминами РР и группы В: В1, В2, В3, В6, В12, а также микроэлементами цинка, калия и магния. ](* <- lang_ru;;*);;
+ concept_lithophaga => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

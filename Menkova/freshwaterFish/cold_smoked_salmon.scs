@@ -1,0 +1,40 @@
+concept_cold_smoked_salmon<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Семга холодного копчения ]
+      (*<-lang_ru;;*);
+       [ cold smoked salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Семга холодного копчения )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_salmon;
+	 concept_smoked;
+     concept_temperature;
+     concept_degree;
+     consept_dish
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Семга холодного копчения - это блюдо из семги, которую коптят при температуре до 30 градусов .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семга холодного копчения, готовка, день, месяц )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_cooking;
+    concept_day;
+    concept_month
+    
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Семга холодного копчения готовится от пяти дней до месяца. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_cold_smoked_salmon -> rrel_example: [ Семга холодного копчения сохраняет максимальное количество различных минеральных и витаминных компонентов.](* <- lang_ru;; *);;
+

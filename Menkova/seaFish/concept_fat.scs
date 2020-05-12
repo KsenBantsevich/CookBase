@@ -1,0 +1,2 @@
+concept_fat <- sc_node_not_relation;;
+concept_fat => nrel_main_idtf: [ жирные ] (*<- lang_ru;;*);;

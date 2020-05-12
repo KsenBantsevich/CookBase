@@ -1,0 +1,86 @@
+concept_european_trachurus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Европейская ставрида ](*<-lang_ru;;*);
+      [ European trachurus](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Европейская ставрида )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_carangidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Европейская ставрида - это представитель семейства ставридовые.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/european_trachurus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_european_trachurus; concept_tropical_fish; concept_atlantic_ocean; concept_meriterranean_sea; concept_north_sea; concept_baltic_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Европейская ставрида является теплолюбивой рыбой и обитает в Атлантическом океане и Средиземном море, а также в Северном море, Чёрном море и западной части Балтийского моря.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Европейская ставрида, тропическая рыба, Атлантический океан, Средиземное море, Северное море, Балтийское море )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_european_trachurus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в европейской ставриде на 100 г продукта: 0 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, европейская ставрида)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal; concept_european_trachurus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность европейской ставриды на 100 г продукта: 119 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, европейская ставрида)](*<- lang_ru;;*);;
+   
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_european_trachurus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в европейской ставриде на 100 г продукта: 19 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, европейская ставрида)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_european_trachurus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в европейской ставриде на 100 г продукта: 5 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, европейская ставрида)] (*<- lang_ru;;*);;
+   
+*);;
+
+
+concept_european_trachurus-> rrel_example: [ У европейской ставриды мясо нежное, без больших костей и насыщенное витаминами C, E, B1, B2, B6, B9 и PP. ](* <- lang_ru;; *);;
+concept_european_trachurus => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

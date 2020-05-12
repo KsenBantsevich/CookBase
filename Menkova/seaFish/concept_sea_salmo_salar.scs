@@ -1,0 +1,84 @@
+concept_sea_salmo_salar <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской атлантический лосось ](*<-lang_ru;;*);
+      [ Sea salmo salar ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской атлантический лосось)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морской атлантический лосось - это представитель семейства морские лососёвые.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/salma_salar.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_salmo_salar; concept_arctical_fish; concept_pacific_ocean; concept_black_sea; concept_arctic_ocean; concept_meriterranean_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской атлантический лосось является арктическим представителем и обитает в Северном Ледовитом океане, Черном море, Средиземное море и Тихом океане. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Морской атлантический лосось, арктическая рыба, Северный Ледовитый океан, Средиземное море, Тихий океан, Черное море, )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_salmo_salar;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в морском атлантическом лососе на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, морской атлантический лосось )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_sea_salmo_salar;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность морского атлантического лосося на 100 г продукта: 180 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, морской атлантический лосось)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_sea_salmo_salar;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в морском атлантическом лососе на 100 г продукта: 20 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, морской атлантический лосось)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_sea_salmo_salar;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в морском атлантическом лососе на 100 г продукта: 11 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, морской атлантический лосось)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_sea_salmo_salar -> rrel_example: [ Мясо морского атлантического лосося богато витаминами РР и группы В: В1, В2, В3, В6, В12, а также микроэлементами натрия и магния. ](* <- lang_ru;;*);;
+ concept_sea_salmo_salar => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;

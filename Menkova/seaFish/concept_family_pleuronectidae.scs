@@ -1,0 +1,64 @@
+concept_family_pleuronectidae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство камбаловые]
+      (*<-lang_ru;;*);
+       [Family pleuronectidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство камбаловые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_sea_fish;
+	 concept_subspecies;
+     concept_asymmetric_structure_of_the_skull;
+     concept_compressed_body;
+     concept_eyes_on_one_side
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example: 
+        [Семейство камбаловые - это подвид морских рыб, который характеризуется асимметричным строением черепа с глазами на одной его стороне (левой или правой) и телом, сильно сжатым с боков] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/pleuronectidae.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство камбаловые, песчано - илистое дно, прибрежный участок моря )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_pleuronectidae;
+    concept_sandy_mud_bottom;
+	concept_coastal_area
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Камбаловые обитают на песчано-илистом дне от мелководных прибрежных участков моря до глубин в 1000 метров.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство камбаловые,низкая калорийность, высокое содержание полезных жирных кислот, средне жирная )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_pleuronectidae;
+    concept_sandy_mud_bottom;
+	concept_coastal_area
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Представители семейства камбаловые отличаются низкой калорийностью, высоким содержанием полезных жирных кислот, а также имеют среднюю жирность.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_pleuronectidae -> rrel_example: [ Представителей данного семейства чаще используют для приготовления жареных и отварных блюд.](* <- lang_ru;; *);;
+concept_family_pleuronectidae => nrel_inclusion: concept_yellow_sole; concept_atlantic_halibut; concept_common_sole; concept_scophthalmus_kalkan;;

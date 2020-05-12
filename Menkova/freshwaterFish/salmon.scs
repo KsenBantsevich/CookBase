@@ -1,0 +1,112 @@
+concept_salmon <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Семга ]
+      (*<-lang_ru;;*);
+      [ Salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семга)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Семга - это представитель семейства лососевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/salmon.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семга, нерест, место, основной источник, пища, килька, сельдь, колюшка )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	  concept_spawning;
+    concept_place;
+    concept_main_source;
+    concept_food;    
+    concept_sprat;
+    concept_herring;
+    concept_stickleback;
+    concept_salmon
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Нерестится семга в местах, где основным источником пищи может служить килька, сельдь и колюшка. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_salmon -> rrel_example: [ Семга занимает обширный ареал.](* <- lang_ru;; *);;
+
+ statement -> ...(*
+    -> rrel_key_sc_element: concept_salmon; concept_tropical_fish; concept_volga_lake; concept_lake_vauger; concept_lake_red; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Семга относится к теплолюбивым рыбам и обитает в теплых водах реки Волги, озера Красное, озеро Воже, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Семга, тропическая рыба, река Волга, озеро Воже, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_salmon; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание углеводов в семге на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание углеводов*, Семга)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_salmon; nrel_protein_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание белков в семге на 100 г продукта: 20,5 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание белков*, Семга )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_salmon; nrel_fats_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание жиров в семге на 100 г продукта: 6,5 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание жиров*, Семга)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_salmon; nrel_kkal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Пищевая ценность семги на 100 г продукта: 140 ккал. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Семга)](*<- lang_ru;;*);;
+   
+*);;
+
+concept_salmon -> rrel_example: [ Мясо семги насыщенно витаминами А, С, D, РР и микроэлементами никеля, железа, цинка и хлора. ](* <- lang_ru;; *);;
+concept_salmon => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+
+concept_salmon <= nrel_subdividing: ...
+(*  		
+        <-concept_baked_salmon;;
+		    <-concept_boiled_salmon;;
+	    	<-concept_smoked_salmon;;
+        <-concept_fried_salmon;; 	
+*);;
+
+

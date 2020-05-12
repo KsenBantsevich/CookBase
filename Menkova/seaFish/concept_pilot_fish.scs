@@ -1,0 +1,80 @@
+concept_pilot_fish=>nrel_idtf: [ Pilot fish ](*<-lang_en;;*);;
+concept_pilot_fish=>nrel_main_idtf: [ Лоцман ](*<-lang_ru;;*);;
+
+concept_pilot_fish <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.(Лоцман)] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Лоцман - это представитель семейства ставридовые .] (* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_carangidae;concept_representative;;
+	*);;
+*);;
+
+concept_pilot_fish <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/Pilot_fish.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pilot_fish; concept_tropical_fish; concept_warm_water; concept_tropical_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Лоцман относится к теплолюбивым рыбам и обитает в теплых водах тропических морей. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение( Лоцман, тропическая рыба, теплая вода, тропические моря )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_pilot_fish;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность лоцмана на 100 г продукта: 103 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, Лоцман )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_pilot_fish;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в лоцмане на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, Лоцман)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_pilot_fish;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в лоцмане на 100 г продукта: 17 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, Лоцман )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_pilot_fish;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в лоцмане на 100 г продукта: 5 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, Лоцман)](* <- lang_ru;; *);;
+   
+*);;
+
+
+ concept_pilot_fish -> rrel_example: [ Мясо лоцмана насыщенно витаминами группы В: B1, B2, B6 и B9. ](* <- lang_ru;; *);;
+ concept_pilot_fish => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

@@ -1,0 +1,68 @@
+concept_family_carangidae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство ставридовые]
+      (*<-lang_ru;;*);
+       [Family carangidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство ставридовые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_sea_fish;
+	 concept_subspecies;
+     concept_asymmetric_structure_of_the_skull;
+     concept_compressed_body;
+     concept_eyes_on_one_side
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example: 
+        [Семейство ставридовые - это подвид морских рыб, который характеризуется дополнительными плавничками, расположенными по одному позади второго спинного и анального плавников.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/carangidae.png"(*
+                    =>nrel_format:format_png;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство ставридовые, Атлантический океан, Индийский океан, Тихий океан, представитель, обитатель )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_carangidae;
+    concept_atlantic_ocean;
+	concept_indian_ocean;
+    concept_pacific_ocean;
+    concept_representative;
+    concept_inhabitant
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Представители семейства ставридовые являются обитателями преимущественно морских, реже солоноватых вод в районах Атлантического, Индийского и Тихого океанов.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство ставридовые, мясо, привкус, запах)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_carangidae;
+    concept_meat;
+	concept_taste;
+    concept_smell
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Мясо представителей семейства ставридовые сероватого цвета, средней жирности, со специфическими привкусом и запахом, созревает при посоле.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_carangidae -> rrel_example: [ Из представителей семейства ставридовые рекомендуется готовить жареные блюда.](* <- lang_ru;; *);;
+concept_family_carangidae => nrel_inclusion: concept_european_trachurus; concept_pilot_fish; concept_seriola_dumerili; concept_selene;;

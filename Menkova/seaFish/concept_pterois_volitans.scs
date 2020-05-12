@@ -1,0 +1,79 @@
+concept_pterois_volitans =>nrel_idtf: [ Pterois volitans ](*<-lang_en;;*);;
+concept_pterois_volitans =>nrel_main_idtf: [ Крылатка ](*<-lang_ru;;*);;
+
+concept_pterois_volitans <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.( Крылатка )] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Крылатка - это представитель семейства скорпеновые .] (* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_scorpaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_pterois_volitans <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/pterois_volitans.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pterois_volitans; concept_tropical_fish; concept_warm_water; concept_pacific_ocean; concept_indian_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Крылатка относится к теплолюбивым рыбам и обитает в теплых водах Тихого и Индийского океанов. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение( Крылатка, тропическая рыба, теплая вода, Тихий океан, Индийский океан)] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_pterois_volitans;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность крылатки на 100 г продукта: 91 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, Крылатка )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_pterois_volitans;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в крылатке на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, Крылатка)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_pterois_volitans;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в крылатке на 100 г продукта: 15 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, Крылатка )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_pterois_volitans;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в крылатке на 100 г продукта: 2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, Крылатка)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_pterois_volitans -> rrel_example: [ Мясо крылатки насыщенно витаминами В1, В12 и РР. ](* <- lang_ru;; *);;
+ concept_pterois_volitans => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

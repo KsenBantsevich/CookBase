@@ -1,0 +1,83 @@
+concept_sea_salvelinus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской голец ](*<-lang_ru;;*);
+      [ Sea salvelinus ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской голец)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морской голец - это представитель семейства морские лососёвые.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/sea_salvelinus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_salvelinus; concept_arctical_fish; concept_pacific_ocean; concept_arctic_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской голец является арктическим представителем и обитает в Тихом океане и Северном Ледовитом океане. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Морской голец, арктическая рыба, Тихий океан, Северный Ледовитый океан )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в морском гольце на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, морской голец )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_sea_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность морского гольца на 100 г продукта: 135 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, морской голец)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_sea_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в морском гольце на 100 г продукта: 22,4 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, морской голец)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_sea_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в морском гольце на 100 г продукта: 5,7 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, морской голец)](* <- lang_ru;; *);;
+*);;
+
+ concept_sea_salvelinus -> rrel_example: [ Мясо морского гольца богато витаминами В1, К, Е, А PP, а также микроэлементами железа, меди, натрия, цинка и хрома. ](* <- lang_ru;;*);;
+ concept_sea_salvelinus => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

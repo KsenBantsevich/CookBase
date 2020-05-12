@@ -1,0 +1,66 @@
+concept_family_sea_salmonidae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство морские лососёвые]
+      (*<-lang_ru;;*);
+       [Family sea salmonidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство морские лососёвые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_family_sea_salmonidae;
+	 concept_sea_fish;
+	 concept_subspecies;
+     concept_long_body;
+     concept_round_scales
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example: 
+        [Семейство морские лососёвые - это подвид морских рыб, который отличается длинным телом, сжатым с боков и покрытое круглой чешуей.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/salmonidae.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство морские лососёвые, арктическая рыба, Северный Ледовитый океан, Черное море )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_sea_salmonidae;
+    concept_arctical_fish;
+    concept_black_sea;
+    concept_arctic_ocean
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Представители семейства морские лососёвые являются обитателями арктических вод, обитают преимущественно в Северном Ледовитом океане и Черном море.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство морские лососёвые, мясо, кость)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_sea_salmonidae;
+    concept_meat;
+    concept_bone
+
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Мясо представителей семейства морские лососёвые содержит мало костей и является сочным.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_sea_salmonidae -> rrel_example: [ Представителей семейства морские лососёвые предпочтительнее запекать для сохранения полезных микроэлементов](* <- lang_ru;; *);;
+concept_family_sea_salmonidae => nrel_inclusion: concept_sea_salmo_salar; concept_sea_gorbusha; concept_sea_oncorhynchys_keta; concept_sea_coregonus; concept_sea_salvelinus; concept_sea_thymallus;;

@@ -1,0 +1,39 @@
+concept_hot_smoked_salmon<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Семга горячего копчения ]
+      (*<-lang_ru;;*);
+       [ Hot smoked salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Семга горячего копчения )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_salmon;
+	 concept_smoked;
+     concept_temperature;
+     concept_degree;
+     consept_dish
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Семга горячего копчения - это блюдо из семги, которую коптят при температуре 45 - 150  градусов .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семга горячего копчения, просушка, подвяливание )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_drying;
+    concept_wilting
+    
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Семга горячего копчения не требует просушки и подвяливания. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_hot_smoked_salmon -> rrel_example: [ Семга горячего копчения готовится от 40 минут до 2 часов.](* <- lang_ru;; *);;
+

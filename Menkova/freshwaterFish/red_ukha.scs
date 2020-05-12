@@ -1,0 +1,44 @@
+concept_red_ukha<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Красная уха ]
+      (*<-lang_ru;;*);
+       [ Red ukha ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Красная уха )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_ukha;
+	 concept_acipenser;
+     concept_beluga;
+     concept_salmon;
+     consept_cooking
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Красная уха - это уха, которая готовится из осетра, белуги и семги.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Красная уха, яйцо, зелень )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_egg;
+    concept_green   
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Красная уха предполагает наличие яиц и зелени. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_red_ukha -> rrel_example: [ Красную уху следует варить в эмалированной или глиняной посуде. ](* <- lang_ru;; *);;
+
+concept_red_ukha <= nrel_subdividing: ...
+(*  		
+	    <-concept_hot_red_ukha;;
+		<-concept_cold_red_ukha;;
+        	
+*);;

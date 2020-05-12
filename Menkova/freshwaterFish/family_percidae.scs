@@ -1,0 +1,56 @@
+concept_family_percidae<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Семейство окуневые]
+      (*<-lang_ru;;*);
+
+      [Family percidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Семейство окуневые)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_subspecies;
+     concept_freshwater_fish
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [Семейство окуневые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Семейство окуневые, спинной плавник, рыба, ключевая часть, мягкая часть) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+	concept_dorsal_fin;
+    concept_fish;
+	concept_key_part;
+    concept_soft_part
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Спинной плавник у рыб семейства окуневые состоит из двух частей: ключевой впереди и мягкий сзади. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_percidae -> rrel_example: [Наиболее ярким представителем окуневых является скумбрия.](* <- lang_ru;; *);;
+
+concept_family_percidae <= nrel_subdividing: ...
+(*  		
+		<-concept_round_goby;;
+		<-concept_european_ruffe;;
+		<-concept_scomber;;	
+        <-concept_sander;;
+*);;

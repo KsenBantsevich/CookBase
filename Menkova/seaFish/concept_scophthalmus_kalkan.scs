@@ -1,0 +1,84 @@
+concept_scophthalmus_kalkan <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Калкан ](*<-lang_ru;;*);
+      [ Scophthalmus kalkan ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Калкан )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_pleuronectidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Калкан - это представитель семейства камбаловые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/kalkan.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_scophthalmus_kalkan; concept_tropical_fish; concept_black_sea; concept_sea_of_Azov; concept_mediterranean_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Калкан относится к теплолюбивым рыбам и обитает в Азовском море, Черномом море, также она встречается в некоторых районах Средиземного моря. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Калкан, тропическая рыба, Черное море, Азовское море, Средиземное море )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_scophthalmus_kalkan;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность калкана на 100 г продукта: 92 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, калкан )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_scophthalmus_kalkan;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в калкане на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, калкан )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_scophthalmus_kalkan;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в калкане на 100 г продукта: 17 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, калкан )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_scophthalmus_kalkan;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в калкане на 100 г продукта: 2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, калкан)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_scophthalmus_kalkan -> rrel_example: [ Мясо калкана насыщено витамином Е и витаминами группы В (в особенности B3, B6, B5 и  B2). ](* <- lang_ru;; *);;
+ concept_scophthalmus_kalkan => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,86 @@
+concept_nephropidae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Омар ](*<-lang_ru;;*);
+      [ Nephropidae ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Омар )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_crustacea;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Омар - это представитель семейства ракообразные.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/omar.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_nephropidae; concept_tropical_fish; concept_sea_of_okhotsk; concept_bering_sea; concept_north_sea; concept_mediterranean_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Омaр является и тропическим представителем и обитает в Северном, Средиземном, Охотском и Беринговом морях. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Омар, тропическая рыба, Северное море, Средиземное море, Охотское море, Берингово море )] (*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_nephropidae;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в омаре на 100 г продукта: 0 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, омар)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_kkal;concept_nephropidae;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность омара на 100 г продукта: 77 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, омар)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_protein_content;concept_nephropidae;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в омаре на 100 г продукта: 19 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, омар)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_fats_content;concept_nephropidae;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в омаре на 100 г продукта: 1 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, омар)](*<- lang_ru;;*);;
+   
+*);;
+
+ concept_nephropidae -> rrel_example: [ Мясо омара является мировым деликатесом. ](* <- lang_ru;; *);;
+ concept_nephropidae -> rrel_example: [ Мясо омара богато витаминами В5, Е, РР, а также микроэлементами магния, кальция, меди и цинка. ](* <- lang_ru;;*);;
+ concept_nephropidae => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

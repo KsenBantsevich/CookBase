@@ -1,0 +1,81 @@
+concept_common_sole=>nrel_idtf: [Common sole](*<-lang_en;;*);;
+concept_common_sole=>nrel_main_idtf: [Язык морской](*<-lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_common_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Язык морской - это представитель семейства камбаловые .](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Язык морской)](*<- lang_ru;;*);;
+       
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_common_sole; concept_tropical_fish; concept_warm_water; concept_tropical_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Язык морской относится к теплолюбивым рыбам и обитает в теплых водах тропических морей. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Язык морской, тропическая рыба, теплая вода, тропические моря )](*<- lang_ru;;*);;
+   
+*);;
+
+
+concept_common_sole <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/common_sole.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal; concept_common_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность языка морского на 100 г продукта: 88 ккал .](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, язык морской)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_common_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в языке морском на 100 г продукта: 0 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, язык морской)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_common_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в языке морском на 100 г продукта: 10 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, язык морской)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_common_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в языке морском на 100 г продукта: 5 г] (*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, язык морской)](*<- lang_ru;;*);;
+   
+*);;
+
+
+ concept_common_sole -> rrel_example: [ Мясо языка морского насыщенно витаминами D, А, Е, В. ](* <- lang_ru;; *);;
+ concept_common_sole => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

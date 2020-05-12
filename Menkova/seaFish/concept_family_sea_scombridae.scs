@@ -1,0 +1,70 @@
+concept_family_sea_scombridae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство морские скумбриевые]
+      (*<-lang_ru;;*);
+       [Family sea scombridae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство морские скумбриевые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_family_sea_scombridae;
+	 concept_sea_fish;
+	 concept_subspecies;
+     concept_eye;
+     concept_bone_ring
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example: 
+        [Семейство морские скумбриевые - это подвид морских рыб, который отличается костным кольцом вокруг глаз.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/scomber.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство морские скумбриевые, тропическая рыба, Балтийское море, Северное море, Белое море, Атлантический океан, Средиземное море )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_sea_scombridae;
+    concept_tropical_fish;
+    concept_white_sea;
+    concept_baltic_sea;
+    concept_arctic_sea;
+    concept_atlantic_ocean;
+    concept_mediterranean_sea
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Представители семейства морские скумбриевые являются обитателями тропических вод, обитают преимущественно в Балтийском, Северном, Средиземном, Белом морях и Атлантическом океане.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство морские скумбриевые, мясо, кость, ртуть)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_sea_scombridae;
+    concept_meat;
+    concept_bone;
+    concept_mercury
+
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Мясо представителей семейства морские лососёвые содержит мало костей и накапливает в себе большое количество ртути.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_family_sea_scombridae -> rrel_example: [ Представителей семейства морские скумбриевые предпочтительнее запекать для сохранения полезных микроэлементов](* <- lang_ru;; *);;
+concept_family_sea_scombridae => nrel_inclusion: concept_sea_scomber; concept_sea_thunnus; concept_sea_atlantic_sarda;;

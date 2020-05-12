@@ -1,0 +1,79 @@
+concept_selaroides_leptolepis=>nrel_idtf: [ Selaroides leptolepis ](*<-lang_en;;*);;
+concept_selaroides_leptolepis=>nrel_main_idtf: [ Желтополосый крокер ](*<-lang_ru;;*);;
+
+concept_selaroides_leptolepis <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.(Желтополосый крокер)] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Желтополосый крокер - это представитель семейства горбылевые .] (* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_selaroides_leptolepis <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/selaroides_leptolepis.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_selaroides_leptolepis; concept_tropical_fish; concept_warm_water; concept_indian_ocean; concept_pacific_ocean; concept_gulf_of_persian;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Желтополосый крокер относится к теплолюбивым рыбам и обитает в теплых водах Индийского и Тихиго океанов, а также в Персидском заливе. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Желтополосый крокер, тропическая рыба, теплая вода, Индийский океан, Тихий океан, Персидский залив)] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_selaroides_leptolepis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность желтополосого крокера на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Желтополосый крокер )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_selaroides_leptolepis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в желтополосом крокере на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Желтополосый крокер)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_selaroides_leptolepis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в желтополосом крокере на 100 г продукта: 17.5 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Желтополосый крокер )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_selaroides_leptolepis;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в желтополосом крокере на 100 г продукта: 2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Желтополосый крокер)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_selaroides_leptolepis -> rrel_example: [ Мясо желтополосого крокера насыщенно витаминами группы В: В3, В6, В12. ](* <- lang_ru;; *);;
+ concept_selaroides_leptolepis => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,84 @@
+concept_teuthida <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Кальмар ](*<-lang_ru;;*);
+      [ Teuthida ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Кальмар )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Кальмар - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/teuthida.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_teuthida; concept_tropical_fish; concept_black_sea; concept_pacific_ocean; concept_meriterranean_sea; concept_north_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Кальмар является тропическим представителем и обитает в Cредиземном море, Северном море, Тихом океане, Черном море. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Кальмар, тропическая рыба, Тихий океан, Черное море, Средиземное море, Северное море. )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_teuthida;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в кальмаре на 100 г продукта: 1,8 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, кальмар )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_kkal;concept_teuthida;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность кальмара на 100 г продукта: 98 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, кальмар)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_protein_content;concept_teuthida;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в кальмаре на 100 г продукта: 19 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, кальмар)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_fats_content;concept_teuthida;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в кальмаре на 100 г продукта: 2,5 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, кальмар)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_teuthida -> rrel_example: [ Мясо кальмара богато витаминами В1, В2, В3, В6, В9, Е и РР. ](* <- lang_ru;;*);;
+ concept_teuthida => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

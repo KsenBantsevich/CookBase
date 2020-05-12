@@ -1,0 +1,116 @@
+concept_chum_salmon <- sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [ Кета ]
+      (*<-lang_ru;;*);
+
+      [ Chum Salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.( Кета )] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_salmonidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Кета - это представитель семейства лососевые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+   <- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/shum_salmon.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение ( Кета, второе место, массовый представитель, семейство лососевые) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+  	concept_mass_representative;
+    concept_second_place;
+    concept_family_salmonidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Кета занимает второе место среди наиболее массовых представителей семейства лососевые. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_chum_salmon -> rrel_example: [ Кета питается ракообразными, моллюсками и корюшкой.](* <- lang_ru;; *);;
+
+ statement -> ...(*
+    -> rrel_key_sc_element: concept_chum_salmon; concept_tropical_fish; concept_chum_lake; concept_volga_river; concept_lake_white; concept_lake_red; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Карась относится к теплолюбивым рыбам и обитает в теплых водах озера Кета, реки Волга, озера Красное, озеро Белое, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Кета, тропическая рыба, озеро Кета, озеро Белое, река Волга, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chum_salmon; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание углеводов в кете на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание углеводов*, Кета )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chum_salmon; nrel_protein_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание белков в кете на 100 г продукта: 22 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание белков*, Кета )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chum_salmon; nrel_fats_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание жиров в кете на 100 г продукта: 5,6 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание жиров*, Кета)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chum_salmon; nrel_kkal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Пищевая ценность кеты на 100 г продукта: 138 ккал. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Кета )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_chum_salmon -> rrel_example: [ Мясо карася насыщенно витаминами А, В1, В2, С, Е, РР и микроэлементами кальция, магния и натрия. ](* <- lang_ru;; *);;
+concept_chum_salmon => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+
+concept_chum_salmon <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_chum_salmon;;
+		<-concept_boiled_chum_salmon;;
+		<-concept_fried_chum_salmon;;	
+*);;

@@ -1,0 +1,115 @@
+concept_round_goby<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Бычок - кругляк]
+      (*<-lang_ru;;*);
+
+      [Round goby]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Бычок - кругляк)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_small_fish;
+     concept_family_percidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [Бычок - кругляк - это мелкая рыба семейства окуневые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/round_goby.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Лещ, группа, глубокое место, растение) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+	concept_stocky_body;
+    concept_body_covered_with_scales;
+	concept_nape
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Тело у бычка - кругляка коренастое, полностью покрытое чешуей, которая заходит на затылок. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_round_goby -> rrel_example: [Бычок - кругляк нерестится с апреля по сентябрь.](* <- lang_ru;; *);;
+
+statement -> ...(*
+    -> rrel_key_sc_element: concept_round_goby; concept_tropical_fish; concept_lake_white; concept_lake_vauger; concept_lake_red; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Бычок - кругляк относится к теплолюбивым рыбам и обитает в теплых водах озера Белое, озера Красное, озеро Воже, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Бычок - кругляк, тропическая рыба, озеро Белое, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_round_goby; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание углеводов в бычке-кругляке на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание углеводов*, Бычок - кругляк )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_round_goby; nrel_protein_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание белков в бычке - кругляке на 100 г продукта: 17,5 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание белков*, Бычок - кругляк )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_round_goby; nrel_fats_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание жиров в бычке - кругляке на 100 г продукта: 2 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание жиров*, Бычок - кругляк)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_round_goby; nrel_kkal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Пищевая ценность бычка - кругляка на 100 г продукта: 88 ккал. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Бычок - кругляк )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_round_goby -> rrel_example: [ Мясо бычка - кругляка насыщенно витамином РР и микроэлементами хрома, цинка, фтора, никеля и серы. ](* <- lang_ru;; *);;
+concept_round_goby => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+concept_round_goby <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_round_goby;;
+		<-concept_boiled_round_goby;;
+		<-concept_fried_round_goby;;	
+*);;

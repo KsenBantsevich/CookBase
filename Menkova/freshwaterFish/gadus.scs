@@ -1,0 +1,111 @@
+concept_gadus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Треска ]
+      (*<-lang_ru;;*);
+      [ Gadus ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Треска )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Треска - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/gadus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Треска, взрослый, питание, минтай, навага, ракообразное, червь, моллюск )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_adult;
+    concept_food;
+    concept_pollock;
+    concept_navaga;
+    concept_crustacean;
+    concept_worm;
+    concept_mollusk
+
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Взрослая треска питается минтаем, навагой, ракообразными, червями и моллюсками. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_gadus -> rrel_example: [ Максимальая длина трески достигает 120 сантиметров. ](* <- lang_ru;; *);;
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_gadus; concept_tropical_fish; concept_dnepr_river; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Треска относится к теплолюбивым рыбам и обитает в реке Днепр, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение(Треска , тропическая рыба, река Днепр, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_gadus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность трески на 100 г продукта: 78 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Треска )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_gadus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в треске на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Треска )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_gadus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в треске на 100 г продукта: 17,7 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Треска )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_gadus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в треске на 100 г продукта: 0,7 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Треска )](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_gadus -> rrel_example: [ Мясо трески насыщенно витаминами А, D, Е, В, РР, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+ concept_gadus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+concept_gadus <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_gadus;;
+		<-concept_boiled_gadus;;
+		<-concept_fried_gadus;;	
+*);;

@@ -1,0 +1,118 @@
+concept_scomber<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Скумбрия]
+      (*<-lang_ru;;*);
+
+      [Scomber]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Скумбрия)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_percidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Скумбрия - это представитель семейства окуневые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/scomber.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Скумбрия , взрослая особь, охота, мелкая рыба, рачок, кальмар) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+  	concept_adult_individual;
+    concept_hunting;
+	  concept_small_fish;
+    concept_crayfish;
+    concept_squid
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Взрослые особи скумбрии охотятся на мелких рыб, рачков и кальмаров. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+statement -> ...(*
+    -> rrel_key_sc_element: concept_scomber; concept_tropical_fish; concept_sarglan_lake; concept_lake_red; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Скумбрия относится к теплолюбивым рыбам и обитает в теплых водах озера Сарглан, озера Красное, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Скумбрия, тропическая рыба, озеро Сарглан, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_scomber; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание углеводов в скумбрии на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание углеводов*, Скумбрия )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_scomber; nrel_protein_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание белков в скумбрии на 100 г продукта: 18 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание белков*, Скумбрия )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_scomber; nrel_fats_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание жиров в скумбрии на 100 г продукта: 13,2 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание жиров*, Скумбрия )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_scomber; nrel_kkal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Пищевая ценность скумбрии на 100 г продукта: 191 ккал. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Скумбрия )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_scomber -> rrel_example: [ Мясо скумбрии насыщенно витаминами А, С, Е, D, РР и микроэлементами цинка. ](* <- lang_ru;; *);;
+concept_scomber => nrel_healthy_fat_content: (concept_fat <- concept_8_14);;
+
+concept_scomber -> rrel_example: [Скумбрия является цедильщиком планктона.](* <- lang_ru;; *);;
+
+concept_scomber <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_scomber;;
+		<-concept_boiled_scomber;;
+		<-concept_fried_scomber;;	
+*);;

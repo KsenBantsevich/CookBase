@@ -1,0 +1,44 @@
+concept_family_clupeidae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство сельдевые]
+      (*<-lang_ru;;*);
+       [Family clupeidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство сельдевые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_freshwater_fish;
+	 concept_subspecies
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Семейство сельдевые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство сельдевые, чешуя, голова, представитель )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_scales;
+    concept_head;
+	concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Ни у одного представителя семейства сельдевые не наблюдается чешуек на голове, некоторые вообще не имеют чешуи.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_clupeidae -> rrel_example: [ Сельдевые широко распостранены от Субантарктики до Арктики.](* <- lang_ru;; *);;
+
+concept_family_clupeidae <= nrel_subdividing: ...
+(*  		
+		<-concept_clupeonella;;
+		<-concept_sprat;;
+		<-concept_sardinella;;
+        <-concept_clupea;;
+        	
+*);;

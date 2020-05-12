@@ -1,0 +1,42 @@
+concept_family_cyprinidae<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство карповые]
+      (*<-lang_ru;;*);
+       [Family cyprinidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство карповые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_freshwater_fish;
+	 concept_subspecies
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Семейство карповые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Семейство карповые, многочисленное семейство, пресноводная рыба, рыба)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_fish;
+    concept_freshwater_fish;
+	concept_large_family
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Рыбы семейства карповые являются самым многочисленным семейством пресноводных рыб.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_cyprinidae -> rrel_example: [Жерех — наиболее крупная рыба из семейства карповых.](* <- lang_ru;; *);;
+
+concept_family_cyprinidae <= nrel_subdividing: ...
+(*  		
+		<-concept_bream;;
+		<-concept_carp;;
+		<-concept_carassius;;	
+*);;

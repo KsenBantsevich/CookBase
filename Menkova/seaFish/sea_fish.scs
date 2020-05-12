@@ -1,0 +1,46 @@
+concept_sea_fish<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Морская рыба]
+      (*<-lang_ru;;*);
+       [Sea fish]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Морская рыба)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_fish;
+	 concept_sea_water;
+	 concept_life
+};;
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Морская рыба - это рыба, которая всю жизнь или большую её часть проводит в морской воде.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/seaFish.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Морская рыба, солёная вода, массивная особь, пресноводные виды) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+  concept_sea_fish;
+	concept_salty_water;
+	concept_massive_individual;
+  concept_freshwater_fish
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Обитающие в солёных водах особи морских рыб часто отличаются массивностью, более крупным размером в сравнении с пресноводными видами.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_sea_fish -> rrel_example: [Морские представители характеризуются активным образом жизни, мясо морских рыб богато йодом.](* <- lang_ru;; *);;
+
+concept_sea_fish => nrel_inclusion: concept_family_pleuronectidae; concept_family_sciaenidae; concept_family_carangidae; concept_family_sea_salmonidae; concept_family_scorpaenidae; concept_family_sea_scombridae; concept_family_crustacea; concept_family_sea_mollusca;;

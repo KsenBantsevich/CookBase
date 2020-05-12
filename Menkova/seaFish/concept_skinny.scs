@@ -1,0 +1,2 @@
+concept_skinny <- sc_node_not_relation;;
+concept_skinny => nrel_main_idtf: [ тощие ] (*<- lang_ru;;*);;

@@ -1,0 +1,48 @@
+concept_white_ukha<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Белая уха ]
+      (*<-lang_ru;;*);
+       [ White ukha ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Белая уха )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_ukha;
+	 concept_sander;
+     concept_som;
+     concept_european_ruffe;
+     consept_cooking
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Белая уха - это уха, которая готовится из судака, ерша и сома.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Белая уха, время, готовка, рыба, вода, кипяток )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_time;
+    concept_cooking;
+    concept_fish;
+    concept_water;
+    concept_boiling_water
+    
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Во время приготовления белой ухи, рыба закладывается не в воду, а в кипяток. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_white_ukha -> rrel_example: [ Во время приготовления белой ухи необходимо соблюдать ограниченное время варки пресноводной рыбы. ](* <- lang_ru;; *);;
+
+concept_white_ukha <= nrel_subdividing: ...
+(*  		
+	    <-concept_hot_white_ukha;;
+		<-concept_cold_black_ukha;;
+        	
+*);;

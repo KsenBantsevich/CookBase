@@ -1,0 +1,74 @@
+concept_tropical_fish<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Тропическая рыба]
+      (*<-lang_ru;;*);
+       [Tropical fish]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Тропическая рыба)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_fish;
+	 concept_warm_stream;
+	 concept_temperature
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Тропическая рыба - это рыба, которая может нормально существовать и перемещаться по теплым потокам, температура которых находится в пределах 16-30 градусов по Цельсию.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/tropical_fish.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Тропическая рыба, теплолюбивая рыба) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+  concept_heat_loving_fish;
+	concept_tropical_fish
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Тропическая рыба также называется теплолюбивой рыбой.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Тропическая рыба, оптимальная температура питания) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+  concept_optimum_supply_temperature;
+	concept_tropical_fish
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Оптимальная температура питания тропической рыбы +20-30 градусов по Цельсию.](*<-lang_ru;;*);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Тропическая рыба, арктическая рыба, оптимальная температура питания, рыба) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+  concept_tropical_fish;
+  concept_arctic_fish;
+  concept_optimum_supply_temperature;
+  concept_fish
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Тропическая рыба обычно значительно меньше по размерам, чем арктическая, что обуславливается оптимальной температурой питания рыб.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_tropical_fish -> rrel_example: [ Тропическая рыба обитает в таких течениях, как Гольфстрим, Северное атлантическое, Карибское, Южнопассатное, Ломоносова, Гвинейское, Бразильское и др.](* <- lang_ru;; *);;
+
+ concept_tropical_fish => nrel_inclusion: concept_family_crustacea; concept_family_mollusca;;

@@ -1,0 +1,105 @@
+concept_cusk <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Менек ]
+      (*<-lang_ru;;*);
+      [ Cusk ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Менек)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Менек - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/cusk.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Менек, вытянутое тело, мелкая чешуя )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_elongated_body;
+    concept_small_scales
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Менек имеет вытянутое тело, покрытое мелкой чешуей. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_cusk -> rrel_example: [ Менек питается ракообразными, моллюсками и мелкой рыбой. ](* <- lang_ru;; *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_cusk; concept_tropical_fish; concept_dnepr_river; concept_onega_lake; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Менек относится к теплолюбивым рыбам и обитает в реке Днепр, озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение(Менек , тропическая рыба, река Днепр, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_cusk;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность менька на 100 г продукта: 87 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Менек )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_cusk;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в меньке на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Менек )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_cusk;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в меньке на 100 г продукта: 19 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Менек )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_cusk;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в меньке на 100 г продукта: 0,7 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Менек )](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_cusk -> rrel_example: [ Мясо менька насыщенно витаминами А, С, Е, В, РР, а также микроэлементами цинка, йода и натрия. ](* <- lang_ru;; *);;
+ concept_cusk => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+concept_cusk <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_cusk;;
+		<-concept_boiled_cusk;;
+		<-concept_fried_cusk;;	
+*);;

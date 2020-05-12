@@ -1,0 +1,119 @@
+concept_carp<-sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [Сазан]
+      (*<-lang_ru;;*);
+
+      [Carp]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Сазан)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_freshwater_fish;
+	 concept_representative;
+     concept_family_cyprinidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Сазан - это пресноводная рыба, которая является представителем семейства карповые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/carp.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение (Сазан, всеядная рыба, крупная рыба, толстое тело, удлиненное тело, крупная чешуя, гладкая чешуя) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+	concept_omnivorous_fish;
+    concept_big_fish;
+	concept_fat_body;
+    concept_elongated_body;
+    concept_large_scales;
+    concept_smooth_scales
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Сазан является всеядной крупной рыбой с толстым, умеренно удлиненным телом, покрытым крупной, гладкой чешуей. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+statement -> ...(*
+    -> rrel_key_sc_element: concept_carp; concept_tropical_fish; concept_lena_river; concept_lake_vauger; concept_lake_red; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Лещ относится к теплолюбивым рыбам и обитает в теплых водах реки Лены, озера Красное, озеро Воже, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Лещ, тропическая рыба, река Лена, озеро Воже, озеро Красное, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_carp; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание углеводов в сазане на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание углеводов*, Сазан )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_carp; nrel_protein_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание белков в сазане на 100 г продукта: 18,2 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание белков*, Сазан )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_carp; nrel_fats_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание жиров в сазане на 100 г продукта: 2,7 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание жиров*, Сазан )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_carp; nrel_kkal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Пищевая ценность сазана на 100 г продукта: 97 ккал. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Сазан )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_carp -> rrel_example: [ Европейский сазан является самым часто встречаемым сазаном. ](* <- lang_ru;; *);;
+concept_carp -> rrel_example: [ Мясо сазана насыщенно витаминами А, В1, В2, С, Е, РР и микроэлементами кальция и фосфора. ](* <- lang_ru;; *);;
+concept_carp => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+concept_carp <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_carp;;
+		<-concept_boiled_carp;;
+		<-concept_fried_carp;;	
+*);;

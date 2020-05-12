@@ -1,0 +1,24 @@
+concept_fish=>nrel_idtf: [Fish](*<-lang_en;;*);;
+concept_fish=>nrel_main_idtf: [Рыба](*<-lang_ru;;*);;
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fish;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Рыба - это обширная группа челюстноротых, для которых характерно жаберное дыхание.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Рыба)](*<- lang_ru;;*);;
+       
+*);;
+
+statement -> ...(*
+    -> rrel_key_sc_element: concept_fish; concept_product; concept_vitamin; concept_mocroelement;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Рыба является одним из немногих продуктов, который богат большим количеством витаминов и микроэлементов. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Рыба, продукт, витамин, микроэлемент )](*<- lang_ru;;*);;
+*);;
+
+concept_fish -> rrel_example: [ Рыбу в кулинарии готовят различными методами: жарят, варят, готовят на пару, запекают, вялят, коптят, высушивают.](* <- lang_ru;; *);;
+concept_fish => rrel_inclusion: sea_fish; concept_freshwater_fish;;

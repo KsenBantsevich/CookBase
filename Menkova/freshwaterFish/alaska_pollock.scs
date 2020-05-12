@@ -1,0 +1,108 @@
+concept_alaska_pollock<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Минтай ]
+      (*<-lang_ru;;*);
+      [ Alaska pollock ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Минтай)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Минтай - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/alaska_pollock.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Минтай, спинной плавник, короткий усик, нижняя губа, пятнистая окраска, большой глаз )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	  concept_spawning;
+    concept_dorsal_fin;
+    concept_short_antenna;
+    concept_lower_lip;    
+    concept_spotted_coloration;
+    concept_large_eye
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Минтай имеет три спинных плавника, очень короткий усик под нижней губой, пятнистую окраску и больше глаза.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_alaska_pollock -> rrel_example: [ Минтай достигает половго созревания в возрасте трех лет.](* <- lang_ru;; *);;
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_alaska_pollock; concept_tropical_fish; concept_volga_river; concept_onega_lake; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Вомер относится к теплолюбивым рыбам и обитает в реке Волге, озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение(Минтай , тропическая рыба, река Волга, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_alaska_pollock;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность минтая на 100 г продукта: 72 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Минтай )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_alaska_pollock;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в минтае на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Минтай )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_alaska_pollock;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в минтае на 100 г продукта: 15,9 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Минтай )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_alaska_pollock;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в минтае на 100 г продукта: 0,9 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Минтай )](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_alaska_pollock -> rrel_example: [ Мясо минтая насыщенно витаминами группы В: В1, В3, В6 и В9, а также микроэлементами цинка, железа и натрия. ](* <- lang_ru;; *);;
+ concept_alaska_pollock => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+concept_alaska_pollock <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_alaska_pollock;;
+		<-concept_boiled_alaska_pollock;;
+		<-concept_fried_alaska_pollock;;	
+*);;

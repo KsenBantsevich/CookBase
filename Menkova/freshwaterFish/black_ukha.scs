@@ -1,0 +1,44 @@
+concept_black_ukha<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Черная уха ]
+      (*<-lang_ru;;*);
+       [ Black ukha ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Черная уха )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_ukha;
+	 concept_carp;
+     concept_carassius;
+     consept_cooking
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Черная уха - это уха, которая готовится из сазана и карася.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Черная уха, черный хлеб, пирог, еда )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_black_bread;
+    concept_food;
+    concept_cake    
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Черную уху едят с черным хлебом или с пирогами. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_black_ukha -> rrel_example: [ Черную уху нельзя варить в алюминиевой и чугунной посуде. ](* <- lang_ru;; *);;
+
+concept_black_ukha <= nrel_subdividing: ...
+(*  		
+	    <-concept_hot_black_ukha;;
+		<-concept_cold_black_ukha;;
+        	
+*);;

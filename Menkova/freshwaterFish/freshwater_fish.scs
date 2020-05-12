@@ -1,0 +1,45 @@
+concept_freshwater_fish<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Пресноводная рыба]
+      (*<-lang_ru;;*);
+       [Freshwater fish]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Пресноводная рыба)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_fish;
+	 concept_freshwater_pond;
+	 concept_life
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Пресноводная рыба - это рыба, которая всю жизнь или большую её часть проводит в пресноводном водоеме.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Пресноводная рыба, позвоночное животное, разнообразная группа) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_diverse_group;
+	concept_vertebrate_animal
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Пресноводные рыбы являются очень разнообразной группой позвоночных животных.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_freshwater_fish -> rrel_example: [Во всём мире пресноводная рыба ценится как один из лучших источников питания для человека.](* <- lang_ru;; *);;
+
+concept_freshwater_fish <= nrel_subdividing: ...
+(*  		
+		<-concept_family_cyprinidae;;
+		<-concept_family_percidae;;
+		<-concept_family_salmonidae;;
+		<-concept_family_sturgeon;;
+		<-concept_family_clupeidae;;
+		
+*);;

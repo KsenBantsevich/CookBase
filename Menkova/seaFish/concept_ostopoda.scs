@@ -1,0 +1,95 @@
+concept_ostopoda <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Осьминог ](*<-lang_ru;;*);
+      [ Ostopoda ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Осьминог )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_mollusca;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Осьминог - это представитель семейства морские моллюски.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/ostopoda.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_ostopoda; concept_tropical_fish; concept_black_sea; concept_sea_of_okhotsk; concept_pacific_ocean; concept_world_ocean; concept_bering_sea; concept_cave;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Осьминог является тропическим представителем и обитает в пещерах Мирового и Тихого океанов, Черном, Охотском и Беринговом морях.](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Осьминог, тропическая рыба, Тихий океан, Мировой океан, Черное море, Охотское море, Берингово море, пещера )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_ostopoda; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в осьминоге на 100 г продукта: 0г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, осьминог )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_kkal;concept_ostopoda;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность осьминога на 100 г продукта: 73 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, осьминог)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_kkal;concept_ostopoda;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность осьминога на 100 г продукта: 73 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, осьминог)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_protein_content;concept_ostopoda;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в осьминоге на 100 г продукта: 18,2 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, осьминог)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_fats_content;concept_ostopoda;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в осьминоге на 100 г продукта: 0 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, осьминог)](*<- lang_ru;;*);;
+   
+*);;
+
+ concept_ostopoda -> rrel_example: [ Мясо осьминога богато витаминами А, В1, В2, В3, В6, В12, С, Е, РР, а также микроэлементами магния и калия. ](* <- lang_ru;;*);;
+ concept_ostopoda => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

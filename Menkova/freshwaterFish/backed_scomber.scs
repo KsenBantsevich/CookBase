@@ -1,0 +1,45 @@
+concept_baked_scomber<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Запеченная скумбрия ]
+      (*<-lang_ru;;*);
+       [ Baked scomber ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Запеченная скумбрия )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_dish;
+	 concept_scomber;
+     concept_oven;
+     consept_cooking
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Запеченная скумбрия - это блюдо, приготовленное из скумбрии в духовке.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Запеченная скумбрия, лимон, лук, горчица, перец)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_onion;
+    concept_limon;
+    concept_mustard;
+    concept_pepper   
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Чаще всего скумбрию запекают с лимоном, луком, горчицей и перцем. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_baked_scomber -> rrel_example: [ Скумбрия, запеченная в фольге, сочнее. ](* <- lang_ru;; *);;
+
+concept_baked_scomber <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_scomber_with_limon;;
+        
+                	
+*);;

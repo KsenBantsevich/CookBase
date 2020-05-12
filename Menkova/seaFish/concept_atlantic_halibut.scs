@@ -1,0 +1,85 @@
+concept_atlantic_halibut <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Палтус атлантический ](*<-lang_ru;;*);
+      [ Atlantic halibut ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Палтус атлантический )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_pleuronectidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Палтус атлантический - это представитель семейства камбаловые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+			->rrel_example: "file://PICTURES/atlantic_halibut.jpg"(*
+				=>nrel_format:format_jpg;;
+			*);;
+       *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_atlantic_halibut; concept_arctical_fish; concept_atlantic_ocean; concept_arctic_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Палтус атлантический относится к холоднолюбивым рыбам и обитает в северной части Атлантического океана и в прилежащих частях Северного Ледовитого океана. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Палтус атлантический, артическая рыба, Атлантический океан, Северный Ледовитый океан )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_atlantic_halibut;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность палтуса атлантического на 100 г продукта: 102 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Палтус атлантический )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_atlantic_halibut;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в палтусе атлантическом на 100 г продукта: 0 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Палтус атлантический )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_atlantic_halibut;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в палтусе атлантическом на 100 г продукта: 19 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Палтус атлантический )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_atlantic_halibut;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в палтусе атлантическом на 100 г продукта: 5 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Палтус атлантический)](*<- lang_ru;;*);;
+   
+*);;
+
+
+concept_atlantic_halibut -> rrel_example: [ Мясо палтуса атлантического насыщено витаминами Е, D, витаминами группы В (в особенности B3, B6, B5 и  B2), глутаминовой и никотиновыми кислотами. ](* <- lang_ru;; *);;
+concept_atlantic_halibut => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

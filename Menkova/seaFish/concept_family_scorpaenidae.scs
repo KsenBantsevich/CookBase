@@ -1,0 +1,65 @@
+concept_family_scorpaenidae <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство скорпеновые]
+      (*<-lang_ru;;*);
+       [Family scorpaenidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство скорпеновые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_sea_fish;
+	 concept_subspecies;
+     concept_frashwater_perch;
+     concept_pink_cover
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example: 
+        [Семейство скорпеновые - это подвид океанических рыб, которые по форме сходны с пресноводным окунем, но у них большие голова и глаза, кожно-чешуйчатый покров розового цвета.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/scorpaenidae.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство скорпеновые, Атлантический океан, Черное море, Средиземное море, тропическая рыба )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_scorpaenidae;
+    concept_atlantic_ocean;
+    concept_black_sea;
+    concept_meriterranean_sea;
+    concept_tropical_fish
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Представители семейства скорпеновые являются обитателями теплых и тропических вод, обитают преимущественно в Атлантическом океане, Черном море и Средиземном море.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство скорпеновые, мясо, кость)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_scorpaenidae;
+    concept_meat;
+    concept_bone
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Мясо представителей семейства скорпеновые без мелких костей.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_scorpaenidae -> rrel_example: [ Из представителей семейства скорпеновые рекомендуется готовить отварные блюда.](* <- lang_ru;; *);;
+concept_family_scorpaenidae => nrel_inclusion: concept_pterois_volitans; concept_scorpaena_porcus;;

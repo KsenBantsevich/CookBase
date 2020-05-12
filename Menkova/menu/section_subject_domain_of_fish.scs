@@ -1,0 +1,13 @@
+section_subject_domain_of_fish
+=> nrel_main_idtf: 
+	[Раздел. Предметная область рыб]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of fish]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_fish = [*^"file://Subject_domains/subject_domain_of_fish.scsi"*];;
+
+section_subject_domain_of_fish -> rrel_key_sc_element: subject_domain_of_fish;;

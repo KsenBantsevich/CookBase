@@ -1,0 +1,9 @@
+subject_domain_of_fish => 
+nrel_main_idtf: 
+    [Предметная область рыбы](* <- lang_ru;;*);
+    [subject_domain_of_fish](*<-lang_en;;*);;
+subject_domain_of_fish <- subject_domain;;
+
+subject_domain_of_fish -> rrel_maximum_studied_object_class: concept_fish;;
+subject_domain_of_fish -> rrel_not_maximum_studied_object_class: concept_sea_fish; concept_freshwater_fish;;
+subject_domain_of_fish -> rrel_not_maximum_studied_object_class: concept_family_pleuronectidae; concept_family_sciaenidae; concept_family_carangidae; concept_family_sea_salmonidae; concept_family_scorpaenidae; concept_family_sea_scombridae; concept_family_crustacea; concept_family_sea_mollusca; concept_family_cyprinidae; concept_family_percidae; concept_family_salmonidae; concept_family_sturgeon; concept_family_clupeidae;;

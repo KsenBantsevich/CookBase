@@ -1,0 +1,44 @@
+concept_family_code<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство тресковые]
+      (*<-lang_ru;;*);
+       [Family code]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство тресковые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_freshwater_fish;
+	 concept_subspecies
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Семейство тресковые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Семейство тресковые, преставитель, мелкая чешуя, плавник, колючка )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_representative;
+    concept_fine_scales;
+    concept_fin;  
+    concept_spine
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ У представителей семейства тресковые чешуя очень мелкая и их плавники не несут колючек. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_code -> rrel_example: [ Налим - это наиболее распространенный представитель семейства лососевые.](* <- lang_ru;; *);;
+
+concept_family_code <= nrel_subdividing: ...
+(*  		
+		<-concept_allaska_pollock;;
+		<-concept_cusk;;
+		<-concept_gadus;;
+        <-concept_burbot;;	
+*);;

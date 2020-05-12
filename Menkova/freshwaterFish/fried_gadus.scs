@@ -1,0 +1,44 @@
+concept_fried_gadus<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Жареная треска ]
+      (*<-lang_ru;;*);
+       [ Fried gadus ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Жареная треска )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_dish;
+	 concept_gadus;
+     concept_fried;
+     consept_cooking;
+     concept_pan
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Жареная треска - это блюдо, приготовленное из трески, которое жарят на сковороде.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Жареная треска, сочность, белое вино)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_juiciness;
+    concept_white_wine
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Для того, чтобы жареная треска была сочной, используют белое вино. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_fried_gadus -> rrel_example: [ У жареной трески легко отделяется мясо от костей. ](* <- lang_ru;; *);;
+
+concept_fried_gadus <= nrel_subdividing: ...
+(*  		
+	    <-concept_meat_fried_gadus;;
+		
+
+*);;

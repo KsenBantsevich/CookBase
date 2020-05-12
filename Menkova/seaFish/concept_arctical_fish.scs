@@ -1,0 +1,73 @@
+concept_arctical_fish<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Арктическая рыба](*<-lang_ru;;*);
+       [Arctical fish](*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Арктическая рыба)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_fish;
+	 concept_warm_stream;
+	 concept_temperature
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Арктическая рыба - это рыба, которая может нормально существовать и перемещаться по холодным потокам, температура которых находится в пределах 4-20 градусов по Цельсию.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/arctical_fish.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Арктическая рыба, холодолюбивая рыба) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+  concept_cold_loving_fish;
+	concept_arctical_fish
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Арктическая рыба также называется холодолюбивой рыбой.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Арктическая рыба, оптимальная температура питания) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+  concept_optimum_supply_temperature;
+	concept_arctical_fish
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Оптимальная температура питания тропической рыбы +8-16 градусов по Цельсию.](*<-lang_ru;;*);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Арктическая рыба, тропическая рыба,  недостаток кислорода) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+  concept_tropical_fish;
+  concept_arctical_fish;
+  concept_lack_of_oxygen
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Арктическая рыба менее устойчива к недостатку кислорода, чем тропическая рыба.](*<-lang_ru;;*);;
+      *);;
+  *);;
+ concept_arctical_fish=>nrel_idtf:[Холоднолюбивая рыба] (* <- lang_ru;; *);;
+
+ concept_arctical_fish -> rrel_example: [ Арктическая рыба обитает в таких течениях, как Канарское, Лабрадорское, Бенгальское, Калифорнийское, Перуанское и др.](* <- lang_ru;; *);;
+
+ concept_arctical_fish => nrel_inclusion: nrel_inclusion: concept_family_pleuronectidae;  concept_family_carangidae; concept_family_salmonidae; concept_family_scorpaenidae; concept_family_scombridae;;

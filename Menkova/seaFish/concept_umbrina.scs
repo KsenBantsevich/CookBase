@@ -1,0 +1,80 @@
+concept_umbrina=>nrel_idtf: [ Umbrina ](*<-lang_en;;*);;
+concept_umbrina=>nrel_main_idtf: [ Умбрина ](*<-lang_ru;;*);;
+
+concept_umbrina <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.( Умбрина )] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Умбрина - это представитель семейства горбылевые .] (* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_umbrina <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/umbrina.png"(*
+			=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_umbrina; concept_tropical_fish; concept_warm_water; concept_indian_ocean; concept_pacific_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Умбрина относится к теплолюбивым рыбам и обитает в теплых водах Индийского и Тихиго океанов. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Умбрина , тропическая рыба, теплая вода, Индийский океан, Тихий океан)] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_kkal;concept_umbrina;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность умбрины на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Умбрина )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_umbrina;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в умбрине на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Умбрина)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_protein_content;concept_umbrina;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в умбрине на 100 г продукта: 17.5 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Умбрина )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_fats_content;concept_umbrina;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в умбрине на 100 г продукта: 2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Умбрина)](* <- lang_ru;; *);;
+   
+*);;
+
+
+ concept_umbrina -> rrel_example: [ Мясо умбрины насыщенно витаминами А, В, С и РР. ](* <- lang_ru;; *);;
+ concept_umbrina => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

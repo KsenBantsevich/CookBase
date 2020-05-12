@@ -1,0 +1,79 @@
+concept_larimichthys =>nrel_idtf: [Larimichthys ](*<-lang_en;;*);;
+concept_larimichthys=>nrel_main_idtf: [ Горбыль желтый ](*<-lang_ru;;*);;
+
+concept_larimichthys <- rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:[Oпр.( Горбыль желтый )] (* <- lang_ru;;*);;
+	<=nrel_sc_text_translation:...(*
+		-> [ Горбыль желтый - это представитель семейства горбылевые .] (* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...(*
+		-> concept_family_sciaenidae;concept_representative;;
+	*);;
+*);;
+
+concept_larimichthys <- rrel_key_sc_element: ... (*
+	<-illustration;;<=nrel_sc_text_translation:...(*
+		->rrel_example: "file://PICTURES/larimicuthys.jpg"(*
+			=>nrel_format:format_jpg;;
+		*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_larimichthys; concept_tropical_fish; concept_warm_water; concept_pacific_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Горбыль желтый относится к теплолюбивым рыбам и обитает в теплых водах Тихиго океанa. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Горбыль желтый, тропическая рыба, теплая вода, Тихий океан)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_larimichthys;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность горбыля желтого на 100 г продукта: 123 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Горбыль желтый )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_larimichthys;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в горбыле желтом на 100 г продукта: 0 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Горбыль желтый)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_larimichthys;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в горбыле желтом на 100 г продукта: 22.5 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Горбыль желтый )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_larimichthys;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в горбыле желтом на 100 г продукта: 6.3 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Горбыль желтый)](*<- lang_ru;;*);;
+   
+*);;
+
+ concept_larimichthys -> rrel_example: [ Мясо горбыля желтого насыщенно витаминами А, В1, В2, В5, В12, С, Zn и РР. ](* <- lang_ru;; *);;
+ concept_larimichthys => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

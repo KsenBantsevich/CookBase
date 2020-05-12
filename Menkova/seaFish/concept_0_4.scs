@@ -1,0 +1,2 @@
+concept_0_4 <- sc_node_not_relation;;
+concept_0_4 => nrel_main_idtf: [0-4] (*<- lang_ru;;*);;

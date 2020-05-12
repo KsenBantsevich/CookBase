@@ -1,0 +1,111 @@
+concept_salvelinus <- sc_node_not_relation;
+=> nrel_main_idtf:
+
+      [ Голец ]
+      (*<-lang_ru;;*);
+
+      [ Salvelinus ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.( Голец )] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_representative;
+     concept_family_salmonidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [ Голец - это представитель семейства лососевые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/salvunus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+
+      [ Утверждение ( Голец, мелкое пятнышко, светлое пятнышко, тело, горбатое рыло, короткое рыло) ] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+
+  	concept_fine_speck;
+    concept_light_speck;
+    concept_body;
+    concept_humpback_snout;
+    concept_short_snout
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+[ Голец имеет много мелких светлых пятнышек на теле, горбатое и короткое рыло. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal; concept_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность гольца на 100 г продукта: 135 ккал .](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Голец)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в гольце на 100 г продукта: 0 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Голец)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в гольце на 100 г продукта: 22,4 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Голец )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_salvelinus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в гольце на 100 г продукта: 5,7 г] (*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Голец)](*<- lang_ru;;*);;
+   
+*);;
+
+
+ concept_salvelinus -> rrel_example: [ Мясо гольца насыщенно витаминами А, Е, В1, В2, В3, В6, В12. ](* <- lang_ru;; *);;
+ concept_salvelinus => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+
+ concept_salvelinus -> rrel_example: [ Голец занесен в красную книгу Камчатского края.](* <- lang_ru;; *);;
+
+concept_salvelinus <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_salvelinus;;
+		<-concept_boiled_salvelinus;;
+		<-concept_fried_salvelinus;;	
+*);;

@@ -1,0 +1,96 @@
+concept_bream<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Лещ](*<-lang_ru;;*);
+      [Bream](*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+
+      [Опр.(Лещ)] (* <- lang_ru;; *);;
+
+    => nrel_using_constants: {
+
+	 concept_freshwater_fish;
+	 concept_representative;
+   concept_family_cyprinidae
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+
+        [Лещ - это пресноводная рыба, которая является представителем семейства карповые.] (* <- lang_ru;; *);;
+
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/bream.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...(*
+    -> rrel_key_sc_element: concept_bream; concept_tropical_fish; concept_lena_river; concept_yenisei_river; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Лещ относится к теплолюбивым рыбам и обитает в теплых водах реки Лены, реки Енисей, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Лещ, тропическая рыба, река Лена, река Енисей, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bream; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание углеводов в леще на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание углеводов*, Лещ )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bream; nrel_protein_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание белков в леще на 100 г продукта: 17,1 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание белков*, Лещ )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bream; nrel_fats_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание жиров в леще на 100 г продукта: 4,4 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание жиров*, Лещ )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_bream; nrel_kkal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Пищевая ценность леща на 100 г продукта: 105 ккал. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Лещ )](*<- lang_ru;;*);;
+   
+*);;
+
+
+concept_bream -> rrel_example: [В период нереста лещ охотно поедает икру рыб других видов.](* <- lang_ru;; *);;
+concept_bream -> rrel_example: [ Мясо леща насыщенно витаминами В1, В2, Е, РР и микроэлементами железа, цинка, калия. ](* <- lang_ru;; *);;
+concept_bream => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+
+concept_bream <= nrel_subdividing: ...
+(*  		
+		<-concept_baked_bream;;
+		<-concept_boiled_bream;;
+		<-concept_fried_bream;;	
+*);;

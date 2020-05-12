@@ -1,0 +1,82 @@
+concept_pink_salmon <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Горбуша ]
+      (*<-lang_ru;;*);
+      [ Pink salmon ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Горбуша )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_representative;
+	 concept_family_salmonidae
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Горбуша - это представитель семейства лососевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+   <- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/pink_salmon.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+   statement -> ...(*
+    -> rrel_key_sc_element: concept_pink_salmon; concept_tropical_fish; concept_lake_white; concept_lake_onega; concept_lake_red; concept_kesey_lake;;
+    <= nrel_sc_text_translation:...(*
+            -> [ Карась относится к теплолюбивым рыбам и обитает в теплых водах озера Белое, озера Онежское, озера Красное, озера Кизи и других. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Горбуша, тропическая рыба, озеро Красное, озеро Белое, озеро Онежское, озеро Кизи)](*<- lang_ru;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pink_salmon; nrel_carbohydrates_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание углеводов в горбуше на 100 г продукта: 0 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание углеводов*, Горбуша )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pink_salmon; nrel_protein_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание белков в горбуше на 100 г продукта: 19 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание белков*, Горбуша )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pink_salmon; nrel_fats_content;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Содержание жиров в горбуше на 100 г продукта: 5,6 г. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( содержание жиров*, Горбуша)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_pink_salmon; nrel_kkal;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Пищевая ценность Горбуша на 100 г продукта: 127 ккал. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение( пищевая ценность*, Горбуша )](*<- lang_ru;;*);;
+   
+*);;
+
+concept_pink_salmon -> rrel_example: [ Мясо горбуши насыщенно витаминами А, В1, В2, В3, В6, В9, В12 и микроэлементами кальция, магния, калия и натрия. ](* <- lang_ru;; *);;
+concept_pink_salmon => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+

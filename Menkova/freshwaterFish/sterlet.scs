@@ -1,0 +1,105 @@
+concept_sterlet <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Стерлядь ]
+      (*<-lang_ru;;*);
+      [ Sterlet ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Стерлядь )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sturgeon;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Стерлядь - это представитель семейства осетровые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/sterlet.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Стерлядь, личинка, моллюск, беспозвоночное )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_larva; 
+    concept_mollusk;
+    concept_invertebrate
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Взрослые особи стердяли питаются личинками, моллюсками и другими беспозвоночными. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_sterlet; concept_tropical_fish; concept_onega_lake; concept_dnepr_river; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Стерлядь относится к теплолюбивым рыбам и обитает в реке Днепр, озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Стерлядь , тропическая рыба,река Днепр, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_sterlet;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность стерляди на 100 г продукта: 122 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Стерлядь )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+-> rrel_key_sc_element:nrel_carbohydrates_content;concept_sterlet;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в стерляди на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Стерлядь )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_sterlet;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в стерляди на 100 г продукта: 17  г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Стерлядь )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_sterlet;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в стерляди на 100 г продукта: 6,1 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Стерлядь )](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_sterlet -> rrel_example: [ Мясо стерляди насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+ concept_sterlet => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+ concept_sterlet -> rrel_example: [ Стерлядь занесена в Красную книгу России. ](* <- lang_ru;; *);;
+ concept_sterlet <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_sterlet;;
+		<-concept_boiled_sterlet;;
+		<-concept_fried_sterlet;;	
+*);;

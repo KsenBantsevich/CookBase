@@ -1,0 +1,107 @@
+concept_burbot <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Налим ]
+      (*<-lang_ru;;*);
+      [ Burbot ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Налим )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_code;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Налим - это представитель семейства тресковые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+   <- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/burbot.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Налим, удлиненное тело, округлое тело, невысокое тело, передняя часть )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_elongated_body; 
+    concept_rounded_body;
+    concept_low_body; 
+    concept_front_part
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Налим имеет удлиненное, невысокое, округлое тело в передней части и сильно сжатое с боков. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+concept_burbot -> rrel_example: [ Налим более активен в холодной воде. ](* <- lang_ru;; *);;
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_burbot; concept_tropical_fish; concept_lena_river; concept_onega_lake; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Налим относится к теплолюбивым рыбам и обитает в реке Лена, озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение(Налим , тропическая рыба, река Лена, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_burbot;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность налима на 100 г продукта: 80 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Налим )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_burbot;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в налиме на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Налим )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_burbot;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в налиме на 100 г продукта: 18,8 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Налим )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_burbot;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в налиме на 100 г продукта: 0,6 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Налим )](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_burbot -> rrel_example: [ Мясо налима насыщенно витаминами группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+ concept_burbot => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+concept_burbot <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_burbot;;
+		<-concept_boiled_burbot;;
+		<-concept_fried_burbot;;	
+*);;

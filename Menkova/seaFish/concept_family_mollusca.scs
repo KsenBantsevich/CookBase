@@ -1,0 +1,67 @@
+concept_family_sea_mollusca <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство морские моллюски]
+      (*<-lang_ru;;*);
+       [Family sea mollusca]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство морские моллюски)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+     concept_family_sea_mollusca;
+	 concept_sea_fish;
+	 concept_subspecies;
+     concept_bivalve_shell;
+     concept_head;
+     concept_leg
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example: 
+        [Семейство морские моллюски - это подвид морских рыб, который отличается наличием двустворчатого панциря или головы и ноги.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/mollusca.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство морские моллюски, Атлантический океан, Черное море, Средиземное море )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_sea_mollusca;
+    concept_tropical_ocean;
+    concept_black_sea;
+    concept_meriterranean_sea
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Представители семейства морские моллюски являются обитателями теплых и тропических вод, обитают преимущественно в Атлантическом океане, Черном море и Средиземном море.](*<-lang_ru;;*);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Семейство морские моллюски, мясо, сливочный вкус)] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_family_sea_mollusca;
+    concept_meat;
+    concept_creamy_taste
+
+};; 
+
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Мясо представителей семейства морские моллюски нежное, маслянистое и имеет сливочный вкус .](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_sea_mollusca -> rrel_example: [ Из представителей семейства морские моллюски готовят изысканные блюда, чаще всего на пару, в сыром виде, запеченом а также с добавлением алкоголя.](* <- lang_ru;; *);;
+concept_family_sea_mollusca => nrel_inclusion: concept_mytilus; concept_ostreidae; concept_petinoidea; concept_siliqua_patula; concept_lithophaga; concept_ostopoda; concept_teuthida;;

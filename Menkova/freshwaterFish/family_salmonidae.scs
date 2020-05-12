@@ -1,0 +1,45 @@
+concept_family_salmonidae<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [Семейство лососевые]
+      (*<-lang_ru;;*);
+       [Family salmonidae]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.(Семейство лососевые)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_freshwater_fish;
+	 concept_subspecies
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Семейство лососевые - это подвид пресноводных рыб.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение (Семейство лососевые, образ жизни, внешний вид, окраска, внешнее условие )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_fish;
+    concept_lifestyle;
+    concept_appearance;
+    concept_color;    
+    concept_external_condition
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Рыбы из семейства лососевые легко изменяют образ жизни, внешний вид, окраску из-за внешних условий.](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_family_salmonidae -> rrel_example: [Семга - это наиболее известный представитель семейства лососевые.](* <- lang_ru;; *);;
+
+concept_family_salmonidae <= nrel_subdividing: ...
+(*  		
+		<-concept_salmon;;
+		<-concept_pink_salmon;;
+		<-concept_chum_salmon;;
+        <-concept_salvenus;;	
+*);;

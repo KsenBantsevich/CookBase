@@ -1,0 +1,84 @@
+concept_sea_coregonus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской сиг ](*<-lang_ru;;*);
+      [ Sea coregonus ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской сиг)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морской сиг - это представитель семейства морские лососёвые.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/coregonus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_coregonus; concept_tropical_fish; concept_pacific_ocean; concept_indian_ocean;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской сиг является тропическим представителем и обитает в Тихом, Индийском океанах. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Морской сиг, тропическая рыба, Тихий океан, Индийский океан )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_coregonus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в морском сиге на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, морской сиг )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_sea_coregonus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность морского сига на 100 г продукта: 144 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, морской сиг)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_sea_coregonus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в морском сиге на 100 г продукта: 18 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, морской сиг)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_sea_coregonus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в морском сиге на 100 г продукта: 4,75 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, морской сиг)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_sea_coregonus -> rrel_example: [ Мясо морского сига богато витамином PP, а также микроэлементами железа, цинка и хрома. ](* <- lang_ru;;*);;
+ concept_sea_coregonus => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;

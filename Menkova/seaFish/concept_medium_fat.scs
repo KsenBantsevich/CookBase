@@ -1,0 +1,2 @@
+concept_medium_fat <- sc_node_not_relation;;
+concept_medium_fat => nrel_main_idtf: [ средне жирные ] (*<- lang_ru;;*);;

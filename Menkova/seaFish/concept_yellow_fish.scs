@@ -1,0 +1,84 @@
+concept_yellow_sole <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Камбала желтопёрая ](*<-lang_ru;;*);
+      [ Yellow sole ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Камбала желтопёрая )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_pleuronectidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Камбала желтопёрая - это представитель семейства камбаловые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/yellow_sole.png"(*
+                    =>nrel_format:format_png;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	concept_yellow_sole; concept_arctical_fish; concept_japanese_sea; concept_sea_of_okhotsk; concept_bering_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Камбала желтоперая относится к холоднолюбивым рыбам и обитает в Японском, Охотском и Беринговом морях. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Камбала желтопёрая, холоднолюбивая рыба, Японское море, Охотское море, Берингово море )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_carbohydrates_content;concept_yellow_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в камбале жестопёрой на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, камбала желтопёрая)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_kkal;concept_yellow_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность камбалы жестопёрой на 100 г продукта: 80 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, камбала желтопёрая)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_protein_content;concept_yellow_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в камбале желтопёрой на 100 г продукта: 15 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, камбала желтопёрая)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:	nrel_fats_content;concept_yellow_sole;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в камбале желтопёрой на 100 г продукта: 3 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, камбала желтопёрая)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_yellow_sole -> rrel_example: [ Камбала желтоперая составляет большую часть рыбы, употребляемой в пищу, у датчан. ](* <- lang_ru;; *);;
+ concept_yellow_sole => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

@@ -1,0 +1,85 @@
+concept_caridea <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Креветка ](*<-lang_ru;;*);
+      [ Caridea ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Креветка )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_crustacea;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Креветка - это представитель семейства ракообразные.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/caridea.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_caridea; concept_tropical_fish; concept_japanese_sea; concept_sea_of_okhotsk; concept_arctical_fish; concept_pacific_ocean; concept_bering_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Креветка является и тропическим, и арктическим представителем, но обитает преимущественно в Тихом океане, Японском, Охотском и Беринговом морях. ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Креветка, тропическая рыба, арктическая рыба, Японское море, Тихий океан, Охотское море, Берингово море )](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_caridea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в креветке на 100 г продукта: 1 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, креветка)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_caridea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность креветки на 100 г продукта: 99 ккал ](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, креветка)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_caridea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в креветка на 100 г продукта: 24 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, креветка)](*<- lang_ru;;*);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_fats_content;concept_caridea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в креветке на 100 г продукта: 1,2 г](*<- lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, креветка)](*<- lang_ru;;*);;
+   
+*);;
+
+
+ concept_caridea -> rrel_example: [ Мясо креветки богато витаминами В2, В3, В6, В12, С, Е, РР, а также микроэлементами магния, кальция, меди и цинка. ](* <- lang_ru;;*);;
+ concept_caridea => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

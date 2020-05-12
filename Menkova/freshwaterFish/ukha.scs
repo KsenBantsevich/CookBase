@@ -1,0 +1,48 @@
+concept_ukha<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Уха ]
+      (*<-lang_ru;;*);
+       [ Ukha ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Уха )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_russian_dish;
+	 concept_national_dish;
+     concept_fish;
+     concept_soup;
+     consept_cooking
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Уха - это русское национальное блюдо, разновидность супа, приготовленного из рыбы.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Уха, история, рыбный суп, готовка, рыба, семейство осетровые )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_history;
+    concept_cooking;
+    concept_fish;
+    concept_family_sturgeon
+    
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Исторически сложилось, что уха - это рыбный суп, приготовленный из конкретных рыб семейства осетровые. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_ukha -> rrel_example: [ Существуют такие разновидности классической ухи, как белая уха, черная уха, красная уха и тройная уха.](* <- lang_ru;; *);;
+
+concept_ukha <= nrel_subdividing: ...
+(*  		
+	    <-concept_white_ukha;;
+		<-concept_black_ukha;;
+        <-concept_red_ukha;;
+        	
+*);;

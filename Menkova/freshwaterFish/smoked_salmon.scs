@@ -1,0 +1,45 @@
+concept_smoked_salmon<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Копченая семга ]
+      (*<-lang_ru;;*);
+       [ Smoked salmon]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Копченая семга )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_product;
+	 concept_meat_salmon;
+     concept_process;
+     concept_smoking
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Копченая семга - это продукт из мяса семги, прошедший процесс копчения.] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Копченая семга, способ, горячее копчение, холодное копчение, готовка )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+    concept_hot_smoking;
+    concept_method;
+    concept_cold_smoking;
+    concept_cooking
+    
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Готовить семгу способом горячего копчения легче, чем холодного копчения](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_smoked_salmon -> rrel_example: [ Копченую семгу часто добавляют в различные блюда.](* <- lang_ru;; *);;
+
+concept_smoked_salmon <= nrel_subdividing: ...
+(*  		
+	    <-concept_hot_smoked_salmon;;
+		<-concept_cold_smoked_salmon;;	
+*);;

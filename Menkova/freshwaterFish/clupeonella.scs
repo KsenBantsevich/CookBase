@@ -1,0 +1,109 @@
+concept_clupeonella <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Тюлька ]
+      (*<-lang_ru;;*);
+      [ Clupeonella ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Тюлька )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_clupeidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Тюлька - это представитель семейства сельдевые .] (* <- lang_ru;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/clupeonella.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Тюлька, сантиметр, длина, тело, жизнь, год )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_centimetr; 
+    concept_length;
+    concept_body;
+    concept_life;
+    concept_year
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Длина тела тюльки достигает до девяти в половиной саниметров, а максимальная продолжительность жизни два года. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+  statement -> ...
+(*
+    -> rrel_key_sc_element:concept_clupeonella; concept_tropical_fish; concept_onega_lake; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Тюлька относится к теплолюбивым рыбам и обитает в озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение( Тюлька , тропическая рыба, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_clupeonella;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность тюльки на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, Тюлька )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_carbohydrates_content;concept_clupeonella;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в тюльке на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, Тюлька )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_clupeonella;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в тюльке на 100 г продукта: 17,5  г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, Тюлька )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_clupeonella;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в тюльке на 100 г продукта: 2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, Тюлька )](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_clupeonella -> rrel_example: [ Мясо тюльки насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+ concept_clupeonella => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
+
+ concept_clupeonella -> rrel_example: [ Тюлька обитает в пресноводном озере Абрау. ](* <- lang_ru;; *);;
+ concept_clupeonella <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_clupeonella;;
+		<-concept_boiled_clupeonella;;
+		<-concept_fried_clupeonella;;	
+*);;

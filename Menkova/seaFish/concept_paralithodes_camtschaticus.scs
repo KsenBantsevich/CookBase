@@ -1,0 +1,85 @@
+concept_paralithodes_camtschaticus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Камчатский краб ](*<-lang_ru;;*);
+      [ Paralithodes camtschaticus ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Камчатский краб )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_crustacea;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Камчатский краб - это представитель семейства ракообразные.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/paralithodes.png"(*
+                    =>nrel_format:format_png;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_paralithodes_camtschaticus; concept_tropical_fish; concept_japanese_sea; concept_sea_of_okhotsk; concept_bering_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Камчатский краб относится к тропическим представителям, обитает преимущественно в Японском, Охотском и Беринговом морях. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf:[Утверждение ( Каматский краб, тропическая рыба, Японское море, Охотское море, Берингово море )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_paralithodes_camtschaticus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в камчатском крабе на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание углеводов*, камчатский краб)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_kkal;concept_paralithodes_camtschaticus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность камчатского краба на 100 г продукта: 82 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (пищевая ценность*, камчатский краб)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_protein_content;concept_paralithodes_camtschaticus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в камчатском крабе на 100 г продукта: 18,2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание белков*, камчатский краб)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_paralithodes_camtschaticus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в камчатском крабе на 100 г продукта: 1 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf:[Утверждение (содержание жиров*, камчатский краб)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_paralithodes_camtschaticus -> rrel_example: [ Мясо камчатского краба отличается мягкостью и сочностью, обладает очень нежным, тонким, изысканным вкусом, причём он сохраняется даже в процессе консервации. ](* <- lang_ru;; *);;
+ concept_paralithodes_camtschaticus -> rrel_example: [ Мясо камчатского краба богато витаминами А, В, С, РР, а также микроэлементами натрия, магния, калия, кальция, меди и цинка. ](* <- lang_ru;;*);;
+ concept_paralithodes_camtschaticus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;

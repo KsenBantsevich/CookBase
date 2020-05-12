@@ -1,0 +1,84 @@
+concept_sea_thymallus <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Морской хариус ](*<-lang_ru;;*);
+      [ Sea thymallus ](*<-lang_en;;*);
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Морской хариус)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sea_salmonidae;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [ Морской хариус - это представитель семейства морские лососёвые.] (* <- lang_ru;; *);;
+    *);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/thymallus.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_sea_thymallus; concept_arctical_fish; concept_pacific_ocean; concept_arctic_ocean; concept_mediterranean_sea;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Морской хариус является арктическим представителем и обитает в Тихом океане, Северном Ледовитом океане и Средиземном море. ](*<-lang_ru;;*);;
+        *);;
+    => nrel_main_idtf: [Утверждение ( Морской хариус, арктическая рыба, Тихий океан, Северный Ледовитый океан, Средиземное море )] (* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: nrel_carbohydrates_content;concept_sea_thymallus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание углеводов в морском хариусе на 100 г продукта: 0 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание углеводов*, морской хариус )](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_kkal;concept_sea_thymallus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пищевая ценность морского хариуса на 100 г продукта: 88 ккал ](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (пищевая ценность*, морской хариус)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_protein_content;concept_sea_thymallus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание белков в морском хариусе на 100 г продукта: 17,5 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание белков*, морской хариус)](* <- lang_ru;; *);;
+   
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element:nrel_fats_content;concept_sea_thymallus;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Содержание жиров в морском хариусе на 100 г продукта: 2 г](* <- lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение (содержание жиров*, морской хариус)](* <- lang_ru;; *);;
+   
+*);;
+
+ concept_sea_thymallus -> rrel_example: [ Мясо морского хариусе богато витамином PP, а также микроэлементами никеля, цинка и хрома. ](* <- lang_ru;;*);;
+ concept_sea_thymallus => nrel_healthy_fat_content: (concept_skinny <- concept_0_4);;
