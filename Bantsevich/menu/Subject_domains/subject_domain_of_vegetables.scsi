@@ -20,7 +20,6 @@ concept_vegetables;
 	concept_tomat;
 	concept_pumk;
 	concept_pulses;
-	concept_bean;
 	concept_cereal;
 	concept_desser;;
 
