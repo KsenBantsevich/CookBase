@@ -89,7 +89,7 @@ concept_sugar
 	=> nrel_main_idtf: [сахар]
 		(* <- lang_ru;; *);;
 		
-concept_alcohol
+concept_spirt
 	<- sc_node_not_relation;
 	=> nrel_main_idtf: [спирт]
 		(* <- lang_ru;; *);;
@@ -141,7 +141,3 @@ concept_milk_product
 	=> nrel_main_idtf: [молочный продукт]
 		(* <- lang_ru;; *);;
 
-concept_alcohol
-	<- sc_node_not_relation;
-	=> nrel_main_idtf: [алкоголь]
-		(* <- lang_ru;; *);;
