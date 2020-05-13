@@ -1,6 +1,5 @@
 nrel_sugar_content
 	=>nrel_idtf:[sugar content*] (* <- lang_en;; *);
-	=>nrel_system_identifier:[nrel_sugar_content] (* <- lang_en;; *);
 	=>nrel_main_idtf:[содержание сахара*] (* <- lang_ru;; *);
 	<- sc_node_norole_relation;;
 

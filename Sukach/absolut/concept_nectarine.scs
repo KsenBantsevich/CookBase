@@ -20,6 +20,16 @@ statement ->...
 	
 *);;
 
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_nectarine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Их едят свежими, используют в десертах и джемах, для производства консервированных компотов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Нектарин, применение)](*<- lang_ru;;*);;
+	
+*);;
+
+
 concept_nectarine=>nrel_sugar_content : 8_g
 (*
 	=> nrel_main_idtf:[8 грамма]	

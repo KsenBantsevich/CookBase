@@ -11,9 +11,9 @@ subject_domain_of_fruit
 -> rrel_maximum_studied_object_class:
 concept_fruit;
 -> rrel_not_maximum_studied_object_class:
-{
+
 	concept_stone_fruit;
 	concept_pome_fruit;
 	concept_citrus_fruit;
-	concept_exotic_fruit
-};;
+	concept_exotic_fruit;;
+
