@@ -1,0 +1,16 @@
+subject_domain_of_mechanical_culinary_processing
+=> nrel_main_idtf:
+[Предметная область механической кулинарной обработки]
+(* <- lang_ru;;*);
+[Subject domain of mechanical culinary processing]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_mechanical_culinary_processing;
+-> rrel_not_maximum_studied_object_class:
+concept_slicing;
+
+=>nrel_private_subject_domain:
+subject_domain_of_slicing;;

@@ -1,0 +1,11 @@
+subject_domain_of_spicy_vegitables
+=> nrel_main_idtf:
+[Предметная область пряных овощей]
+(* <- lang_ru;;*);
+[Subject domain of spicy vegitables]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_spicy_vegitable;;

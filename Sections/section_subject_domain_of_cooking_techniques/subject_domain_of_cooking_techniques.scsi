@@ -1,0 +1,20 @@
+subject_domain_of_cooking_techniques
+=> nrel_main_idtf:
+[Предметная область кулинарных техник]
+(* <- lang_ru;;*);
+[Subject domain of cooking techniques]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_cooking_techniques;
+-> rrel_not_maximum_studied_object_class:
+concept_mechanical_culinary_processing;
+concept_termal_culinary_processing;
+concept_chemical_culinary_processing;
+
+=>nrel_private_subject_domain:
+subject_domain_of_mechanical_culinary_processing;
+subject_domain_of_termal_culinary_processing;
+subject_domain_of_chemical_culinary_processing;;

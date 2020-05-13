@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_battonet_slicing;;
+concept_battonet_slicing => nrel_main_idtf:
+[нарезка брусочки](*<-lang_ru;;*);
+[battonet slicing] (* <-lang_en;; *);;
+concept_straw_slicing -> concept_battonet_slicing;;

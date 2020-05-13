@@ -1,0 +1,23 @@
+subject_domain_of_horticultural_products
+=> nrel_main_idtf:
+[Предметная область плодоовощной продукции]
+(* <- lang_ru;;*);
+[Subject domain of horticultural products]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_horticultural_products;
+
+-> rrel_not_maximum_studied_object_class:
+concept_vegetables;
+concept_fruit;
+concept_berries;
+concept_nuts;
+
+=>nrel_private_subject_domain:
+subject_domain_of_vegetables;
+subject_domain_of_fruit;
+subject_domain_of_berries;
+subject_domain_of_nuts;;
