@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_large_dice_slicing;;
+concept_large_dice_slicing => nrel_main_idtf:
+[нарезка крупные кубики](*<-lang_ru;;*);
+[large dice slicing] (* <-lang_en;; *);;
+concept_dice_slicing -> concept_large_dice_slicing;;

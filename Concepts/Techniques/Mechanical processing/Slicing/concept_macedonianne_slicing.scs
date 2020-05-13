@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_macedonianne_slicing;;
+concept_macedonianne_slicing => nrel_main_idtf:
+[нарезка македонские кубики](*<-lang_ru;;*);
+[macedonianne slicing] (* <-lang_en;; *);;
+concept_dice_slicing -> concept_macedonianne_slicing;;

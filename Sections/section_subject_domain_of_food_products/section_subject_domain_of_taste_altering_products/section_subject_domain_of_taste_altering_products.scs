@@ -1,0 +1,35 @@
+section_subject_domain_of_taste_altering_products
+=> nrel_main_idtf: 
+	[Раздел. Предметная область вкусовых продуктов]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of taste-altering products]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- non_atomic_section;;
+
+section_subject_domain_of_taste_altering_products = [*^"file://subject_domain_of_taste_altering_products.scsi"*];;
+
+section_subject_domain_of_taste_altering_products
+
+<= nrel_section_decomposition:
+	{
+	section_subject_domain_of_spices
+		(*
+		=> nrel_section_base_order:
+			 section_subject_domain_of_mixtures_of_spices;;
+		*);	
+    section_subject_domain_of_mixtures_of_spices
+		(*
+		=> nrel_section_base_order:
+			section_subject_domain_of_sauces;;
+		*);
+	section_subject_domain_of_sauces
+		(*
+		=> nrel_section_base_order:
+			section_subject_domain_of_alcohol;;
+		*);
+	section_subject_domain_of_alcohol
+	};
+
+-> rrel_key_sc_element: subject_domain_of_taste_altering_products;;

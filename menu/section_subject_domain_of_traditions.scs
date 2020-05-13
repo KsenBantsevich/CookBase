@@ -1,12 +1,12 @@
-section_subject_domain_of_traditions
+section_subject_domain_of_culinary_traditions
 => nrel_main_idtf: 
-	[Раздел. Предметная область традиций в кулинарии]
+	[Раздел. Предметная область кулинарных традиций]
 	(* <- lang_ru;;*);
-	[Section. Subject domain of traditions]
+	[Section. Subject domain of culinary traditions]
 	(* <- lang_en;; *);
 
 <- not_enough_formed_structure;
 <- atomic_section;;
 
-section_subject_domain_of_traditions
--> rrel_key_sc_element: subject_domain_of_traditions;;
+section_subject_domain_of_culinary_traditions
+-> rrel_key_sc_element: subject_domain_of_culinary_traditions;;

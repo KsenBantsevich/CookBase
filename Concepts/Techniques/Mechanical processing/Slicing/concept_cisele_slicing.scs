@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_cisele_slicing;;
+concept_cisele_slicing => nrel_main_idtf:
+[нарезка сизле](*<-lang_ru;;*);
+[cisele slicing] (* <-lang_en;; *);;
+concept_dice_slicing -> concept_cisele_slicing;;

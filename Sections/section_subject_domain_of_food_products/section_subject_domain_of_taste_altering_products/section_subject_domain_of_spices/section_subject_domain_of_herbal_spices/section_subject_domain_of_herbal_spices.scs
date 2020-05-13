@@ -1,0 +1,25 @@
+section_subject_domain_of_herbal_spices
+=> nrel_main_idtf: 
+	[Раздел. Предметная область специй растительного происхождения]
+	(* <- lang_ru;;*);
+	[Section. Subject domain of herbal spices]
+	(* <- lang_en;; *);
+
+<- not_enough_formed_structure;
+<- atomic_section;;
+
+section_subject_domain_of_herbal_spices = [*^"file://subject_domain_of_herbal_spices.scsi"*];;
+
+section_subject_domain_of_herbal_spices
+
+<= nrel_section_decomposition:
+	{
+	section_subject_domain_of_spicy_herbs
+		(*
+		=> nrel_section_base_order:
+			 section_subject_domain_of_spicy_vegitables;;
+		*);
+	section_subject_domain_of_spicy_vegitables
+	};
+
+-> rrel_key_sc_element: subject_domain_of_herbal_spices;;

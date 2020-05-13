@@ -1,0 +1,10 @@
+sc_node_not_relation -> concept_slicing;;
+concept_slicing => nrel_main_idtf:
+[нарезка](*<-lang_ru;;*);
+[slicing] (* <-lang_en;; *);
+ <= nrel_subdividing:
+{		
+	concept_dice_slicing;
+	concept_straw_slicing
+		
+};;

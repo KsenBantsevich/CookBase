@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_medium_dice_slicing;;
+concept_medium_dice_slicing => nrel_main_idtf:
+[нарезка средние кубики](*<-lang_ru;;*);
+[medium dice slicing] (* <-lang_en;; *);;
+concept_dice_slicing -> concept_medium_dice_slicing;;

@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_straw_slicing;;
+concept_straw_slicing => nrel_main_idtf:
+[нарезка соломка](*<-lang_ru;;*);
+[straw slicing] (* <-lang_en;; *);;

@@ -1,0 +1,24 @@
+subject_domain_of_taste_altering_products
+=> nrel_main_idtf:
+[Предметная область вкусовых продуктов]
+(* <- lang_ru;;*);
+[Subject domain of taste-altering products]
+(* <- lang_en;; *);
+
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class:
+concept_taste_altering_product;
+-> rrel_not_maximum_studied_object_class:
+concept_spice;
+concept_mixture_of_spices;
+concept_sauce;
+concept_tea;
+concept_coffee;
+concept_alcohol;
+
+=>nrel_private_subject_domain:
+subject_domain_of_spices;
+subject_domain_of_mixtures_of_spices;
+subject_domain_of_sauces;
+subject_domain_of_alcohol;;

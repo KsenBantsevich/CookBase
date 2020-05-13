@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_brunoise_slicing;;
+concept_brunoise_slicing => nrel_main_idtf:
+[нарезка брюнуаз](*<-lang_ru;;*);
+[brunoise slicing] (* <-lang_en;; *);;
+concept_dice_slicing -> concept_brunoise_slicing;;
