@@ -1,12 +1,12 @@
 concept_longan
 	=>nrel_idtf:[longan] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Лонган] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[лонган] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_longan;;
 	<= nrel_sc_text_translation: ...(*->[Лонган - плод вечнозеленого дерева семейства Сапиндовые.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Лонган)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (лонган)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_longan;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Лонган известен под названием «глаз дракона».](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Лонган)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (лонган)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -29,10 +29,19 @@ concept_longan=>nrel_sugar_content : 12_g
 	<- concept_g;;
 *);;
 
+concept_longan=>nrel_fiber_content : 1.1_g
+(*
+	=> nrel_main_idtf:[1.1 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 illustration -> ...
 (*
 	->rrel_key_sc_element: concept_longan;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//longan.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Лонган)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (лонган)](*<- lang_ru;;*);;
 *);;
 

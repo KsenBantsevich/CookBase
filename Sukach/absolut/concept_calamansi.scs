@@ -1,12 +1,12 @@
 concept_calamansi
 	=>nrel_idtf:[calamansi] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Каламанси] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[каламанси] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_calamansi;;
 	<= nrel_sc_text_translation: ...(*->[Каламанси - цитрусовая культура.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Каламанси)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (каламанси)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_calamansi;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Каламанси является гибридом кумквата и мандарина.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Каламанси)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (каламанси, происхождение)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -42,6 +42,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_calamansi;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//calamansi.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Каламанси)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (каламанси)](*<- lang_ru;;*);;
 *);;
 

@@ -1,12 +1,12 @@
 concept_pear
 	=>nrel_idtf:[pear] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Груша] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[груша] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_pear;;
 	<= nrel_sc_text_translation: ...(*->[Груша - плод одноимённого дерева,.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Груша)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (груша)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,8 +16,14 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_pear;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Груши имеют форму лампочки, но встречаются круглые или цилиндрические груши.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Груша)](*<- lang_ru;;*);;
-	
+	=> nrel_main_idtf: [Утверждение (груша, плод)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pear;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вкус груш может меняться от кислого до приторно сладкого, мякоть одних сортов тает во рту, а другие остаются твердыми.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (груша, вкус)](*<- lang_ru;;*);;	
 *);;
 
 concept_pear=>nrel_sugar_content : 10_g

@@ -1,12 +1,12 @@
 concept_banana
 	=>nrel_idtf:[banana] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Банан] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[банан] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_banana;;
 	<= nrel_sc_text_translation: ...(*->[Банан - продолговатый сладкий плод.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Банан)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (банан)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_banana;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[С точки зрения ботаники, банан – это ягода.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Банан)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (банан)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -42,6 +42,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_banana;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//banana.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Банан)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (банан)](*<- lang_ru;;*);;
 *);;
 

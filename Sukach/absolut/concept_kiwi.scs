@@ -1,12 +1,12 @@
 concept_kiwi
 	=>nrel_idtf:[kiwi] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Киви] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[киви] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_kiwi;;
 	<= nrel_sc_text_translation: ...(*->[Киви - плод культурных сортов растений рода Актинидия.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Киви)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (киви)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_kiwi;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Киви является рекордсменом по содержанию витамина С.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Киви)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (киви)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -42,6 +42,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_kiwi;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//kiwi.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Киви)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (киви)](*<- lang_ru;;*);;
 *);;
 

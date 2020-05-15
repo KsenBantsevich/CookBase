@@ -1,12 +1,12 @@
 concept_guava
 	=>nrel_idtf:[guava] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Гуава] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[гуава] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_guava;;
 	<= nrel_sc_text_translation: ...(*->[Гуава - плод растения Псидиум.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Гуава)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (гуава)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -15,7 +15,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_guava;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Плоды сильно пахнут сладким мускусом. Запах кожуры плода гуавы напоминает запах разгоряченного потного тела. ](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Гуава)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (гуава, вкус)](*<- lang_ru;;*);;
 
 *);;
 
@@ -23,7 +23,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_guava;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Едят гуаву сырой. Спелые плоды употребляют вместе с кожурой и косточками. Используют ее для приготовления соков, компотов, сиропов, шербета, тоников, салатов, пюре, «фруктового масла», кетчупа, пасты, а также для ароматизации напитков. ](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Гуава, применение)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (гуава, применение)](*<- lang_ru;;*);;
 
 *);;
 
@@ -51,6 +51,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_guava;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//guava.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Гуава)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (гуава)](*<- lang_ru;;*);;
 *);;
 

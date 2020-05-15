@@ -29,6 +29,15 @@ concept_bergamot=>nrel_sugar_content : 6_g
 	<- concept_g;;
 *);;
 
+concept_bergamot=>nrel_fiber_content : 1.6_g
+(*
+	=> nrel_main_idtf:[1.6 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 illustration -> ...
 (*
 	->rrel_key_sc_element: concept_bergamot;;

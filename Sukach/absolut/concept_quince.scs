@@ -1,12 +1,12 @@
 concept_quince
 	=>nrel_idtf:[quince] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Айва] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[айва] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_quince;;
 	<= nrel_sc_text_translation: ...(*->[Айва - плод растения семейства Розовые.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Айва)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (айва)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,16 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_quince;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Плоды айвы малосочные и жесткие с терпким сладковатым вкусом.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Айва)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (айва, вкус)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_quince;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Восточные народы айву едят во всех ее видах. Жареная, она становится гарниром к мясу, печеная – самостоятельным блюдом, растертая – соусом. А еще из этого позднего фрукта можно приготовить желе, мармелад, горчицу, аджику и пр.
+](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (айва, применение)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -30,10 +39,19 @@ concept_quince=>nrel_sugar_content : 8.5_g
 	<- concept_g;;
 *);;
 
+concept_quince=>nrel_fiber_content : 1.9_g
+(*
+	=> nrel_main_idtf:[1,9 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 illustration -> ...
 (*
 	->rrel_key_sc_element: concept_quince;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//quince.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Айва)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (айва)](*<- lang_ru;;*);;
 *);;
 
