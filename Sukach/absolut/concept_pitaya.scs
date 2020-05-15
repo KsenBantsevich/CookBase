@@ -1,12 +1,12 @@
 concept_pitaya
 	=>nrel_idtf:[pitaya] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Питайя] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[питайя] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_pitaya;;
 	<= nrel_sc_text_translation: ...(*->[Питайя - плод нескольких видов кактусов.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Питайя)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (питайя)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,9 +16,19 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_pitaya;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[На вкус питайя похожа одновременно на киви и банан.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Питайя)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (питайя, вкус)](*<- lang_ru;;*);;
 	
 *);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pitaya;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фрукты рекомендуется есть в охлажденном виде, так лучше проявляется их потрясающий вкус. Термическую обработку плоды переносят плохо. Употребляют их свежими, в виде пюре или соков. Из фруктов также делают вина.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (питайя, употребление)](*<- lang_ru;;*);;
+	
+*);;
+
+
 
 concept_pitaya=>nrel_sugar_content : 8_g
 (*
@@ -29,10 +39,19 @@ concept_pitaya=>nrel_sugar_content : 8_g
 	<- concept_g;;
 *);;
 
+concept_pitaya=>nrel_fiber_content : 1.7_g
+(*
+	=> nrel_main_idtf:[1.7 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 illustration -> ...
 (*
 	->rrel_key_sc_element: concept_pitaya;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//pitaya.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Питайя)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (питайя)](*<- lang_ru;;*);;
 *);;
 

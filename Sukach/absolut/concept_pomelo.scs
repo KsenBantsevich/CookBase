@@ -1,12 +1,12 @@
 concept_pomelo
 	=>nrel_idtf:[pomelo] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Помело] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[помело] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_pomelo;;
 	<= nrel_sc_text_translation: ...(*->[Помело - плод вечнозеленого растения рода Цитрус.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Помело)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (помело)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_pomelo;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Помело является самым большим представителем рода Цитрус.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Помело)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (помело)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -43,6 +43,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_pomelo;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//pomelo.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Помело)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (помело)](*<- lang_ru;;*);;
 *);;
 

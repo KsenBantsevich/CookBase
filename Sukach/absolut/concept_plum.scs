@@ -1,12 +1,12 @@
 concept_plum
 	=>nrel_idtf:[plum] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Слива] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[слива] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_plum;;
 	<= nrel_sc_text_translation: ...(*->[Слива - плод растений семейства Розовые.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Слива)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (слива)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,9 +16,18 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_plum;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Слива является естественным гибридом тёрна и алычи.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Слива)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (слива, происхождение)](*<- lang_ru;;*);;
 	
 *);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_plum;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Сливы обладают большим вкусовым разнообразием, варьирующимся от сладкого до терпкого. Имеют сочные сладкие плоды, в некоторых присутствует кислинка, привкус меда, пряностей, миндаля, персика и другие оттенки.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (слива, вкус)](*<- lang_ru;;*);;
+	
+*);;
+
 
 concept_plum=>nrel_sugar_content : 10_g
 (*
@@ -42,6 +51,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_plum;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//plum.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Слива)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (слива)](*<- lang_ru;;*);;
 *);;
 
