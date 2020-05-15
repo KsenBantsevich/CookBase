@@ -19,7 +19,7 @@ definition ->...
 	->rrel_key_sc_element: concept_vegetables;;
 	<= nrel_sc_text_translation: ...(*->[ Как кулинарный термин, овощ обозначает сочную съедобную  часть специально культивируемых огородных травянистых 
     растений (например,клубень или плод),
-    а также всякую твердую растительную <b><sc_element sys_idtf="concept_meal">пищу</b></sc_element>, кроме <b><sc_element sys_idtf="concept_fruits">фруктов
+    а также всякую твердую растительную <b><sc_element sys_idtf="concept_meal">пищу</b></sc_element>, кроме <b><sc_element sys_idtf="concept_fruit">фруктов
     </b></sc_element>,<b><sc_element sys_idtf="concept_berries">ягод</b></sc_element>,<b><sc_element sys_idtf="concept_nuts">орехов</b></sc_element> и
     <b><sc_element sys_idtf="concept_cereals">круп</b></sc_element>. ](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
 	=> nrel_main_idtf: [Опр.(овощ)](*<- lang_ru;;*);;
