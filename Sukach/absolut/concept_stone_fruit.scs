@@ -1,14 +1,14 @@
 concept_stone_fruit
 	<-sc_node_not_relation;
 	=>nrel_idtf:[stone fruit] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Косточковые фрукты] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[косточковые фрукты] (* <- lang_ru;; *);;
 
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_stone_fruit;;
 	<= nrel_sc_text_translation: ...(*->[Косточковые фрукты - это плоды внутри которых находится всего одно крупное семя, которое заключено в окостеневшую твёрдую оболочку.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Косточковые фрукты)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (косточковые фрукты)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -18,18 +18,16 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_stone_fruit;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//stone_fruit.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Косточковые фрукты)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (косточковые фрукты)](*<- lang_ru;;*);;
 *);;
 
 
-concept_stone_fruit=>nrel_inclusion:
-	{
+concept_stone_fruit->
 	concept_plum;
 	concept_peach;
 	concept_apricot;
 	concept_avocado;
 	concept_nectarine;
 	concept_cherry_plum;
-	concept_mango
-	};;
+	concept_mango;;
 

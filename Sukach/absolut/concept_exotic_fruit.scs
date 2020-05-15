@@ -1,13 +1,13 @@
 concept_exotic_fruit
 	<-sc_node_not_relation;
 	=>nrel_idtf:[exotic fruit] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Экзотические фрукты] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[экзотические фрукты] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_exotic_fruit;;
 	<= nrel_sc_text_translation: ...(*->[Экзотические фрукты фрукты - это плоды имеющие плотную сочную мякоть, утолщенную и весьма плотную кожицу и множество мелких семян внутри.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Экзотические фрукты)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (экзотические фрукты)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -17,11 +17,10 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_exotic_fruit;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//exotic_fruit.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Экзотические фрукты)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (экзотические фрукты)](*<- lang_ru;;*);;
 *);;
 
-concept_exotic_fruit=>nrel_inclusion:
-	{
+concept_exotic_fruit->
 	concept_kiwi;
 	concept_diospyros;
 	concept_chirimoya;
@@ -41,8 +40,4 @@ concept_exotic_fruit=>nrel_inclusion:
 	concept_rambutan;
 	concept_pitaya;
 	concept_guava;
-	concept_pineapple
-	
-	
-	
-	};;
+	concept_pineapple;;

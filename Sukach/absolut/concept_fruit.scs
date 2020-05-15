@@ -1,14 +1,14 @@
 concept_fruit
 	<-sc_node_not_relation;
 	=>nrel_idtf:[fruit] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Фрукт] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[фрукт] (* <- lang_ru;; *);;
 
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_fruit;;
 	<= nrel_sc_text_translation: ...(*->[Фрукт - сочный съедобный плод растения.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Фрукт)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (фрукт)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_fruit;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Фрукты являются важной составляющей пищи человека и многих животных.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Фрукт)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (фрукт)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -24,11 +24,11 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_fruit;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//fruit.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Фрукт)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (фрукт)](*<- lang_ru;;*);;
 *);;
 
 	
-concept_fruit=>nrel_inclusion:
+concept_fruit<= nrel_subdividing:
 {
 	concept_stone_fruit;
 	concept_pome_fruit;
@@ -36,52 +36,4 @@ concept_fruit=>nrel_inclusion:
 	concept_exotic_fruit
 };;
 
-concept_fruit=>nrel_inclusion:
-{
-	concept_mandarin;
-	concept_pomelo;
-	concept_grapefruit;
-	concept_lime;
-	concept_limequat;
-	concept_lemon;
-	concept_kumquat;
-	concept_tangelo;
-	concept_calamansi;
-	concept_bergamot;
-	concept_citron;
-	concept_bitter_orange;
-	concept_orange;
-	concept_buddhas_hand;
-	concept_kiwi;
-	concept_diospyros;
-	concept_chirimoya;
-	concept_granadilla;
-	concept_mango;
-	concept_pomelo;
-	concept_kumquat;
-	concept_loquat;
-	concept_citron;
-	concept_durian;
-	concept_banana;
-	concept_mangosteen;
-	concept_jackfruit;
-	concept_lychee;
-	concept_papaya;
-	concept_longan;
-	concept_rambutan;
-	concept_pitaya;
-	concept_apple;
-	concept_pear;
-	concept_quince;
-	concept_loquat;
-	concept_plum;
-	concept_peach;
-	concept_apricot;
-	concept_avocado;
-	concept_nectarine;
-	concept_cherry_plum;
-	concept_mango;
-	concept_guava;
-	concept_pineapple
-};;
 
