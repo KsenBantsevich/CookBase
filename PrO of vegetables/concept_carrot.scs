@@ -1,0 +1,87 @@
+
+concept_carrot
+
+	=> nrel_main_idtf: [морковь]
+		(* <- lang_ru;; *);
+       
+    =>nrel_idtf:[carrot]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/carrot.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(морковь)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+	<= nrel_sc_text_translation: ...(*->[Морковь - широко распространенный <b><sc_element sys_idtf="concept_roots">корнеплод</b></sc_element>.]
+		(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр. (морковь)](*<- lang_ru;;*);;  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Выведены множество сортов моркови, отличающихся по размерам, форме, окраске, химическому составу, 
+    вкусовым качествам, срокам созревания и лежкоспособности.](*<-lang_ru;;*);;*);;
+  
+    => nrel_main_idtf: [Утв.(морковь, сорт)](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Корнеплоды моркови едят в сыром, вареном, тушеном виде; используют для приготовления первых, 
+    вторых блюд, начинок для пирогов, пюре, соков, и даже варенья. Плоды дикой и культурной моркови, обладающие жгучим пряным вкусом,
+     могут быть использованы как пряность.](*<-lang_ru;;*);;*);;
+
+    => nrel_main_idtf: [Утв.(морковь,употребление)](*<- lang_ru;;*);;
+  
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_carrot;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Помытую морковь  долго хранить нельзя, максимум 1-2 недели. В другом случае морковь можно хранить несколько месяцев. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(морковь, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_carrot=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_carrot=>nrel_carbohydrates_content : 7_g
+(*
+=> nrel_main_idtf:[7 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+//concept_biennial<=nrel_lifespan:concept_carrot;;
+concept_biennial->concept_carrot;;
+
+
+
+
+

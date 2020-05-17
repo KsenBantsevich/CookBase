@@ -1,0 +1,105 @@
+
+concept_sweet_pepper
+
+	=> nrel_main_idtf: [cладкий стручковый перец]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[болгарский перец]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[cладкий овощной перец]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[sweet pepper]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_sweet_pepper;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/sweetpepper.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(cладкий стручковый перец )](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_sweet_pepper;;
+	<= nrel_sc_text_translation: ...(*->[Болгарский перец – это плоды однолетнего травянистого растения семейства паслёновых.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (cладкий стручковый перец )](*<- lang_ru;;*);;
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweet_pepper;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Плод болгарского перца имеет крупный, короткий, почти четырёхгранный плод красного, желтого, белого цвета. 
+                Часто плоды собирают еще зеленым, такие плоды особенно хороши для консервирования.](*<-lang_ru;;*);;*);;
+
+	
+    
+    => nrel_main_idtf: [Утв.(cладкий стручковый перец, плод, окрас)](*<- lang_ru;;*);;
+
+   	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweet_pepper;;
+    
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Сладкий болгарский перец имеет нейтральный слегка сладковатый вкус.](*<-lang_ru;;*);;*);;
+
+    
+    => nrel_main_idtf: [Утв.(cладкий стручковый перец, вкус)](*<- lang_ru;;*);;
+
+   	
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweet_pepper;;
+    
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Болгарский перец широко используется в кулинарии. Его употребляют в свежем виде, солят, маринуют, консервируют, жарят,
+     приготавливают на гриле, фаршируют мясом, овощами и другими продуктами. Перец используют для приготовления лечо и соусов,  а также добавляют в салаты, супы, тушат с овощами или мясом.]
+        (*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(cладкий стручковый перец,использование)](*<- lang_ru;;*);;
+
+   	
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweet_pepper;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Перец можно хранить в холодильнике от 30 до 50 суток.](*<-lang_ru;;*);;*);;
+
+	
+    
+    => nrel_main_idtf: [Утв.(cладкий стручковый перец, срок и условия хранения* )](*<- lang_ru;;*);;
+
+   	
+*);;
+
+
+concept_sweet_pepper<=>nrel_go_together:concept_meat;concept_vegetables;;
+
+
+concept_sweet_pepper=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_sweet_pepper=>nrel_carbohydrates_content : 6_g
+(*
+=> nrel_main_idtf:[6 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_sweet_pepper;;
+concept_perennial->concept_sweet_pepper;;
+

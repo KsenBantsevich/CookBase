@@ -1,0 +1,87 @@
+
+concept_salad
+
+	=> nrel_main_idtf: [салат латук]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[огородный салат]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[молокан]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[salad]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_salad;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/salad.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(салат латук)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_salad;;
+	<= nrel_sc_text_translation: ...(*->[Салат латук - <b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element>,в основом использующаяся как витаминная зелень, 
+	у которой в пищу используют листья, кочан, утолщённый стебель.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(салат латук)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_salad;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[При выборе салата нужно обязательно смотреть на его внешний вид. Если листья завяли, пожелтели, покрылись пятнами или же черенок стал 
+			темным, салат испорчен и его не стоит покупать. ](*<-lang_ru;;*);;*);;
+    
+     
+	=> nrel_main_idtf: [Утв.(салат латук, выбор)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_salad;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В свежем виде салат латук кладут в различные салаты и закуски. На его основе получаются вкусные соусы, а также в мясные и рыбные блюда.
+		 Латук можно положить в первые блюда для улучшения вкуса и пользы. Салатные листья служат прекрасным украшениям для разнообразных блюд. ](*<-lang_ru;;*);;*);;
+   
+     
+	=> nrel_main_idtf: [Утв.(салат латук, использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_salad;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Хранится салат в холодильнике 4-6 дней.](*<-lang_ru;;*);;*);;
+     
+	=> nrel_main_idtf: [Утв.(салат латук, срок и условия хранения*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+concept_salad=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_salad=>nrel_carbohydrates_content : 3_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_salad;;
+concept_annual->concept_salad;;
+
+

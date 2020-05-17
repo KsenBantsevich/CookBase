@@ -1,0 +1,103 @@
+
+concept_squash
+
+	=> nrel_main_idtf: [кабачок]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[squash]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_squash;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/squash.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(кабачок)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_squash;;
+	<= nrel_sc_text_translation: ...(*->[Кабачок - <b><sc_element sys_idtf="concept_vegetables">овощное</b></sc_element>
+	 и кормовое растение с плодами-тыквинами цилиндрической или продолговатой формы, кремового, белого, зеленого или черного цвета.]
+        (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр. (кабачок)](*<- lang_ru;;*);;
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_squash;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Легче всего усваиваются и наиболее приятны по вкусу - молодые плоды. Их едят обычно после термической обработки: тушат, варят, 
+        жарят, запекают.](*<-lang_ru;;*);;*);;
+
+       
+	=> nrel_main_idtf: [Утв.(кабачок, усвоение, вкус)](*<- lang_ru;;*);;
+    
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_go_together;concept_squash;;
+  
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Кабачок отлично сочетается с большинством овощей.](*<-lang_ru;;*);;*);;
+
+        
+	=> nrel_main_idtf: [Утв.(кабачок, сочетаться* )](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_squash;;
+   
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Икра из кабачков – пикантная закуска, которая готовится из вареных или обжареных кабачков с добавлением 
+	<b><sc_element sys_idtf="concept_carrot">моркови</b></sc_element>, <b><sc_element sys_idtf="concept_onion">лука</b></sc_element>
+    <b><sc_element sys_idtf="concept_sweet_pepper">болгарского перца</b></sc_element>,<b><sc_element sys_idtf="concept_tomato">томатов</b></sc_element> и ароматных специй.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+       
+	=> nrel_main_idtf: [Утв.(кабачок, икра из кабачков)](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element:nrel_storage_conditions; concept_squash;;
+  
+
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Кабачки могут храниться несколько лет.](*<-lang_ru;;*);;*);;
+
+    
+       
+	=> nrel_main_idtf: [Утв.(кабачок, срок и условия хранения*)](*<- lang_ru;;*);;
+
+      
+*);;
+
+concept_squash=>nrel_protein_content : 1_g
+(*
+=> nrel_main_idtf:[1 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_squash=>nrel_carbohydrates_content : 6_g
+(*
+=> nrel_main_idtf:[6 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_squash;;
+concept_annual->concept_squash;;
+
+

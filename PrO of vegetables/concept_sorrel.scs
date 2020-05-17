@@ -1,0 +1,96 @@
+
+concept_sorrel
+
+	=> nrel_main_idtf: [щавель кислый]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[sorrel]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_sorrel;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/sorrel.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(щавель кислый)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_sorrel;;
+	<= nrel_sc_text_translation: ...(*->[Щавель кислый – ценное пищевое растение.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (щавель кислый)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sorrel;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для кулинарных целей применяются в основном молодые листья, собранные до цветения. ](*<-lang_ru;;*);;*);;
+   
+  
+     
+	=> nrel_main_idtf: [Утв.(щавель кислый? применение)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sorrel;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Из него готовят щавелевый суп (в некоторых регионах его называют «зеленый борщ»), холодные щавелевые щи, супы-пюре, 
+            начинку для пирогов, пирожков (в том числе сладких), слоек и вареников.](*<-lang_ru;;*);;*);;
+   
+  
+     
+	=> nrel_main_idtf: [Утв.(щавель кислый, блюда)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sorrel;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Свежий щавель придает пикантность салатам из свежих овощей и трав, его добавляют в сендвичи и бутерброды, тушат вместе со шпинатом, 
+    чесноком и сливочным маслом, готовят на пару, добавляют в котлеты из птицы или картофеля, запеканки, лазаньи и пасту.](*<-lang_ru;;*);;*);;
+  
+     
+	=> nrel_main_idtf: [Утв.(щавель кислый,сочетание)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sorrel;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Срок хранения в свежем виде в холодильнике составляет 1-2 дня. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(щавель кислый, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_sorrel=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_sorrel=>nrel_carbohydrates_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_sorrel;;
+concept_perennial->concept_sorrel;;
+
+
+

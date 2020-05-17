@@ -1,0 +1,98 @@
+
+concept_sweetcorn
+
+	=> nrel_main_idtf: [cахарная кукуруза]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[маис]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[sweetcorn]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_sweetcorn;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/sweet_corn.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(cахарная кукуруза)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_sweetcorn;;
+	<= nrel_sc_text_translation: ...(*->[Кукуруза сахарная или иначе маис является единственным представителем 
+	<b><sc_element sys_idtf="concept_cereal">злаковых овощей</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр.(cахарная кукуруза)](*<- lang_ru;;*);;
+
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweetcorn;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Кукуруза широко используется в пищу по всему миру, но особенно распространена в кухнях Центральной, Южной Америки и Азии.](*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(cахарная кукуруза, распространение)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweetcorn;;
+  
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В пищу используются зерна кукурузы в самом разном виде. После сбора початков, зерна можно есть сырыми, для хранения кукурузу 
+        замораживают. Также початки можно отварить. Консервированная кукуруза используется для приготовления широкого спектра блюд - первых, вторых блюд, салатов. Кукурузная мука 
+        используется для приготовления хлебобулочных изделий, выпечки, приготовления каш. Торты и печенья, приготовленные с добавлением кукурузной муки, становятся более вкусными 
+        и рассыпчатыми.] (*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(cахарная кукуруза, использование)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweetcorn;;
+   
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Попкорн - зерна кукурузы, разорванные изнутри давлением пара при нагревании-популярный десерт.](*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(cахарная кукуруза, попкорн)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweetcorn;;
+  
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Срок хранения кукурузы в початках в холодильнике составляет от 3 до 10 дней.](*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(cахарная кукуруза, срок и условия хранения*)](*<- lang_ru;;*);;	
+*);;
+
+
+concept_sweetcorn=>nrel_protein_content : 5_g
+(*
+=> nrel_main_idtf:[5 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_sweetcorn=>nrel_carbohydrates_content : 24_g
+(*
+=> nrel_main_idtf:[24 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_sweetcorn;;
+concept_annual->concept_sweetcorn;;

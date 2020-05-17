@@ -1,0 +1,102 @@
+
+concept_onion
+
+	=> nrel_main_idtf: [лук репчатый]
+		(* <- lang_ru;; *);
+             
+    =>nrel_idtf:[onion]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_onion;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/bow.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(лук репчатый)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_onion;;
+	<= nrel_sc_text_translation: ...(*->[Репчатый лук - самая распространенная <b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element> среди
+	<b><sc_element sys_idtf="concept_bulbous">луковичных овощей</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр. (лук репчатый)](*<- lang_ru;;*);;
+   
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_onion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В кулинарии репчатый лук широко применяется как приправа для приготовления множества блюд - первых, вторых, закусок и салатов, подлив,
+         соусов, фарша, начинок для пирогов и пиццы; для консервирования и маринования. ](*<-lang_ru;;*);;*);;
+     
+  
+     
+	=> nrel_main_idtf: [Утв.(лук репчатый, использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_onion;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Лук острых и полуострых сортов чаще всего используется как приправа в жареном на растительном масле до золотого цвета или
+         пассированном виде. Сырой лук прекрасно дополняет мясные изделия, хлеб с салом, маринованную сельдь, салаты, сыры.](*<-lang_ru;;*);;*);;
+    
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(лук репчатый,приготовление)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_onion;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[При использовании репчатого лука его сначала надо почистить. Сначала отрежьте верхнюю часть луковицы, затем удалите внешнюю шелуху
+     плоть до мякоти. Теперь разрежьте луковицу пополам. Положите одну половину на разделочную доску срезом вниз, сделайте ножом несколько продольных разрезов. Затем режьте эту же половину 
+     поперек. Все это время нижняя часть луковицы должна оставаться нетронутой, ее и держите левой рукой, пока режете лук. Когда лук порезан, нижнюю часть можно выбросить.](*<-lang_ru;;*);;*);;
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(лук репчатый, пригоовление к использованию)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_onion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Способ хранения лука зависит от его состояния. Если лук в шелухе, его надо положить в темное и прохладное место, 
+	где он пролежит несколько месяцев.  В холодильнике луковици хранить не стоит, там они размякнут. ](*<-lang_ru;;*);;*);;
+    
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(лук репчатый, срок и условия хранения*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+concept_onion=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_onion=>nrel_carbohydrates_content : 11_g
+(*
+=> nrel_main_idtf:[11 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_onion;;
+concept_perennial->concept_onion;;
+

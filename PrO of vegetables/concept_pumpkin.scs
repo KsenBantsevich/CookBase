@@ -1,0 +1,96 @@
+
+concept_pumpkin
+
+	=> nrel_main_idtf: [тыква]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[pampkin]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pumpkin;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/pumpkin.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(тыква)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pumpkin;;
+	<= nrel_sc_text_translation: ...(*->[тыква - растение семейства Тыквенные с крупными гладкими овальными или шаровидными мясистыми плодами-тыквинами, покрытыми твердой коркой 
+        и содержащими многочисленные семена.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (тыква)](*<- lang_ru;;*);;
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pumpkin;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Тыкву можно тушить, запекать, варить, жарить. Из тыквы можно приготовить овощную икру, рагу, оладьи, овощную запеканку, сок, 
+        пюре, повидло, добавить в пшенную или рисовую кашу. Недозрелые плоды тыквы засаливают и маринуют.](*<-lang_ru;;*);;*);;
+
+	
+	=> nrel_main_idtf: [Утв.(тыква, применение)](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pumpkin;;
+    
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вкус тыквы – мягкий, сладковатый.](*<-lang_ru;;*);;*);;
+
+       
+	=> nrel_main_idtf: [Утв.(тыква, вкус)](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pumpkin;;
+   
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Из тыквы можно сварить суп, сделать отличный гарнир к мясу, приготовить начинку для сладкого пирога, вкусную запеканку или оладьи
+     на десерт. Очень популярны молочные каши с добавлением тыквы: рисовая или пшенная. Кроме тыквенной мякоти, в пищу употребляются семечки и цветки. Цветки используют в свежем виде, 
+     добавляя в салаты. А семечки – отличное дополнение к десертам, выпечке, салатам и сухим завтракам.](*<-lang_ru;;*);;*);;
+
+       
+	=> nrel_main_idtf: [Утв.(тыква, блюда)](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pumpkin;;
+   
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Большим преимуществом тыквы является то, что она может долго храниться.](*<-lang_ru;;*);;*);;
+
+    
+	=> nrel_main_idtf: [Утв.(тыква, срок хранения)](*<- lang_ru;;*);;
+  
+*);;
+
+concept_pumpkin=>nrel_protein_content : 1_g
+(*
+=> nrel_main_idtf:[1 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_pumpkin=>nrel_carbohydrates_content : 7_g
+(*
+=> nrel_main_idtf:[7 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_pumpkin;;
+concept_annual->concept_pumpkin;;

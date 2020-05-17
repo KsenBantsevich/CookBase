@@ -1,0 +1,90 @@
+
+concept_bean
+
+	=> nrel_main_idtf: [боб обыкновенный]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[фава]
+		(* <- lang_ru;; *);
+        
+    =>nrel_idtf:[bean]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_bean;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/bean.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(бобы)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_bean;;
+	<= nrel_sc_text_translation: ...(*->[Боб обыкновенный — зернобобовая культура, вид овощных 
+	<b><sc_element sys_idtf="concept_pulses">бобовых растений</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр. (бобы)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bean;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Незрелые молодые семена очень вкусны в отварном виде с маслом и горчицей. Вареные бобы прекрасно усваиваются организмом. 
+        Зрелые зерна конского боба тушат, варят, жарят; используют для приготовления винегретов, супов, борщей, пюре, гарниров, горячих блюд с овощами и специями, и даже выпечки.]
+        (*<-lang_ru;;*);;*);;
+
+    => nrel_main_idtf: [Утв.(бобы, использование)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bean;;
+    
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для всех блюд бобы подготавливают: обрезают кончики с обеих сторон, удаляют волокно из швов, моют в холодной воде, нарезают 
+        кусочками (3–5 см) и опускают в подсоленный кипяток. Кипятят в большом количестве воды, чтобы сохранить зеленый цвет.] (*<-lang_ru;;*);;*);;
+
+    => nrel_main_idtf: [Утв.(бобы, подготовка к использованию)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_bean;;
+
+
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Свежие бобы могут храниться в холодильнике несколько дней. Чтобы сохранить овощ надолго необходимо заморозить бобы в
+	 морозильной камере или высушить.] (*<-lang_ru;;*);;*);;
+
+    => nrel_main_idtf: [Утв.(бобы, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_bean=>nrel_protein_content : 8_g
+(*
+=> nrel_main_idtf:[8 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_bean=>nrel_carbohydrates_content : 63_g
+(*
+=> nrel_main_idtf:[63 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_bean;;
+//concept_annual<=nrel_lifespan:concept_bean;;
+concept_perennial->concept_bean;;
+concept_annual->concept_bean;;

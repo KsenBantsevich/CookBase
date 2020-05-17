@@ -1,0 +1,103 @@
+
+concept_thyme
+
+	=> nrel_main_idtf: [тимьян]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[чабрец]
+		(* <- lang_ru;; *);
+      
+    =>nrel_idtf:[thyme]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_thyme;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/thyme.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(тимьян)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_thyme;;
+	<= nrel_sc_text_translation: ...(*->[Тимьян — пряность, обладающая сильным приятным ароматом и острым пряным вкусом.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (тимьян)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_thyme;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В качестве специи в кулинарии используют свежие или сушёные ароматные листья тимьяна.](*<-lang_ru;;*);;*);;
+    
+  
+     
+	=> nrel_main_idtf: [Утв.(тимьян? использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_thyme;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Тимьян полностью раскрывает свой аромат при длительной тепловой обработке, поэтому его кладут в начале приготовления.]
+            (*<-lang_ru;;*);;*);;  
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(тимьян, аромат)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_thyme;;
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Как приправу тимьян можно добавлять практически в любые блюда. Обычно его используют для ароматизации жаркого, жареного на гриле мяса,
+     птицы, сыров и салатов. Листья тимьяна используют как пряную добавку в ликёро-водочной и консервной промышленности. Добавляют в салаты из картофеля и помидоров, блюда из яиц,
+     баранины, курицы, макарон, риса. тимьян обогащает вкус и аромат супов, бульонов, борщей, а также светлых соусов. Служит отдушкой для коктейлей, чая. Высушенную траву применяют при 
+     консервировании огурцов](*<-lang_ru;;*);;*);;
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(тимьян, блюда)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_thyme;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Хранить продукт рекомендуется в герметичной посуде в прохладном и сухом месте. Чтобы сохранить аромат семян и зелени, измельчать и размалывать их 
+    следует непосредственно перед употреблением.](*<-lang_ru;;*);;*);;
+   
+  
+  
+  	=> nrel_main_idtf: [Утв.(тимьян, срок и условия хранения*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+concept_thyme=>nrel_protein_content : 18_g
+(*
+=> nrel_main_idtf:[18 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_thyme=>nrel_carbohydrates_content : 45_g
+(*
+=> nrel_main_idtf:[45 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_biennial<=nrel_lifespan:concept_thyme;;
+concept_biennial->concept_thyme;;
+
+
+

@@ -1,0 +1,79 @@
+
+concept_rhubarb
+
+	=> nrel_main_idtf: [ревень]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[rhubarb]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_rhubarb;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/rhubarb.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(ревень)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_rhubarb;;
+	<= nrel_sc_text_translation: ...(*->[Ревень - <b><sc_element sys_idtf="concept_pulses">десертный овощ</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр.(ревень)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_rhubarb;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Ревень едят не только сырым, для хранения его консервируют и замораживают.](*<-lang_ru;;*);;*);;
+
+
+
+   => nrel_main_idtf: [Утв.(ревень, употреблении)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_rhubarb;;
+    
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Кисловатое, но очень вкусное варенье; мармелад, джемы, желе, пудинги; начинка для пирога; цукаты; сладкий суп - это все 
+    «десертное применение» ревеня. Из напитков готовят освежающие компоты, кисели, квас и даже вино (из выжатого из черешков сока). В борще черешки ревеня могут заменить помидоры, 
+    а в рассольнике соленые огурцы. ревень можно использовать в кулинарии при приготовлении салата, винегрета, каши, соусов для приправки мяса.] (*<-lang_ru;;*);;*);;
+
+ 
+
+   => nrel_main_idtf: [Утв.(ревень, применение)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_rhubarb;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Ревень лучше хранить в замороженном виде.](*<-lang_ru;;*);;*);;
+
+	
+
+   => nrel_main_idtf: [Утв.(ревень, срок и условия хранения*)](*<- lang_ru;;*);;	
+*);;
+
+concept_rhubarb=>nrel_protein_content : 1_g
+(*
+=> nrel_main_idtf:[1 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_rhubarb=>nrel_carbohydrates_content : 3_g
+(*
+=> nrel_main_idtf:[3 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_rhubarb;;
+concept_perennial->concept_rhubarb;;
+

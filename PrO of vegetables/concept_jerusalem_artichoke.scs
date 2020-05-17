@@ -1,0 +1,82 @@
+
+concept_jerusalem_artichoke
+
+	=> nrel_main_idtf: [топинамбур]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[земляная груша]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[иерусалимский артишок]
+		(* <- lang_ru;; *);
+
+     =>nrel_idtf:[jerusalem artichoke]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_jerusalem_artichoke;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/Jerusalem.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(топинамбур)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_jerusalem_artichoke;;
+	<= nrel_sc_text_translation: ...(*->[Топинамбур - ценное продовольственное, кормовое, техническое растение, родом из Северной Америки.]
+         (*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр.(топинамбур, происхождение)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_jerusalem_artichoke;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Клубни употребляются в пищу сырыми или подвергаются термической обработке. Жареный топинамбур на вкус 
+	напоминает <b><sc_element sys_idtf="concept_sweet_potato"> сладкий жареный картофель</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+    => nrel_main_idtf: [Утв.(топинамбур)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_jerusalem_artichoke;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике топинамбур может храниться около 2-3 недель. При этом клубни необходимо поместить в герметичные 
+	пластиковые контейнеры или пищевые пакеты.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(топинамбур, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_jerusalem_artichoke=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_jerusalem_artichoke=>nrel_carbohydrates_content : 17_g
+(*
+=> nrel_main_idtf:[17 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+//concept_perennial<=nrel_lifespan:concept_jerusalem_artichoke;;
+concept_perennial->concept_jerusalem_artichoke;;
+
+
+
+
+
+

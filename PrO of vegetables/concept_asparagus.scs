@@ -1,0 +1,102 @@
+
+concept_asparagus
+
+	=> nrel_main_idtf: [спаржа]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[asparagus]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_asparagus;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/asparagus.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(спаржа)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_asparagus;;
+	<= nrel_sc_text_translation: ...(*->[Растение спаржа относится к семейству лилейных и является близкой родственницей
+	<b><sc_element sys_idtf="concept_onion">лука</b></sc_element>, хотя ничем не напоминает его. 
+        В кулинарии спаржа является деликатесом.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр. (спаржа)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_asparagus;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Первоначально вкус спаржи напоминает вкусом фасоли. Но если фасоль обладает более плотной текстурой и насыщенным вкусом, то спаржа,
+     особенно белая, - более нежная, можно различить в ней легкие ореховые нотки.Зеленая спаржа обладает более ярким и насыщенным вкусом. Ее пряный привкус чем-то напоминает молодые 
+     стручки зеленого   горошка. Вообще, вкус спаржи разного сорта и цвета отличается друг от друга – от нейтрального нежного до горьковатого.](*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(спаржа, вкус)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_asparagus;;
+   
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Самый простой способ приготовления спаржи – варка.Отварная спаржа это полноценное блюдо.]
+         (*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утверждение(спаржа, варка)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_asparagus;;
+  
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Применение спаржи в кулинарии весьма разнообразно. Ее готовят на пару, отваривают, жарят на гриле, томят в духовке. 
+         спаржу используют не только как гарнир, ее кладут в супы, салаты, вторые блюда, подливы, делают даже десерты.]       (*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(спаржа,использование)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_asparagus;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Срок хранения спаржи в холодильнике может быть до 3 дней. Чтобы она дольше хранилась, стоит поставить ее в воду.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(спаржа, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+
+
+concept_asparagus<=>nrel_go_together:concept_meat;concept_fish;concept_asparagus;;
+
+concept_asparagus=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_asparagus=>nrel_carbohydrates_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_asparagus;;
+concept_perennial->concept_asparagus;;
+

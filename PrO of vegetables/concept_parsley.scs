@@ -1,0 +1,139 @@
+
+concept_parsley
+
+	=> nrel_main_idtf: [петрушка]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[parsley]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_parsley;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/parsley.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(петрушка)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_parsley;;
+	<= nrel_sc_text_translation: ...(*->[Петрушка - <b><sc_element sys_idtf="concept_vegetables">овощное растение</b></sc_element>, культивируемое во многих
+	 странах Европы, севере США.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр.(петрушка)](*<- lang_ru;;*);;	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_parsley;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В пищу употребляют корнеплоды и листья петрушки.](*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(петрушка, употребление)](*<- lang_ru;;*);; 
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_parsley;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Благодаря высокому содержанию эфирных масел, петрушка имеет специфический аромат,
+	 это свойство активно используется в кулинарии, при <b><sc_element sys_idtf="nrel_salting">солении</b></sc_element> и 
+	 <b><sc_element sys_idtf="nrel_pickling">мариновании</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+  
+    => nrel_main_idtf: [Утв.петрушка, аромат)](*<- lang_ru;;*);;  
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_parsley;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Петрушку используют в свежем и сушеном виде, реже соленом. Листья используют как компонент салата, 
+    как добавку к гарнирам и супам, соусам, для придания еде аромата. Некоторые едят зелень петрушки как самостоятельную закуску или в сочетании 
+    с зелеными частями других овощных растений (<b><sc_element sys_idtf="concept_dill">укропом</b></sc_element>,<b><sc_element sys_idtf="concept_celery">
+	сельдереем</b></sc_element>,<b><sc_element sys_idtf="concept_onion">луком</b></sc_element>). Корнеплоды петрушки используют в сушеном или сыром виде в 
+	гарнирах, соусах, подливах, супах. Семена петрушки, равно как и зелень, применяют в домашнем консервировании.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+
+    => nrel_main_idtf: [Утв.(петрушка)](*<- lang_ru;;*);;  
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_parsley;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[ Срок хранения петрушки в холодильнике несколько недель, примерно от 2 до 3, в нижнем отделении холодильника. Если заморозить зелень, 
+	то она будет еще несколько месяцев сохранять полезные свойства. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(петрушка, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_parsley <= nrel_subdividing:
+{		
+    concept_leaf_parsley;
+    concept_root_parsley
+		
+};;
+
+
+concept_leaf_parsley
+
+	=> nrel_main_idtf: [листовая петрушка]
+		(* <- lang_ru;; *);
+
+	=>nrel_idtf:[leaf parsley]
+       (*<-lang_en;;*);;
+
+concept_root_parsley
+
+	=> nrel_main_idtf: [корневая петрушка]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[root parsley]
+       (*<-lang_en;;*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_leaf_parsley;;
+	<= nrel_sc_text_translation: ...(*->[В пищу идут обычно только листья, так как корни ветвистые, тонкие и очень жесткие.
+                             Листовую петрушку из-за короткого вегетационного периода можно выращивать в северных районах.]
+         (*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(Листовая петрушка)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_root_parsley;;
+	<= nrel_sc_text_translation: ...(*->[В пищу идут корнеплоды и листья. Цвет корнеплода белый, желтоватый или кремовый.]
+         (*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(Корневая петрушка)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_parsley=>nrel_protein_content : 3_g
+(*
+=> nrel_main_idtf:[3 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_parsley=>nrel_carbohydrates_content : 6_g
+(*
+=> nrel_main_idtf:[6 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_parsley;;
+concept_perennial->concept_parsley;;

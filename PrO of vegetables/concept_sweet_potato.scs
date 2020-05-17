@@ -1,0 +1,87 @@
+
+concept_sweet_potato
+
+	=> nrel_main_idtf: [батат]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[сладкий картофель]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[sweet potato]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_sweet_potato;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/sweet_potato.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(батат)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_sweet_potato;;
+	<= nrel_sc_text_translation: ...(*->[ Батат - ценная пищевая и кормовая <b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	
+	=> nrel_main_idtf: [Опр.(батат)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweet_potato;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Батат едят в вареном, жареном, печеном виде.Вкус приготовленного батата отчасти напоминает 
+	сладковатый подмороженный <b><sc_element sys_idtf="concept_potato">картофель</b></sc_element>.Вкус жареного батата похож на вкус обыкновенной 
+	<b><sc_element sys_idtf="concept_pumpkin">тыквы</b></sc_element>, а сырого - на вкус <b><sc_element sys_idtf="concept_carrot">моркови</b></sc_element>.]
+	(*<-lang_ru;;	=>nrel_format:format_html;;*);;*);;
+    
+	=> nrel_main_idtf: [Утв.(батат)](*<- lang_ru;;*);;
+
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweet_potato;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Батат используют не только для приготовления различных <b><sc_element sys_idtf="concept_dish">блюд</b></sc_element>,
+	 также из него изготавливают <b><sc_element sys_idtf="concept_flour">муку</b></sc_element>,<b><sc_element sys_idtf="concept_sugar">сахар</b></sc_element>,и 
+	 <b><sc_element sys_idtf="concept_alcohol">спирт</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(батат,блюда)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_sweet_potato;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В зависимости от сорта  клубни могут храниться от 5 месяцев до 2-х лет.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(батат, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_sweet_potato=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_sweet_potato=>nrel_carbohydrates_content : 20_g
+(*
+=> nrel_main_idtf:[20 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_sweet_potato;;
+concept_perennial->concept_sweet_potato;;

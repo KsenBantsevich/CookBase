@@ -1,0 +1,98 @@
+
+concept_pepper
+
+	=> nrel_main_idtf: [острый стручковый перец]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[перец чили]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[красный перец]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[кайенский перец]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[жгучий перец]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[pepper]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_pepper;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/pepper.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(острый стручковый перец )](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_pepper;;
+	<= nrel_sc_text_translation: ...(*->[Острый перец с жгучим вкусом - плод сортов тропического кустарника.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (острый стручковый перец )](*<- lang_ru;;*);;
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pepper;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Острый перец используют в свежем виде, тушеным и жареным, консервируют, засушивают и замораживают.](*<-lang_ru;;*);;*);;
+
+	
+
+   => nrel_main_idtf: [Утв.(острый стручковый перец, использование )](*<- lang_ru;;*);;
+ 
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pepper;;
+   
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Свежие стручки используют в овощных блюдах и солениях, во время варки их добавляют в борщи и супы, можно добавить немного свежего 
+    чили-перца в мясные блюда для пикантности.Небольшие плоды можно обжарить, переворачивая, пока плоды не размякнут и потемнеют, толстую кожицу можно предварительно убрать. 
+    Обжаренные острые перцы можно заморозить. ](*<-lang_ru;;*);;*);;
+
+    
+   => nrel_main_idtf: [Утв.(острый стручковый перец,блюда)](*<- lang_ru;;*);;
+
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_pepper;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[ Свежим перец хранится в нижнем отсеке холодильника (до 5 дней в пакете и до 2-х недель в герметичном контейнере). ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(острый стручковый перец, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);; 
+
+concept_pepper<=>nrel_go_together:concept_garlic;concept_basil;concept_dill;;
+
+
+concept_pepper=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_pepper=>nrel_carbohydrates_content : 9_g
+(*
+=> nrel_main_idtf:[9 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_pepper;;
+concept_perennial->concept_pepper;;

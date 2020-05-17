@@ -1,0 +1,129 @@
+
+concept_melissa
+
+	=> nrel_main_idtf: [мелисса]
+		(* <- lang_ru;; *);
+      
+    =>nrel_idtf:[melissa]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/melissa.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(мелисса)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	<= nrel_sc_text_translation: ...(*->[Мелисса - растение, которое используют главным образом в качестве приправы или для приготовления освежающих и лечебных напитков.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (мелисса)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В кулинарии обычно используют побеги и молодые листья мелиссы.](*<-lang_ru;;*);;*);;
+   
+     
+	=> nrel_main_idtf: [Утв.(мелисса, использование,побеги,листья)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Мелиссу добавляют в салаты, используют при ароматизации сыров и разного рода десертов, кладут в супы и заливное. Она является 
+        неотъемлемым ингредиентом многих мясных, рыбных и грибных блюд, а также блюд из дичи.Эту приправу добавляют в соусы и салатные заправки (особенно – предназначенные для салатов
+         из свежих овощей). ](*<-lang_ru;;*);;*);;
+   
+  
+     
+	=> nrel_main_idtf: [Утв.(мелисса, использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Мелисса служит основой большинства тонизирующих напитков, от чаев и настоев до коктейлей (в том числе и алкогольных). Она применяется 
+        как отдушка для ликеров, настоек и уксусов.](*<-lang_ru;;*);;*);;
+   
+  
+     
+	=> nrel_main_idtf: [Утв.(мелисса, напитки)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Наибольшую известность мелисса получила как компонент разного рода чаев (в том числе и чисто травяных). Она прекрасно сочетается 
+    и с черным, и с зеленым чаем и вполне способна выступить в качестве заменителя лимона. В травяных чаях мелиссу чаще всего комбинируют со зверобоем, мятой, чабрецом, жасмином или анисом.](*<-lang_ru;;*);;*);;
+   
+  
+     
+	=> nrel_main_idtf: [Утв.(мелисса, чай)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Чтобы мелисса полностью раскрыла и сохранила свой аромат, добавлять ее нужно лишь за несколько минут до окончания приготовления блюда. 
+         Еще лучше – положить ее в готовое блюдо и дать настояться.](*<-lang_ru;;*);;*);;
+  
+     
+	=> nrel_main_idtf: [Утв.(мелисса, аромат)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для мелиссы характерен ярко выраженный освежающе-лимонный запах с пряными нотками.](*<-lang_ru;;*);;*);;
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(мелисса, запах)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_melissa;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Срок годности составляет 3 года. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(мелисса, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_melissa=>nrel_protein_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_melissa=>nrel_carbohydrates_content : 8_g
+(*
+=> nrel_main_idtf:[8 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_melissa;;
+concept_perennial->concept_melissa;;

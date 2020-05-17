@@ -1,0 +1,107 @@
+
+concept_cauliflower
+
+	=> nrel_main_idtf: [цветная капуста]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[капуста курчавая]
+		(* <- lang_ru;; *);
+          
+    =>nrel_idtf:[cauliflower]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/cauliflower.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(цветная капуста)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+	<= nrel_sc_text_translation: ...(*->[цветная капуста является одним из культурных сортов вида Капуста огородная.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр.(цветная капуста)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[цветная капуста содержит множество полезных для организма веществ, она еще и обладает прекрасным вкусом и отлично сочетается
+	 со многими ингредиентами.](*<-lang_ru;;*);;*);;
+   
+	=> nrel_main_idtf: [Утв.(цветная капуста, вкус, сочетание, полезные вещества)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Чтобы сохранить максимум полезных свойств, овощ лучше готовить на пару или в небольшом количестве воды.](*<-lang_ru;;*);;*);;
+   
+	=> nrel_main_idtf: [Утв.(цветная капуста, полезные свойства)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[ Из цветной капусты готовят обычные и крем-супы, можно включить ее в состав овощного пюре, запечь в духовке. 
+     Для приготовления вторых блюд следует выбирать плотные и наиболее белые головки; более рыхлые головки лучше использовать для приготовления супов и гарниров.](*<-lang_ru;;*);;*);;
+     	
+	=> nrel_main_idtf: [Утв.(цветная капуста,приготовление)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В домашних условиях цветную капусту можно солить, мариновать, консервировать отдельно или вместе с другими овощами.](*<-lang_ru;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(цветная капуста, виды приготовления)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+	
+     	<= nrel_sc_text_translation: ...(*->rrel_example:[Цветная капуста уникальна тем, что она усваивается организмом лучше всех остальных видов капусты.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(цветная капуста, полезность)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_cauliflower;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Лучше всего хранить цветную капусту на средней полке холодильника или в ящике для овощей.
+	 Срок хранения цветной капусты в холодильнике составляет около 10-14 дней. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(цветная капуста, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+concept_cauliflower=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_cauliflower=>nrel_carbohydrates_content : 5_g
+(*
+=> nrel_main_idtf:[5 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_biennial<=nrel_lifespan:concept_cauliflower;;
+concept_biennial->concept_cauliflower;;

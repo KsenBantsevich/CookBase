@@ -1,0 +1,111 @@
+
+concept_dill
+
+	=> nrel_main_idtf: [укроп пахучий]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[укроп огородный]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[dill]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_dill;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/dill.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(укроп пахучий)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_dill;;
+	<= nrel_sc_text_translation: ...(*->[Укроп пахучий или огородный   – растение с сильным пряным освежающим вкусом и запахом.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр.(укроп пахучий)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_dill;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Укроп – одна из самых популярных специй у кулинаров по всему миру.](*<-lang_ru;;*);;*);;
+    
+  
+     
+	=> nrel_main_idtf: [Утв.(укроп пахучий, распространение)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_dill;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В кулинарии используется зелень и семена укропа, а также эфирное масло.](*<-lang_ru;;*);;*);;
+    
+  
+     
+	=> nrel_main_idtf: [Утв.(укроп пахучий, использование)](*<- lang_ru;;*);;
+	
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: concept_dill;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Укроп используют при <b><sc_element sys_idtf="nrel_salting">солении</b></sc_element> и <b><sc_element sys_idtf="nrel_pickling">
+	мариновании</b></sc_element> <b><sc_element sys_idtf="concept_cucumber">огурцов</b></sc_element>, <b><sc_element sys_idtf="concept_tomato">помидоров</b></sc_element>, 
+	<b><sc_element sys_idtf="concept_squash">кабачков</b></sc_element>,<b><sc_element sys_idtf="concept_mushrooms">грибов</b></sc_element>,
+	<b><sc_element sys_idtf="concept_fish">рыбы</b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   
+  
+     
+	=> nrel_main_idtf: [Утв.(укроп пахучий, маринование, соление)](*<- lang_ru;;*);;
+	
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element: concept_dill;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Семена укропа раскрывают свой аромат после тепловой обработки, поэтому их лучше закладывать в самом начале приготовления блюда.](*<-lang_ru;;*);;*);;
+    
+  
+     
+	=> nrel_main_idtf: [Утв.(укроп пахучий, аромат)](*<- lang_ru;;*);;
+	
+*);;
+statement ->...
+(*
+	->rrel_key_sc_element:concept_dill;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Лучше всего использовать свежую зелень укропа. А сухую хранить не дольше года в герметично закрытой посуде.](*<-lang_ru;;*);;*);;
+  
+     
+	=> nrel_main_idtf: [Утв.(укроп пахучий, срок и условия хранения*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+concept_dill=>nrel_protein_content : 16_g
+(*
+=> nrel_main_idtf:[16 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_dill=>nrel_carbohydrates_content : 55_g
+(*
+=> nrel_main_idtf:[55 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_dill;;
+concept_annual->concept_dill;;
+
+
+
+
+
+

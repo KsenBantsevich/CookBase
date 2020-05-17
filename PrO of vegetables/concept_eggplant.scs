@@ -1,0 +1,106 @@
+
+concept_eggplant
+
+	=> nrel_main_idtf: [баклажан]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[паслен темноплодный]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[бадриджан]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[бубриджан]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[eggplant]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/eggplant.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(баклажан)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+	<= nrel_sc_text_translation: ...(*->[Баклажан – это одна из известных <b><sc_element sys_idtf="concept_vegetables">овощных культур</b></sc_element>, травянистое 
+	растение, относящееся к роду пасленовых.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр. (баклажан)](*<- lang_ru;;*);;
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Съедобной частью баклажана является многосемянная ягода с семенными камерами, заполненными сочной мякотью.](*<-lang_ru;;*);;*);;
+
+	
+       
+	=> nrel_main_idtf: [Утв.(баклажан, съедобная часть)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+    
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Баклажаны едят вареными, жареными, запеченными на гриле, тушеными, сырыми, маринованными, солеными, консервированными, из них делают 
+        баклажанную икру.](*<-lang_ru;;*);;*);;
+
+
+       
+	=> nrel_main_idtf: [Утв.(баклажан, использование)](*<- lang_ru;;*);;
+    
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+    
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Баклажаны обладают довольно пикантным вкусом.](*<-lang_ru;;*);;*);;
+
+    
+	=> nrel_main_idtf: [Утв.(баклажан, вкус)](*<- lang_ru;;*);;
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_eggplant;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Его необходимо негерметично запаковать в кулек и хранить во влажном месте, так как этот овощ не любит сухости. 
+	При температуре 10 градусов и влажности 90 процентов баклажаны могут храниться около месяца. Срок хранения баклажанов при температуре 6-7 градусов до 2х месяцев.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(баклажан, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+concept_eggplant<=>nrel_go_together:concept_tomato;concept_sweet_pepper;concept_onion;concept_garlic;concept_leafy;;
+
+
+concept_eggplant=>nrel_protein_content : 1_g
+(*
+=> nrel_main_idtf:[1 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_eggplant=>nrel_carbohydrates_content : 6_g
+(*
+=> nrel_main_idtf:[6 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_eggplant;;
+concept_annual->concept_eggplant;;

@@ -1,0 +1,102 @@
+
+concept_basil
+
+	=> nrel_main_idtf: [базилик]
+		(* <- lang_ru;; *);
+      
+    =>nrel_idtf:[basil]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_basil;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/basil.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(базилик)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_basil;;
+	<= nrel_sc_text_translation: ...(*->[Базилик - это растение, обладающее горьковато-сладким привкусом и очень широко использующееся в кулинарии.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (базилик)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_basil;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В кулинарии обычно используют листья базилика.](*<-lang_ru;;*);;*);;
+   
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(базилик, листья, использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_basil;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Вкусовые свойства  базилика в блюдах проявляются постепенно. Сначала эта приправа дает горчинку, а после – имеет сладковатый привкус.]
+            (*<-lang_ru;;*);;*);;
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(базилик, вкус)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_basil;;
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Базилик чаще всего кладут в овощные блюда, супы, блюда из бобов, гороха, томатов, квашеной капусты, шпината, а также в 
+    рыбные и мясные блюда. Мелко нарезанные молодые побеги добавляют в мясные блюда, бутербродное масло, салаты.](*<-lang_ru;;*);;*);;
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(базилик, блюда)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_basil;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В банке с водой базилик может сохранить свежесть в течение нескольких дней. В холодильнике свежий базилик хранится в среднем одну
+	 неделю.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(базилик, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_basil<=>nrel_go_together:concept_parsley;concept_mint;;
+
+
+concept_basil=>nrel_protein_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_basil=>nrel_carbohydrates_content : 5_g
+(*
+=> nrel_main_idtf:[5 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_basil;;
+concept_annual->concept_basil;;
+
+
+

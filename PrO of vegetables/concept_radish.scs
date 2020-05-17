@@ -1,0 +1,94 @@
+
+concept_radish
+
+	=> nrel_main_idtf: [редис]
+		(* <- lang_ru;; *);
+       
+     =>nrel_idtf:[radish]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_radish;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/radish.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(редис)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_radish;;
+	<= nrel_sc_text_translation: ...(*->[Редис - съедобное растение, выращиваемое во многих станах мира в открытом и закрытом грунте.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр.(редис)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_radish;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Корнеплоды редиса едят сырыми - готовят салаты, окрошку, редко в горячих блюдах. 
+                        Съедобная листва также используется в салатах, окрошках и супах.](*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(редис, употребление)](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_radish;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Корнеплоды редиса имеют горьковато-острый вкус, обусловленный содержащимся в нем горчичным маслом.]
+            (*<-lang_ru;;*);;*);;
+
+    => nrel_main_idtf: [Утв.(редис, вкус)](*<- lang_ru;;*);;
+  
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_radish;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В пищу употребляют корнеплоды редиса, реже листья.]
+            (*<-lang_ru;;*);;*);;
+
+    => nrel_main_idtf: [Утв.(редис, использование)](*<- lang_ru;;*);;
+  
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_radish;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В отсеке для овощей редис останется свежим в течение 10-15 дней. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(редис, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+concept_radish=>nrel_protein_content : 1_g
+(*
+=> nrel_main_idtf:[1 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_radish=>nrel_carbohydrates_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+//concept_annual<=nrel_lifespan:concept_radish;;
+concept_annual->concept_radish;;
+
+
+
+
+
+

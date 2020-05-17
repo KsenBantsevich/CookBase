@@ -1,0 +1,93 @@
+
+concept_potato
+
+	=> nrel_main_idtf: [картофель]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[potato]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_potato;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/potato.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(картофель)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_potato;;
+	<= nrel_sc_text_translation: ...(*->[Картофель - самый популярный в Беларуси <b><sc_element sys_idtf="concept_tubers">клубнеплодный</b></sc_element>
+	<b><sc_element sys_idtf="concept_vegetables">овощ</b></sc_element>. ](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр.(картофель)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_potato;;
+
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В мире насчитывается около 5 тысяч сортов картофеля, которые подразделяют на подразделяют на столовые, 
+            универсальные, кормовые и технические.](*<-lang_ru;;*);;*);;
+    
+	=> nrel_main_idtf: [Утв.(картофель,сорт)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_potato;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Картошка обладает непревзойденной питательной ценностью за счет большого содержания <b><sc_element sys_idtf="concept_starch">
+	крахмала</b></sc_element>,а также уникальным набором полезных органических и неорганических веществ.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   
+	=> nrel_main_idtf: [Утв.(картофель,питательная ценность)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_potato;;
+	
+     <= nrel_sc_text_translation: ...(*->rrel_example:[Клубни картофеля не только употребляют в пищу (вареными, жареными, тушеными, печеными) и применяют для 
+        изготовления различных <b><sc_element sys_idtf="concept_dish">блюд</b></sc_element> и продуктов-полуфабрикатов, из них также производят <b><sc_element sys_idtf="concept_starch">
+		крахмал</b></sc_element> .](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(картофель,употребление)](*<- lang_ru;;*);;
+
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_potato;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Время хранения колеблется от 1-2 недель до 10-ти месяцев. Оно зависит от сорта картофеля. ]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(картофель, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_potato=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_potato=>nrel_carbohydrates_content : 17_g
+(*
+=> nrel_main_idtf:[17 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_potato;;
+concept_perennial->concept_potato;;
+

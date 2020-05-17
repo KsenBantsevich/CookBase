@@ -1,0 +1,101 @@
+
+concept_horseradish
+
+	=> nrel_main_idtf: [хрен]
+		(* <- lang_ru;; *);
+       
+   =>nrel_idtf:[horseradish]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_horseradish;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/horseradish.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(хрен)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_horseradish;;
+	<= nrel_sc_text_translation: ...(*->[Хрен -<b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element>, выращиваемая ради корневища, 
+    употребляемого в пищу.]    (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+
+	=> nrel_main_idtf: [Опр.(хрен)](*<- lang_ru;;*);;   
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_horseradish;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Эфирные масла и гликозид синигрин придают хрену жгучий вкус и специфический острый аромат.](*<-lang_ru;;*);;*);;
+    
+  => nrel_main_idtf: [Утв.(хрен, вкус)](*<- lang_ru;;*);;
+  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_horseradish;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Хрен в виде свежих тертых корневищ или листьев применяется как пряно-вкусовая добавка к разным 
+	<b><sc_element sys_idtf="concept_dish">блюдам</b></sc_element>. 
+    Из корневищ изготавливают одноименную популярную приправу, а также он используется как компонент других пряных соусов и приправ.] (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+    
+    
+  => nrel_main_idtf: [Утв.(хрен, приправа)](*<- lang_ru;;*);;  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_horseradish;;
+  <= nrel_sc_text_translation: ...(*->rrel_example:[Хрен используется как пряность при <b><sc_element sys_idtf="nrel_conservation">
+	консервировании	</b></sc_element>  <b><sc_element sys_idtf="concept_vegetables"> овощей</b></sc_element> и <b><sc_element sys_idtf="concept_mushrooms">
+	грибов</b></sc_element>.] (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+  => nrel_main_idtf: [Утв.(хрен, пряность)](*<- lang_ru;;*);;  
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_horseradish;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике срок хранения хрена составит до 6 месяцев.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(хрен, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+concept_horseradish<=>nrel_go_together:concept_sausage;concept_meat;concept_scrapple;;
+
+
+concept_horseradish=>nrel_protein_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_horseradish=>nrel_carbohydrates_content : 11_g
+(*
+=> nrel_main_idtf:[11 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+//concept_perennial<=nrel_lifespan:concept_horseradish;;
+concept_perennial->concept_horseradish;;
+
+
+
+
+

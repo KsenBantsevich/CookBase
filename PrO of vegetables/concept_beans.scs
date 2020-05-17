@@ -1,0 +1,99 @@
+
+concept_beans
+
+	=> nrel_main_idtf: [фасоль]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[beans]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_beans;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/beans.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(фасоль)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_beans;;
+	<= nrel_sc_text_translation: ...(*->[фасоль – это одно из древнейших <b><sc_element sys_idtf="concept_pulses">бобовых</b></sc_element> овощных растений.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр. (фасоль)](*<- lang_ru;;*);;
+		
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_beans;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[фасоль обладает нейтральным вкусом, поэтому отлично сочетается практически с любыми овощами, зеленью и приправами. 
+        Разные сорта фасоли имеют свои вкусовые оттенки. Одни обладают сливочным или ореховым привкусом, другие имеют нотки грибного и хлебного вкуса. Существуют сладкие и острые 
+        сорта фасоли.](*<-lang_ru;;*);;*);;
+
+
+   => nrel_main_idtf: [Утв.(фасоль, вкус, сочетание)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_beans;;
+
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В кулинарии используются бобы и стручки фасоли.Используют фасоль в салатах, супах, в овощных рагу, в качестве гарнира к мясу.
+         Ее солят и маринуют, консервируют, а также сушат для хранения. Из измельченных зерен фасоли делают муку. В свежем виде фасоль не употребляется. Ее отваривают, тушат или 
+         консервируют.] (*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(фасоль, блюда, использование)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_beans;;
+   
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Приготовление большинства блюд из фасоли начинается с предварительного замачивания и отваривания зерен. Замачивают фасоль в холодной
+         воде на срок от 12 до 24 часов. ](*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(фасоль,подготовка к использованию)](*<- lang_ru;;*);;
+
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_beans;;
+    
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Фасоль можно хранить в холодильнике в течение всего года.](*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(фасоль, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_beans=>nrel_protein_content : 21_g
+(*
+=> nrel_main_idtf:[21 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_beans=>nrel_carbohydrates_content : 53_g
+(*
+=> nrel_main_idtf:[53 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_beans;;
+concept_perennial->concept_beans;;

@@ -1,0 +1,84 @@
+
+concept_spinach
+
+	=> nrel_main_idtf: [шпинат]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[spinach]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_spinach;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/spinach.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(шпинат)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_spinach;;
+	<= nrel_sc_text_translation: ...(*->[Шпинат - один из самых распространённых и питательных видов <b><sc_element sys_idtf="concept_vegetables">овощной</b></sc_element> 
+	зелени.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(шпинат)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_spinach;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для шпината характерен слабо-выраженный вкус и нейтральный запах.
+	 В свежем виде шпинат является идеальной основой для салатов, в том числе, диетических.](*<-lang_ru;;*);;*);;
+   
+     
+	=> nrel_main_idtf: [Утв.(шпинат, вкус)](*<- lang_ru;;*);;
+	
+*);;
+
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_spinach;;
+	 <= nrel_sc_text_translation: ...(*->rrel_example:[ Овощ может прекрасно подчеркнуть вкус омлета или яичницы, а также выступить в роли оригинальной начинки для пирогов, пиццы или 
+            другой, несладкой выпечки.](*<-lang_ru;;*);;*);;
+  
+     
+	=> nrel_main_idtf: [Утв.(шпинат, использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_spinach;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике (отсек для зелени или овощей) шпинат может храниться в течение 4-5 дней.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(шпинат, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+concept_spinach<=>nrel_go_together:concept_meat;concept_fish;concept_eggs;concept_vegetables;;
+
+
+concept_spinach=>nrel_protein_content : 3_g
+(*
+=> nrel_main_idtf:[3 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_spinach=>nrel_carbohydrates_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_spinach;;
+concept_annual->concept_spinach;;

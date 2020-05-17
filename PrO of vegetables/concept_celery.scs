@@ -1,0 +1,154 @@
+
+concept_celery
+
+	=> nrel_main_idtf: [сельдерей]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[celery]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_celery;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/celery.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(сельдерей)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_celery;;
+	<= nrel_sc_text_translation: ...(*->[Сельдерей - повсеместно распространенная <b><sc_element sys_idtf="concept_vegetables">овощная культура</b>
+	</sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр. (сельдерей)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_celery;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Все части сельдерея добавляют в первые и вторые блюда, соусы, салаты, напитки, приправы.
+    Корнеплоды можно есть сырыми, вареными, печеными. Можно высушить и потом добавлять в супы и гарниры. Корнеплоды также используют в <b><sc_element sys_idtf="nrel_conservation">
+	консервировании	</b></sc_element> . 
+    Листья используют для приготовления салатов, приправки блюд и для сушки. Стебли - ароматный компонент многих салатов.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+    
+	=> nrel_main_idtf: [Утв.(сельдерей, употребление)](*<- lang_ru;;*);;
+
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_celery;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Сельдерей - низкокалорийный <b><sc_element sys_idtf="concept_vegetables">овощ</b></sc_element>
+	, хорошо подходит для диетического питания.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Утв.(сельдерей, калорийность)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_celery;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Сельдерей придает <b><sc_element sys_idtf="concept_dish">блюдам</b></sc_element> специфический аромат благодаря содержащимся 
+	в нем эфирным маслам.]	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	
+	=> nrel_main_idtf: [Утв.(сельдерей, вкус)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_celery;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Сельдерей не может долго лежать. Поэтому лучше покупать овощ в свежем состоянии, тогда срок хранения сельдерея 
+	составит от 3 до 7 дней.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(сельдерей, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_celery <= nrel_subdividing:
+{		
+    concept_leaf_celery;
+    concept_root_celery;
+    concept_petiole_celery
+		
+};;
+
+
+concept_leaf_celery
+	
+	=> nrel_main_idtf: [Листовой сельдерей]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[Leaf celery]
+       (*<-lang_en;;*);;
+
+concept_root_celery
+	
+	=> nrel_main_idtf: [Корневой сельдерей]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[Root celery]
+       (*<-lang_en;;*);;
+
+concept_petiole_celery
+	
+	=> nrel_main_idtf: [Черешковый сельдерей]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[Petiole celery]
+       (*<-lang_en;;*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_leaf_celery;;
+	<= nrel_sc_text_translation: ...(*->[Листовой (салатный) имеет большое количество нежных листьев.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(Листовой сельдерей)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_root_celery;;
+	<= nrel_sc_text_translation: ...(*->[Имеет хорошо развитые белые шаровидные или продолговатые корнеплоды с большим количеством придаточных корней, 
+    белые черенки листьев. Масса корнеплода 150-200 грамм.]   (*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(Корневой сельдерей)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_petiole_celery;;
+	<= nrel_sc_text_translation: ...(*->[Имеет мясистые черешки листьев до 3-4 см толщиной. Черешки идут на салат, листья на приправу.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(Черешковый сельдерей)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_celery=>nrel_protein_content : 1_g
+(*
+=> nrel_main_idtf:[1 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_celery=>nrel_carbohydrates_content : 7_g
+(*
+=> nrel_main_idtf:[7 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+//concept_perennial<=nrel_lifespan:concept_celery;;
+concept_perennial->concept_celery;;

@@ -1,0 +1,65 @@
+
+concept_white_cabbage
+
+	=> nrel_main_idtf: [капуста белокочанная]
+		(* <- lang_ru;; *);
+          
+    =>nrel_idtf:[white cabbage]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_white_cabbage;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/white_cabbage.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(капуста белокочанная)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_white_cabbage;;
+	<= nrel_sc_text_translation: ...(*->[Белокочанная капуста - <b><sc_element sys_idtf="concept_vegetables">овощное растение</b></sc_element>, относится к разновидности вида 
+	капуста огородная.Сегодня белокочанная капуста самая распространенная из капуст и один из популярнейших овощей в мире.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(капуста белокочанная)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_white_cabbage;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В холодильнике капусту можно хранить до 1 месяца.](*<-lang_ru;;*);;*);;
+   
+	=> nrel_main_idtf: [Утв.(капуста белокочанная, срок и условия хранения*)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_white_cabbage;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Капуста используется во многих кухнях мира: ее едят сырой, варят, тушат,
+									 жарят, фаршируют, запекают, квасят, маринуют, используют в качестве начинки для пирогов.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(капуста белокочанная)](*<- lang_ru;;*);;
+	
+*);;
+
+concept_white_cabbage=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_white_cabbage=>nrel_carbohydrates_content : 6_g
+(*
+=> nrel_main_idtf:[6 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_biennial<=nrel_lifespan:concept_white_cabbage;;
+concept_biennial->concept_white_cabbage;;

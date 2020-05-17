@@ -1,0 +1,79 @@
+
+concept_artichoke
+	
+	=> nrel_main_idtf: [артишок]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[artichoke]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_artichoke;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/artichoke.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(артишок)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_artichoke;;
+	<= nrel_sc_text_translation: ...(*->[Артишок - <b><sc_element sys_idtf="concept_desser">десертный</b></sc_element>, и, скорее, 
+	экзотичный <b><sc_element sys_idtf="concept_vegetables">овощ</b></sc_element>.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр. (артишок)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_artichoke;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Молодые артишоки едят целиком в сыром или полусыром виде, а также маринуют и консервируют. Более взрослые и крупные бутоны 
+        отваривают, предварительно отрезав жесткие концы листьев и удалив жесткие волоски в центре. Раскрывшиеся бутоны не едят.](*<-lang_ru;;*);;*);;
+ 
+
+   => nrel_main_idtf: [Утв.(артишок, употребление)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_artichoke;;
+   
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Артишок можно употреблять как самостоятельное деликатесное блюдо, а также в качестве гарнира в горячем или холодном виде. 
+    Можно добавить артишок в тушеное блюдо, начинку пирога, в пиццу, салат, соусы. Есть в кулинарии рецепты десертов и хлеба с использованием артишока.] (*<-lang_ru;;*);;*);;
+
+ 
+
+   => nrel_main_idtf: [Утв.(артишок, использование)](*<- lang_ru;;*);;	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element:concept_artichoke;;
+    
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Артишоки лучше всего хранить в сухом холодном месте – так они могут сохраниться в хорошем виде около недели.] (*<-lang_ru;;*);;*);;
+ 
+
+   => nrel_main_idtf: [Утв.(артишок, срок и условия хранения* )](*<- lang_ru;;*);;	
+*);;
+
+concept_artichoke=>nrel_protein_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_artichoke=>nrel_carbohydrates_content : 11_g
+(*
+=> nrel_main_idtf:[11 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+concept_perennial->concept_artichoke;;
+
+

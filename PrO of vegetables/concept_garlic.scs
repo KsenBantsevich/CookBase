@@ -1,0 +1,117 @@
+
+concept_garlic
+
+	=> nrel_main_idtf: [чеснок]
+		(* <- lang_ru;; *);
+             
+    =>nrel_idtf:[garlic]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/garlic.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(чеснок)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+	<= nrel_sc_text_translation: ...(*->[Чеснок - травянистое растение, луковицы которого широко применяются в кулинарии.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Опр. (чеснок)](*<- lang_ru;;*);;
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Луковицы чеснока в свежем и консервированном виде используют в кулинарии для приготовления первых и вторых блюд, салатов, закусок, 
+        колбас, фарша. Как приправа используется молотый и сушеный чеснок.](*<-lang_ru;;*);;*);;
+    
+  
+     
+	=> nrel_main_idtf: [Утв.(чеснок, использование)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[При готовке лучше использовать чеснок, натертый на терке или раздавленный в прессе, чем просто порезанный.](*<-lang_ru;;*);;*);;
+   
+     
+	=> nrel_main_idtf: [Утв.(чеснок, натертый чеснок)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Закладка чеснока в горячие блюда производится в самом конце готовки, так приправа лучше гармонирует с остальными ингредиентами.]
+            (*<-lang_ru;;*);;*);;
+    
+	=> nrel_main_idtf: [Утв.(чеснок, горячие блюда)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Чеснок плохо сочетается с рыбой, поэтому рыбные блюда следует готовить с добавлением иных приправ и специй. 
+        Однако чеснок отлично комбинируется с морепродуктами (креветки, мидии, рапаны, морские гребешки, крабы), в том числе, и с морской капустой.](*<-lang_ru;;*);;*);;
+  
+  
+     
+	=> nrel_main_idtf: [Утв.(чеснок, рыбные блюда)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для многих национальных блюд чеснок является основным и незаменимым ингредиентом.](*<-lang_ru;;*);;*);;
+    
+     
+	=> nrel_main_idtf: [Утв.(чеснок, ингредиент, нац.блюдо)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_garlic;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Место для хранения должно быть прохладным. Срок годности чеснока может достигать 8 месяцев. Это максимальное время.
+	 При комнатной температуре он сможет пролежать до 4 месяцев.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(чеснок, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+concept_garlic=>nrel_protein_content : 7_g
+(*
+=> nrel_main_idtf:[7 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_garlic=>nrel_carbohydrates_content : 30_g
+(*
+=> nrel_main_idtf:[30 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_garlic;;
+concept_perennial->concept_garlic;;
+
+

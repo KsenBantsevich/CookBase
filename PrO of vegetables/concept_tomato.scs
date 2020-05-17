@@ -1,0 +1,97 @@
+
+concept_tomato
+
+	=> nrel_main_idtf: [томат]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[помидор]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[tomato]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_tomato;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/tomato.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(томат)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_tomato;;
+	<= nrel_sc_text_translation: ...(*->[Томат — одна из самых популярных <b><sc_element sys_idtf="concept_vegetables">овощных культур</b></sc_element>; выращивается ради съедобных 
+	плодов — сочных многогнёздных ягод различной формы и окраски.](*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+
+	=> nrel_main_idtf: [Опр.(томат)](*<- lang_ru;;*);;
+  
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_tomato;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Существуют тысячи различных сортов томатов, которые отличаются друг от друга размером плода, окраской и вкусом.](*<-lang_ru;;*);;*);;
+
+	
+     
+	=> nrel_main_idtf: [Утв.(томат, сорт)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_tomato;;
+   
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Применение томатов в кулинарии весьма разнообразно: их употребляют в пищу свежими в качестве гарнира и компонента салатов, жареными, 
+        тушеными, варёными, консервированными, маринованными, вялеными.](*<-lang_ru;;*);;*);;
+ 
+	=> nrel_main_idtf: [Утв.(томат, применение)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_tomato;;
+ 
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Из томатов делают томат-пасту, томат-пюре, томатный сок, кетчуп, лечо. В ряде стран популярен томатный суп.](*<-lang_ru;;*);;*);;
+    
+     
+	=> nrel_main_idtf: [Утв.(томат, блюда)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_tomato;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Недозрелые помидоры следует хранить дома при комнатной температуре. Спелые – в холодильнике в полиэтиленовом пакете с отверстиями.
+         Из холодильника помидоры надо доставать за полчаса до приготовления, чтобы они могли естественным путем нагреться.](*<-lang_ru;;*);;*);;
+
+     
+	=> nrel_main_idtf: [Утв.(томат, срок и условия хранения*)](*<- lang_ru;;*);;
+	
+*);;
+
+
+concept_tomato=>nrel_protein_content : 2_g
+(*
+=> nrel_main_idtf:[2 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_tomato=>nrel_carbohydrates_content : 4_g
+(*
+=> nrel_main_idtf:[4 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_annual<=nrel_lifespan:concept_tomato;;
+concept_annual->concept_tomato;;

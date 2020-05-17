@@ -1,0 +1,104 @@
+
+concept_broccoli
+
+	=> nrel_main_itf: [брокколи]
+		(* <- lang_ru;; *);
+
+    =>nrel_idtf:[спаржевая капуста]
+		(* <- lang_ru;; *);
+          
+    =>nrel_idtf:[broccoli]
+       (*<-lang_en;;*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_broccoli;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures/broccoli.jpg";;*);;
+	=> nrel_main_idtf: [Рисунок(брокколи)](*<- lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_broccoli;;
+	<= nrel_sc_text_translation: ...(*->[Брокколи - <b><sc_element sys_idtf="concept_vegetables">овощная культура</b></sc_element> семейства Капустные.
+	 Иначе брокколи называют спаржевая капуста.]   (*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+	=> nrel_main_idtf: [Опр.(брокколи)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_broccoli;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Брокколи - очень близкий родственник <b><sc_element sys_idtf="concept_cauliflower">цветной капусты</b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+    
+	=> nrel_main_idtf: [Утв.(брокколи,Цветная капуста)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_broccoli;;
+
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Брокколи можно замораживать, консервировать, мариновать.](*<-lang_ru;;*);;*);;
+    
+	=> nrel_main_idtf: [Утв.(брокколи, способы приготовления)](*<- lang_ru;;*);;
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_broccoli;;
+	
+     <= nrel_sc_text_translation: ...(*->rrel_example:[ Брокколи можно отварить, бланшировать или приготовить на пару. При такой термической обработке сохраняется больше витаминов. 
+     Нельзя переваривать брокколи – теряются полезные свойства. Отварную капусту можно применить для приготовления гарниров, рагу, овощных супов, салатов, омлетов, начинки для пирогов. 
+     Для приготовления второго блюда спаржевую капусту можно быстро обжарить.](*<-lang_ru;;*);;*);;
+     	
+	=> nrel_main_idtf: [Утв.(брокколи, блюда)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_broccoli;;
+	
+    <= nrel_sc_text_translation: ...(*->rrel_example:[Молодую свежую брокколи можно употреблять в сыром виде как компонент салатов и гарниров из свежих овощей.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утв.(брокколи, салат)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: nrel_storage_conditions;concept_broccoli;;
+    <= nrel_sc_text_translation: ...(*->rrel_example:[В свежем виде брокколи можно хранить в течение 7-14 дней.]       
+	(*<-lang_ru;;*);;*);;
+
+   => nrel_main_idtf: [Утв.(брокколи, срок и условия хранения* )](*<- lang_ru;;*);;
+
+	
+*);;
+
+
+concept_broccoli=>nrel_protein_content : 3_g
+(*
+=> nrel_main_idtf:[3 грамма]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+
+concept_broccoli=>nrel_carbohydrates_content : 7_g
+(*
+=> nrel_main_idtf:[7 грамм]	
+(*
+<- lang_ru;;	
+*);;
+<- concept_g;;
+*);;
+
+//concept_perennial<=nrel_lifespan:concept_broccoli;;
+concept_perennial->concept_broccoli;;

@@ -1,0 +1,55 @@
+concept_rambutan
+	=>nrel_idtf:[rambutan] (* <- lang_en;; *);
+	=>nrel_main_idtf:[рамбутан] (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_rambutan;;
+	<= nrel_sc_text_translation: ...(*->[Рамбутан - плод вечнозеленого дерева семейства Сапиндовые.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Определение (рамбутан)](*<- lang_ru;;*);;
+	
+	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_rambutan;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Рамбутан – сочный фрукт тропических регионов, употребляется в свежем виде в качестве вкусного и полезного десерта.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (рамбутан, употребление)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_rambutan;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Фрукт имеет насыщенно сладкий вкус, чем-то напоминающий виноград, очень сочный,](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (рамбутан, вкус)](*<- lang_ru;;*);;
+
+*);;
+
+
+concept_rambutan=>nrel_sugar_content : 7_g
+(*
+	=> nrel_main_idtf:[7 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+concept_rambutan=>nrel_fiber_content : 0.9_g
+(*
+	=> nrel_main_idtf:[0,9 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_rambutan;;
+	<= nrel_sc_text_translation: ...(*->"file://pictures//rambutan.jpg";;*);;
+	=> nrel_main_idtf: [Изображение (рамбутан)](*<- lang_ru;;*);;
+*);;
+
