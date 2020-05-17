@@ -1,12 +1,12 @@
 concept_papaya
 	=>nrel_idtf:[papaya] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Папайя] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[папайя] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_papaya;;
 	<= nrel_sc_text_translation: ...(*->[Папайя - плод растения рода Карика.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Папайя)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (папайя)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,9 +16,18 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_papaya;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Папайя – это экзотический фрукт с ароматной и вкусной мякотью.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Папайя)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (папайя, плод)](*<- lang_ru;;*);;
 	
 *);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_papaya;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Вкус недозревшего плода многие сравнивают со вкусом сладкой морковки, кабачка или тыквы, а спелой – с той же дыней.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (папайя, вкус)](*<- lang_ru;;*);;
+	
+*);;
+
 
 concept_papaya=>nrel_sugar_content : 8_g
 (*
@@ -42,6 +51,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_papaya;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//papaya.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Папайя)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (папайя)](*<- lang_ru;;*);;
 *);;
 

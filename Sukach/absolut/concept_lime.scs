@@ -1,12 +1,12 @@
 concept_lime
 	=>nrel_idtf:[lime] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Лайм] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[лайм] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_lime;;
 	<= nrel_sc_text_translation: ...(*->[Лайм - плод вечнозеленого растения семейства цитрусовых.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Лайм)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (лайм)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -15,7 +15,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_lime;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[В лайме содержиться большое количество витамина С.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Лайм)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (лайм)](*<- lang_ru;;*);;
 		
 *);;
 
@@ -24,7 +24,7 @@ statement ->...
 	->rrel_key_sc_element: concept_lime;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Чуть горьковатый сок лайма придает напиткам, коктейлям и другим блюдам приятный свежий вкус и аромат. Его добавляют в соусы и маринады для рыбы и мяса, заправляют фруктовые и овощные салаты, ароматизируют выпечку и десерты. Красиво нарезанной цедрой лайма украшают коктейли и кондитерские изделия
 .](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Лайм, применение)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (лайм, применение)](*<- lang_ru;;*);;
 *);;
 
 concept_lime=>nrel_sugar_content : 1.7_g
@@ -49,6 +49,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_lime;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//lime.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Лайм)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (лайм)](*<- lang_ru;;*);;
 *);;
 

@@ -1,12 +1,12 @@
 concept_apple
 	=>nrel_idtf:[apple] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Яблоко] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[яблоко] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_apple;;
 	<= nrel_sc_text_translation: ...(*->[Яблоко - сочный плод яблони.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Яблоко)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (яблоко)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,15 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_apple;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[По вкусу яблоки бывают сладкими, кисло-сладкими, кислыми, терпкими и горьковатыми.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Яблоко)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (яблоко, вкус)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_apple;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Из яблок изготавливают соки, компоты, кисели, квас, вино, сидр, кальвадос, яблочный уксус и яблочный соус. Их также используют в приготовлении выпечки, мармелада и пастилы. Отлично сочетаются яблоки и с мясными продуктами – свининой, говядиной, мясом гуся, утки и индейки.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (яблоко, применение)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -42,6 +50,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_apple;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//apple.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Яблоко)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (яблоко)](*<- lang_ru;;*);;
 *);;
 

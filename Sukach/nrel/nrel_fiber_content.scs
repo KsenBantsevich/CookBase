@@ -1,6 +1,5 @@
 nrel_fiber_content
 	=>nrel_idtf:[fiber content*] (* <- lang_en;; *);
-	=>nrel_system_identifier:[nrel_fiber_content] (* <- lang_en;; *);
 	=>nrel_main_idtf:[содержание клетчатки*] (* <- lang_ru;; *);
 	<- sc_node_norole_relation;;
 

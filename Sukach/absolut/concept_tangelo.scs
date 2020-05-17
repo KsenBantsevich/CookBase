@@ -1,12 +1,12 @@
 concept_tangelo
 	=>nrel_idtf:[tangelo] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Танжело] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[танжело] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_tangelo;;
 	<= nrel_sc_text_translation: ...(*->[Танжело - цитрусовая культура.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Танжело)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (танжело)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,8 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_tangelo;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Танжело является гибридом мандарина и грейпфрута, реже помело.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Танжело)](*<- lang_ru;;*);;
-	
+	=> nrel_main_idtf: [Утверждение (танжело, происхождение)](*<- lang_ru;;*);;
 *);;
 
 concept_tangelo=>nrel_sugar_content : 17_g
@@ -29,10 +28,19 @@ concept_tangelo=>nrel_sugar_content : 17_g
 	<- concept_g;;
 *);;
 
+concept_tangelo=>nrel_fiber_content : 2_g
+(*
+	=> nrel_main_idtf:[2 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 illustration -> ...
 (*
 	->rrel_key_sc_element: concept_tangelo;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//tangelo.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Танжело)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (танжело)](*<- lang_ru;;*);;
 *);;
 

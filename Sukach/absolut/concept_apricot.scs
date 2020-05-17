@@ -1,12 +1,12 @@
 concept_apricot
 	=>nrel_idtf:[apricot] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Абрикос] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[абрикос] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_apricot;;
 	<= nrel_sc_text_translation: ...(*->[Абрикос - плод дерева абрикос.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Абрикос)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (абрикос)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_apricot;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Абрикос низкокалориен, поэтому хорош как диетический продукт.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Абрикос)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (абрикос)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -42,6 +42,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_apricot;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//apricot.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Абрикос)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (абрикос)](*<- lang_ru;;*);;
 *);;
 

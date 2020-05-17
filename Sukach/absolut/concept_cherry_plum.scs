@@ -1,12 +1,12 @@
 concept_cherry_plum
 	=>nrel_idtf:[cherry_plum] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Алыча] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[алыча] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_cherry_plum;;
 	<= nrel_sc_text_translation: ...(*->[Алыча - плод растений семейства Розовые.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Алыча)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (алыча)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,7 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_cherry_plum;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Алычу издавна применяют в народной медицине как хорошее лечебно-диетическое средство.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Алыча)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (алыча, применение)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -42,6 +42,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_cherry_plum;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//cherry_plum.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Алыча)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (алыча)](*<- lang_ru;;*);;
 *);;
 

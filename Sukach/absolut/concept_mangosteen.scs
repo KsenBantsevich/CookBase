@@ -1,12 +1,12 @@
 concept_mangosteen
 	=>nrel_idtf:[mangosteen] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Мангостин] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[мангостин] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_mangosteen;;
 	<= nrel_sc_text_translation: ...(*->[Мангостин - плод дерева мангостан.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Мангостин)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (мангостин)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,23 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_mangosteen;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Мангостин напоминает яблоко с толстой фиолетовой или коричневой кожурой, внутри которого находится белая съедобная мякоть в виде сочных долек белого цвета, похожих на чеснок.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Мангостин)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (мангостин, плод)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mangosteen;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Из мангостина можно приготовить сок, фруктовый салат, молочный коктейль, смузи, нежнейший мусс или суфле.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (мангостин, применение)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mangosteen;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Особенностью мангостина является легкая кислинка, которая присутствует даже в спелых плодах. Вкус мякоти можно описать как сочетание цитрусовых, винограда, ананаса, клубники, персика и абрикоса. Сладкие, слегка кисловатые белые дольки, сочные, желеобразные и ароматные.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (мангостин, вкус)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -29,10 +45,19 @@ concept_mangosteen=>nrel_sugar_content : 16_g
 	<- concept_g;;
 *);;
 
+concept_mangosteen=>nrel_fiber_content : 5_g
+(*
+	=> nrel_main_idtf:[5 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 illustration -> ...
 (*
 	->rrel_key_sc_element: concept_mangosteen;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//mangosteen.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Мангостин)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (мангостин)](*<- lang_ru;;*);;
 *);;
 

@@ -1,12 +1,12 @@
 concept_lychee
 	=>nrel_idtf:[lychee] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Личи] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[личи] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_lychee;;
 	<= nrel_sc_text_translation: ...(*->[Личи - плод дерева семейства Сапиндовых.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Личи)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (личи)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,8 +16,14 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_lychee;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Личи содержит большое количество витаминов: С, Е, К, группа В, РР, Н.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Личи)](*<- lang_ru;;*);;
-	
+	=> nrel_main_idtf: [Утверждение (личи)](*<- lang_ru;;*);;
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_lychee;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (личи)](*<- lang_ru;;*);;
 *);;
 
 concept_lychee=>nrel_sugar_content : 15_g
@@ -28,6 +34,16 @@ concept_lychee=>nrel_sugar_content : 15_g
 	*);;
 	<- concept_g;;
 *);;
+
+concept_lychee=>nrel_fiber_content : 1.6_g
+(*
+	=> nrel_main_idtf:[1,6 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 
 illustration -> ...
 (*

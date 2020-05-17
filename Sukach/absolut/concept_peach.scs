@@ -1,12 +1,12 @@
 concept_peach
 	=>nrel_idtf:[peach] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Персик] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[персик] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_peach;;
 	<= nrel_sc_text_translation: ...(*->[Персик - мягкий, сочный мясистый фрукт, плод персикового дерева.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Персик)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (персик)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,9 +16,18 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_peach;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Персик рекомендуют для улучшения аппетита, при изжоге.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Персик)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (персик)](*<- lang_ru;;*);;
 	
 *);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_peach;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Из персиков можно приготовить множество прекрасных блюд – варенья, джемы, компоты, салаты, пироги, торты и даже супы.](*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (персик)](*<- lang_ru;;*);;
+	
+*);;
+
 
 concept_peach=>nrel_sugar_content : 8_g
 (*
@@ -42,6 +51,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_peach;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//peach.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Персик)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (персик)](*<- lang_ru;;*);;
 *);;
 

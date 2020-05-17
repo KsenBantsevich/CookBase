@@ -1,12 +1,12 @@
 concept_mandarin
 	=>nrel_idtf:[mandarin] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Мандарин] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[мандарин] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_mandarin;;
 	<= nrel_sc_text_translation: ...(*->[Мандарин - плод мандаринового дерева или кустарника.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Мандарин)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (мандарин)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -16,7 +16,15 @@ statement ->...
 (*
 	->rrel_key_sc_element: concept_mandarin;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Мандарин является основным источником витаминов зимой.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Мандарин)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (мандарин)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_mandarin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[У мандаринов кисло-сладкий вкус, с выраженной кислинкой в послевкусии.(*<-lang_ru;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (мандарин, вкус)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -42,6 +50,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_mandarin;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//mandarin.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Мандарин)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (мандарин)](*<- lang_ru;;*);;
 *);;
 

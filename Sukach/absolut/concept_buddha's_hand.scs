@@ -1,12 +1,12 @@
 concept_buddhas_hand
 	=>nrel_idtf:[buddha's_hand] (* <- lang_en;; *);
-	=>nrel_main_idtf:[Цитрон пальчатый] (* <- lang_ru;; *);;
+	=>nrel_main_idtf:[цитрон пальчатый] (* <- lang_ru;; *);;
 
 definition ->...
 (*
 	->rrel_key_sc_element: concept_buddhas_hand;;
 	<= nrel_sc_text_translation: ...(*->[Цитрон пальчатый - цитрусовая культура.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Определение (Цитрон пальчатый)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Определение (цитрон пальчатый)](*<- lang_ru;;*);;
 	
 	
 *);;
@@ -20,11 +20,20 @@ concept_buddhas_hand=>nrel_sugar_content : 10_g
 	<- concept_g;;
 *);;
 
+concept_buddhas_hand=>nrel_fiber_content : 1.4_g
+(*
+	=> nrel_main_idtf:[1.4 грамма]	
+	(*
+		<- lang_ru;;	
+	*);;
+	<- concept_g;;
+*);;
+
 statement ->...
 (*
 	->rrel_key_sc_element: concept_buddhas_hand;;
 	<= nrel_sc_text_translation: ...(*->rrel_example:[Цитрон пальчатый отличается многократно разделёнными плодами, образующими отростки, напоминающие пальцы.](*<-lang_ru;;*);;*);;
-	=> nrel_main_idtf: [Утверждение (Цитрон пальчатый)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Утверждение (цитрон пальчатый, плод)](*<- lang_ru;;*);;
 	
 *);;
 
@@ -33,6 +42,6 @@ illustration -> ...
 (*
 	->rrel_key_sc_element: concept_buddhas_hand;;
 	<= nrel_sc_text_translation: ...(*->"file://pictures//buddha's_hand.jpg";;*);;
-	=> nrel_main_idtf: [Изображение (Цитрон пальчатый)](*<- lang_ru;;*);;
+	=> nrel_main_idtf: [Изображение (цитрон пальчатый)](*<- lang_ru;;*);;
 *);;
 
