@@ -1,0 +1,13 @@
+sc_text_of_agent_of_finding_storage_time
+-> rrel_key_sc_element:
+	agent_of_finding_storage_time;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения типа продукта по сроку годности] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program of finding type of product based on storage] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_of_finding_storage_time = [*^"file://../agent_of_finding_storage_time.scsi"*];;

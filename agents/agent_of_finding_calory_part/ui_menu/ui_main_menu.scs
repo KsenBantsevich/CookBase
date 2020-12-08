@@ -1,0 +1,6 @@
+ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+(*
+    	-> ui_menu_file_for_finding_calory_part;;
+*);;
+
+

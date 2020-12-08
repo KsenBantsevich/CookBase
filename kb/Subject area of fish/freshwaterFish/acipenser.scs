@@ -1,0 +1,84 @@
+concept_acipenser <-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ Осетр ]
+      (*<-lang_ru;;*);
+      [ Acipenser ]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр.( Осетр )] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+	 concept_family_sturgeon;
+	 concept_representative
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> [ Осетр - это представитель <b><sc_element sys_idtf="concept_family_sturgeon"> семейства осетровые </b></sc_element>.]
+	(*<-lang_ru;;=>nrel_format:format_html;;*);;*);;
+   *);
+
+<- rrel_key_sc_element: ... (*
+        <-illustration;;<=nrel_sc_text_translation:...(*
+                ->rrel_example: "file://PICTURES/acipenser.jpg"(*
+                    =>nrel_format:format_jpg;;
+                *);;
+            *);;
+    *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утверждение ( Осетр, дно, питание, рыба, моллюск, червь )] (* <- lang_ru;; *);;
+=> nrel_using_constants: {
+	concept_fish; 
+    concept_food;
+    concept_bottom; 
+    concept_worm;
+    concept_clam
+
+};; 
+ <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Осетр держится преимущественно у дна, питается рыбой, моллюсками и червями. ](*<-lang_ru;;*);;
+      *);;
+  *);;
+
+ concept_acipenser -> rrel_example: [ Масса осетра может достигать 816 кг. ](* <- lang_ru;; *);;
+statement -> ...
+(*
+    -> rrel_key_sc_element:concept_acipenser; concept_tropical_fish; concept_dnepr_river; concept_onega_lake; concept_white_lake; concept_red_lake;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Налим относится к теплолюбивым рыбам и обитает в реке Днепр, озере Онежском, озере Белом, озере Красном и других. ] (* <-lang_ru;; *);;
+        *);;
+    => nrel_main_idtf: [Утверждение(Осётр , тропическая рыба, река Днепр, озеро Онежское, озеро Белое, озеро Красное )] (* <-lang_ru;; *);;
+   
+*);;
+
+concept_acipenser => nrel_kkal : [135];;
+
+
+concept_acipenser => nrel_carbohydrates_content : 0_g
+(*
+	=> nrel_main_idtf: [0 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+concept_acipenser => nrel_protein_content : 21_g
+(*
+	=> nrel_main_idtf: [21 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_acipenser => nrel_fats_content : 5_g
+(*
+	=> nrel_main_idtf: [5 грамм](*<- lang_ru;;*);;
+	<- concept_g;;
+*);;
+
+concept_acipenser -> rrel_example: [ Мясо осетра насыщенно витаминами А, С, Е и группы B: B1, B2, B3, B5, B6, B9, B12, а также микроэлементами цинка, йода, хлора и магния. ](* <- lang_ru;; *);;
+concept_acipenser => nrel_healthy_fat_content: (concept_medium_fat <- concept_4_8);;
+concept_acipenser <= nrel_subdividing: ...
+(*  		
+	    <-concept_baked_acipenser;;
+		<-concept_boiled_acipenser;;
+		<-concept_fried_acipenser;;	
+*);;

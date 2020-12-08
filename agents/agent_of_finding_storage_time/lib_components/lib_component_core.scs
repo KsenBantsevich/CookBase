@@ -1,0 +1,14 @@
+lib_component_proc_of_finding_storage_time
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа нахождения типа продукта по сроку годности]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of finding type of product based on storage time]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- reusable_scp_program;
+
+-> rrel_key_sc_element: 
+	proc_of_finding_storage_time;;
+
+lib_component_proc_of_finding_storage_time = [*^"file://../core/proc_of_finding_storage_time.scs"*];;

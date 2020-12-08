@@ -1,0 +1,12 @@
+lib_component_ui_menu_file_for_finding_calory_part
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для нахождения процентного отношения калорий продукта к суточной норме]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for to finding the percentage of the calories of the product to the daily value]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;;
+
+lib_component_ui_menu_file_for_finding_calory_part = [*^"file://../ui_menu/ui_menu.scsi"*];; 

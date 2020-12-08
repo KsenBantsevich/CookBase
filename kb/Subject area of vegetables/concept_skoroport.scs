@@ -1,0 +1,29 @@
+concept_skoroport
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [скоропортящийся продукт]
+		(* <- lang_ru;; *);
+       
+    =>nrel_idtf:[perishable product]
+       (*<-lang_en;;*);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_skoroport;;
+	<= nrel_sc_text_translation: ...(*->[Скоропортящиеся продукты – это продукты, температура хранения которых не должна превышать 6 °С, ](*<-lang_ru;;*);;*);;
+
+
+	=> nrel_main_idtf: [Опр.(скоропортящийся продукт)](*<- lang_ru;;*);;	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_skoroport;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Срок годности таких продуктов не превышает 30 суток с момента изготовления.](*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(скоропортящийся продукт)](*<- lang_ru;;*);;
+  
+*);;
+
+concept_skoroport=>nrel_time_limit:[30];;

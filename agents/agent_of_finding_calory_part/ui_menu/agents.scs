@@ -1,0 +1,11 @@
+agents <- ui_user_command_class_noatom;;
+
+agents => nrel_main_idtf: [Решатели задач ИСС по кулинарии] (* <- lang_ru;; *);;
+
+agents <= nrel_ui_commands_decomposition:
+{
+	ui_menu_file_for_finding_storage_time;
+    ui_menu_file_for_finding_calory_part
+
+ 
+};;

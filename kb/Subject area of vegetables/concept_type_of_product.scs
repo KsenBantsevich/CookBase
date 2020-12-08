@@ -1,0 +1,30 @@
+concept_type_of_product 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [тип продукта по сроку годности]
+		(* <- lang_ru;; *);
+       
+    =>nrel_idtf:[product type by shelf life]
+       (*<-lang_en;;*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_annual;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Все продукты питания делятся на три типа в зависимости от сроков годности.](*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(product type by shelf life)](*<- lang_ru;;*);;
+  
+*);;
+
+concept_type_of_product <= nrel_subdividing:
+{
+    concept_ultra_skoroport;
+    concept_skoroport;
+    concept_long_keep
+
+};;
+
+
+
+
+

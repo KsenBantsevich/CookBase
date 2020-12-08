@@ -1,0 +1,29 @@
+concept_ultra_skoroport
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [особо скоропортящийся продукт]
+		(* <- lang_ru;; *);
+       
+    =>nrel_idtf:[particularly perishable product]
+       (*<-lang_en;;*);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_ultra_skoroport;;
+	<= nrel_sc_text_translation: ...(*->[Особо скоропортящиеся – это продукты, которые нельзя хранить без поддержания низких температур (не выше +6 °С).](*<-lang_ru;;*);;*);;
+
+
+	=> nrel_main_idtf: [Опр.(особо скоропортящийся продукт)](*<- lang_ru;;*);;	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_ultra_skoroport;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Срок годности таких продуктов не превышает 72 часов с момента изготовления.](*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(особо скоропортящийся продукт)](*<- lang_ru;;*);;
+  
+*);;
+
+concept_ultra_skoroport=>nrel_time_limit:[3];;

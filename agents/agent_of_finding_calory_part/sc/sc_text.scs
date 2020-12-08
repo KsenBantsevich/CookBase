@@ -1,0 +1,13 @@
+sc_text_of_agent_of_finding_calory_part
+-> rrel_key_sc_element:
+	agent_of_finding_calory_part;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения процентного отношения калорий продукта к суточной норме] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program of finding the percentage of the calories of the product to the daily value] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_of_finding_calory_part = [*^"file://../agent_of_finding_calory_part.scsi"*];;

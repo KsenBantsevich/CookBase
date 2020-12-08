@@ -1,0 +1,29 @@
+concept_long_keep
+<- sc_node_not_relation;
+	=> nrel_main_idtf: [нескоропортящийся продукт]
+		(* <- lang_ru;; *);
+       
+    =>nrel_idtf:[non-perishable product]
+       (*<-lang_en;;*);;
+
+
+definition ->...
+(*
+	->rrel_key_sc_element: concept_long_keep;;
+	<= nrel_sc_text_translation: ...(*->[Нескоропортящийся продукт – продукты питания, которые можно хранить без низких температур более месяца.](*<-lang_ru;;*);;*);;
+
+
+	=> nrel_main_idtf: [Опр.(нескоропортящийся продукт)](*<- lang_ru;;*);;	
+*);;
+
+
+statement ->...
+(*
+	->rrel_key_sc_element: concept_long_keep;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Срок годности таких продуктов превышает 30 суток с момента изготовления.](*<-lang_ru;;*);;*);;
+    
+    => nrel_main_idtf: [Утв.(нескоропортящийся продукт)](*<- lang_ru;;*);;
+  
+*);;
+
+concept_long_keep=>nrel_time_limit:[1200];;
